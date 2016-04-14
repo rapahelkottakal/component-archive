@@ -88,7 +88,7 @@ export default class Archive extends React.Component {
 					>
 
 						<Title 
-							text="All these blocks are moduler. This means, making any improvements or adding more 'components' to the archive, will be simple for anyone familiar with reactjs."
+							text="All these blocks are modular. This means, making any improvements or adding more 'components' to the archive, will be simple for anyone familiar with reactjs."
 							font= "Open Sans"
 							color="white"
 							size="16"
