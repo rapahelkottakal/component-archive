@@ -1,4 +1,11 @@
-Title
+Setup and run
+
+git clone https://github.com/rapahelkottakal/component-archive.git
+cd component-archive
+npm install
+npm start
+
+	Title
 
 	Props
 	*text = Text to be displayed,
@@ -10,3 +17,4 @@ Title
 	bgImage = Set background image,
 
 	Render children: true
+
