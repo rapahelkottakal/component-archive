@@ -59,22 +59,23 @@ export default class Archive extends React.Component {
 						
 					</Title>
 
-
 					<Reveal
-						image="https://s-media-cache-ak0.pinimg.com/736x/b7/b5/be/b7b5be5c21678b1f53941f229c2b9cdd.jpg"
-						// btnTxt="Know more"
+						image="https://upload.wikimedia.org/wikipedia/commons/d/d2/Jeans_for_men.jpg"
+						btnTxt="Know more"
 						// btnSize={{width: 200, height: 100}}
 						// btnColor="red"
-						btnBgColor="hsla(0, 100%, 50%, 0.4)"
-						// content="The best collection of shoes can be found here."
+						// btnBgColor="blue"
+						content="The best collection of jeans can be found here. What are you waiting for?"
 						// contentColor="yellow"
-						// contentBgColor="gray"
+						contentBgColor="hsla(230, 68%, 52%, 0.9)"
 						// shopBtnText="Click me now"
 						// shopLink="http://google.com"
 
 					/>
 
-					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1460654675/city-tips-background_wy0nwb.jpg" class="alignnone wp-image-82898" width="100%" height="auto" />
+
+
+					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1460654675/city-tips-background_wy0nwb.jpg" width="100%" height="auto" />
 
 					<Title
 						text="Scalable"
@@ -99,18 +100,19 @@ export default class Archive extends React.Component {
 					</Title>
 
 					<Reveal
-						image="https://upload.wikimedia.org/wikipedia/commons/d/d2/Jeans_for_men.jpg"
-						btnTxt="Know more"
+						image="http://static1.squarespace.com/static/5520e514e4b00f468f8d3de4/5645f7a3e4b0abd1d824dfba/565780c9e4b022a250f9f480/1448575197974/cyclist-dribbble.gif"
+						// btnTxt="Know more"
 						// btnSize={{width: 200, height: 100}}
 						// btnColor="red"
-						// btnBgColor="blue"
-						content="The best collection of jeans can be found here. What are you waiting for?"
+						btnBgColor="hsla(0, 100%, 50%, 0.4)"
+						// content="The best collection of shoes can be found here."
 						// contentColor="yellow"
-						contentBgColor="hsla(230, 68%, 52%, 0.9)"
+						// contentBgColor="gray"
 						// shopBtnText="Click me now"
 						// shopLink="http://google.com"
 
 					/>
+					
 
 					<Title
 						text="Helping you look good"
