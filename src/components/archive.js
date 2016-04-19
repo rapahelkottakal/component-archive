@@ -4,7 +4,7 @@ import 'normalize.css/normalize.css';
 
 import '../css/main.css';
 
-
+import Textonimage from './text-on-image'
 import Title from './title';
 
 export default class Archive extends React.Component {
@@ -20,10 +20,23 @@ export default class Archive extends React.Component {
 		}
 	}
 
+
+	// getTextPositionStyles() {
+	// 	return {
+
+	// 		position: 'absolute',
+	// 		top: 10,
+	// 		left: 50,
+	// 		width: '100%',
+	// 	}
+	// }
+
+
 	render() {
 
 		return(
 			<div style={this.getContainerStyles()}>
+
 				<div>
 
 
@@ -49,11 +62,45 @@ export default class Archive extends React.Component {
 						
 					</Title>
 
+					<Textonimage src ="http://assets.myntassets.com/v1460639223/Lookgood/Feed/Style-tips/april16/14/download.jpg"
+						text = "hi this is varun"
+						color = "red"
+						
+						>
 
+					</Textonimage>
 
+					<Textonimage src ="http://assets.myntassets.com/v1460639223/Lookgood/Feed/Style-tips/april16/14/download.jpg"
+						text = "hi tasdfvarun"
+						color = "red"
+						
+						>
 
+					</Textonimage>
+
+					<Textonimage src ="http://assets.myntassets.com/v1460639223/Lookgood/Feed/Style-tips/april16/14/download.jpg"
+						text = "hi thisasdfarun"
+						textPosition = "left"//center / left-top /right-bot
+						
+						>
+
+					</Textonimage>
 				</div>
+				
 			</div>
+			
+		
+				
+				
+
+
+
 		);
+
 	}
+
+
+	
+		
+
 }
