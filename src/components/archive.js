@@ -1,4 +1,5 @@
 import React from 'react';
+import Slider from 'react-slick';
 
 import 'normalize.css/normalize.css';
 
@@ -22,11 +23,27 @@ export default class Archive extends React.Component {
 
 	render() {
 
+		var settings = {
+			dots: true,
+			infinite: true,
+			speed: 250,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			centerMode: true,
+			arrows: false
+		};
+
 		return(
 			<div style={this.getContainerStyles()}>
 				<div>
 
-
+					<Slider {...settings}>
+				        <div><img src="http://img.getjar.mobi/ss/6c/833651_3.jpg" style={{ width: '100%', height: 'auto' }} /></div>
+				        <div><img src="http://img.getjar.mobi/ss/6c/833651_4.jpg" style={{ width: '100%', height: 'auto' }} /></div>
+				        <div><img src="http://img.getjar.mobi/ss/f2/832457.jpg" style={{ width: '100%', height: 'auto' }}/></div>
+				      </Slider>
 					<Title
 						text="Come home to a charm.."
 						font= "Open Sans"
