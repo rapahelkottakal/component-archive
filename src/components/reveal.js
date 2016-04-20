@@ -1,4 +1,5 @@
 import React from 'react';
+import _ from 'lodash';
 
 import AbCenter from './abCenter';
 
@@ -52,10 +53,11 @@ export default class Title extends React.Component {
 			cursor: 'pointer'
 		}
 
-		Object.assign(styles, animate.transition('0.5s'));
+		_.assignIn(styles, animate.transition('0.5s'));
+		// Object.assign(styles, animate.transition('0.5s'));
 
 		if (this.state.expanded) {
-			Object.assign(styles, {
+			_.assignIn(styles, {
 				color: contentColor,
 				backgroundColor: contentBgColor,
 				width: '100%',
