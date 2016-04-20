@@ -4,8 +4,11 @@ import 'normalize.css/normalize.css';
 
 import '../css/main.css';
 
+import Textonimage from './text-on-image'
+
 
 import Reveal from './reveal';
+
 import Title from './title';
 
 
@@ -22,10 +25,23 @@ export default class Archive extends React.Component {
 		}
 	}
 
+
+	// getTextPositionStyles() {
+	// 	return {
+
+	// 		position: 'absolute',
+	// 		top: 10,
+	// 		left: 50,
+	// 		width: '100%',
+	// 	}
+	// }
+
+
 	render() {
 
 		return(
 			<div style={this.getContainerStyles()}>
+
 				<div>
 
 
@@ -59,6 +75,7 @@ export default class Archive extends React.Component {
 						
 					</Title>
 
+
 					<Reveal
 						image="https://upload.wikimedia.org/wikipedia/commons/d/d2/Jeans_for_men.jpg"
 						btnTxt="Know more"
@@ -73,7 +90,21 @@ export default class Archive extends React.Component {
 
 					/>
 
+					<Textonimage src ="http://assets.myntassets.com/v1460639223/Lookgood/Feed/Style-tips/april16/14/download.jpg"
+						text = "hi this is varun"
+						color = "red"
+						
+						>
 
+					</Textonimage>
+
+					<Textonimage src ="http://assets.myntassets.com/v1460639223/Lookgood/Feed/Style-tips/april16/14/download.jpg"
+						text = "hi thisasdfarun"
+						textPosition = "left"//center / left-top /right-bot
+						
+						>
+
+					</Textonimage>
 
 					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1460654675/city-tips-background_wy0nwb.jpg" width="100%" height="auto" />
 
@@ -125,8 +156,23 @@ export default class Archive extends React.Component {
 						bgImage="http://www.uniteourresources.com/wp-content/uploads/2012/07/black_woven_seamless_tile.jpg"
 					/>
 
+
 				</div>
+				
 			</div>
+			
+		
+				
+				
+
+
+
 		);
+
 	}
+
+
+	
+		
+
 }
