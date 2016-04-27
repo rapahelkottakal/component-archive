@@ -63,7 +63,7 @@ export default class Archive extends React.Component {
 
 				<div>
 
-					<SliderGroup sliderData={sliderGroupData}></SliderGroup>
+					<SliderGroup data={sliderGroupData}></SliderGroup>
 
 					<Title
 						text="React SIS Pages"
