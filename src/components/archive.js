@@ -13,6 +13,9 @@ import Reveal from './reveal';
 import Title from './title';
 
 
+import sliderGroupData from '../data/slider-group';
+import SliderGroup from './slide-group';
+
 export default class Archive extends React.Component {
 
 	getContainerStyles() {
@@ -40,6 +43,9 @@ export default class Archive extends React.Component {
 
 	render() {
 
+		// console.log('test', sliderGroupData);
+
+
 		var settings = {
 			dots: true,
 			infinite: true,
@@ -57,11 +63,8 @@ export default class Archive extends React.Component {
 
 				<div>
 
-					<Slider {...settings}>
-				        <div><img src="http://img.getjar.mobi/ss/6c/833651_3.jpg" style={{ width: '100%', height: 'auto' }} /></div>
-				        <div><img src="http://img.getjar.mobi/ss/6c/833651_4.jpg" style={{ width: '100%', height: 'auto' }} /></div>
-				        <div><img src="http://img.getjar.mobi/ss/f2/832457.jpg" style={{ width: '100%', height: 'auto' }}/></div>
-				      </Slider>
+					<SliderGroup data={sliderGroupData}></SliderGroup>
+
 					<Title
 						text="React SIS Pages"
 						font= "Open Sans"
