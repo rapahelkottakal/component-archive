@@ -1,6 +1,15 @@
 import React from 'react';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
+import Dialog from 'material-ui/Dialog';
+import FlatButton from 'material-ui/FlatButton';
+import RaisedButton from 'material-ui/RaisedButton';
+
 
 import {Motion, spring} from 'react-motion';
+
+injectTapEventPlugin();
+
 
 export default class Slideimage extends React.Component{
 	constructor(){
@@ -36,7 +45,38 @@ export default class Slideimage extends React.Component{
 		}
 	}
 
+
+
+
+	handleOpen() {
+			 this.setState({open: true});
+	}
+
+	handleClose(){
+			this.setState({open: false});
+	}
+
+
+
+
+
 	render(){
+
+
+		const actions = [
+			<FlatButton
+				label="Back"
+				secondary={true}
+				onTouchTap={this.handleClose}
+			/>,
+			<FlatButton
+				label="Shop Now"
+				primary={true}
+				keyboardFocused={true}
+				onTouchTap={this.handleClose}
+			/>,
+    	];
+
 
 		return(
 			<div style={{ position:'relative'}}>
@@ -45,7 +85,7 @@ export default class Slideimage extends React.Component{
 
 
 				<div style={ this.afterImageStyle() }
-						onMouseOver={this.handleMouseDown.bind(this)}
+						onClick={this.handleMouseDown.bind(this)}
 						onTouchStart={this.handleTouchStart}>
 						<img src = {this.props.beforeImage} style={{ width: '100%'}} />	
 				
@@ -60,6 +100,21 @@ export default class Slideimage extends React.Component{
 			          }
 			        </Motion>
 				</div>
+
+				<div>
+					<RaisedButton label="Dialog" onTouchTap={this.handleOpen} />
+					<Dialog
+					  title="Dialog With Actions"
+					  actions={actions}
+					  modal={false}
+					  open={this.state.open}
+					  onRequestClose={this.handleClose}
+					>
+					  The actions in this window were passed in as an array of React objects.
+					</Dialog>
+				</div>
+
+
 			</div>
 
 		);
