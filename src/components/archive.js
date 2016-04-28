@@ -6,6 +6,8 @@ import '../css/main.css';
 
 
 import Title from './title';
+import Slideimage from './slideimage';
+
 
 export default class Archive extends React.Component {
 
@@ -48,6 +50,12 @@ export default class Archive extends React.Component {
 						/>
 						
 					</Title>
+
+					<Slideimage
+					textonimage="Tap to be amazed"
+					beforeImage="http://assets.myntassets.com/v1461563423/Lookgood/Feed/makeover/april/Makeover-22.04.16--7.jpg"
+					afterImage="http://assets.myntassets.com/v1461563423/Lookgood/Feed/makeover/april/Makeover-22.04.16--8.jpg"
+					  />
 
 
 
