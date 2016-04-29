@@ -2,17 +2,12 @@ import React from 'react';
 import Slider from 'react-slick';
 
 import 'normalize.css/normalize.css';
-
 import '../css/main.css';
 
 import Textonimage from './text-on-image'
-
-
 import Reveal from './reveal';
-
 import Title from './title';
-
-
+import FlipCard from './flip-card';
 import sliderGroupData from '../data/slider-group';
 import SliderGroup from './slide-group';
 
@@ -94,6 +89,12 @@ export default class Archive extends React.Component {
 						/>
 						
 					</Title>
+
+					<FlipCard
+						front="http://assets.myntassets.com/v1461908504/Lookgood/Feed/Vocab/april/woh-cab-chevronprint-feedcard.gif"
+						back="http://assets.myntassets.com/v1461908455/Lookgood/Feed/Vocab/april/woh-cab-chevronprint.jpg"
+						link="http://www.myntra.com/chevron-print?userQuery=true&f=categories%3ADresses%2CKurtas%2CTops%3A%3Agender%3Amen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cwomen&sort=high&SRC=Lookgood6"
+					/>
 
 
 					<Reveal
