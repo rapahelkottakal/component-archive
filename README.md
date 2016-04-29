@@ -46,3 +46,13 @@ npm start
 	Props
 	padding = left and right padding. Default 15
 	Render children: true
+
+
+
+	FlipCard
+	Flip to reveal and click through link
+
+	Props
+	front = image url
+	back = image url
+	link = shop link
