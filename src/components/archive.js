@@ -10,7 +10,7 @@ import Title from './title';
 import FlipCard from './flip-card';
 import sliderGroupData from '../data/slider-group';
 import SliderGroup from './slide-group';
-
+import Buble from './buble';
 export default class Archive extends React.Component {
 
 	getContainerStyles() {

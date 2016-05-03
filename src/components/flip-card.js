@@ -74,6 +74,7 @@ export default class FlipCard extends React.Component {
 	}
 
 	handelClick() {
+		console.log(this);
 		this.setState({
 			fliped: true
 		});
