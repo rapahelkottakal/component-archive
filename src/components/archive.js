@@ -7,9 +7,15 @@ import '../css/main.css';
 import Textonimage from './text-on-image'
 import Reveal from './reveal';
 import Title from './title';
+
+import Slideimage from './slideimage';
+import Popup from './popup';
+
+
 import FlipCard from './flip-card';
 import sliderGroupData from '../data/slider-group';
 import SliderGroup from './slide-group';
+
 
 export default class Archive extends React.Component {
 
@@ -89,6 +95,15 @@ export default class Archive extends React.Component {
 						/>
 						
 					</Title>
+
+					<Slideimage
+					textonimage="Tap to be amazed"
+					beforeImage="http://assets.myntassets.com/v1461563423/Lookgood/Feed/makeover/april/Makeover-22.04.16--7.jpg"
+					afterImage="http://assets.myntassets.com/v1461563423/Lookgood/Feed/makeover/april/Makeover-22.04.16--8.jpg"
+					  />
+
+					<Popup 
+					content = "xxxx" />
 
 					<FlipCard
 						front="http://assets.myntassets.com/v1461908504/Lookgood/Feed/Vocab/april/woh-cab-chevronprint-feedcard.gif"
