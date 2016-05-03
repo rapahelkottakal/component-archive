@@ -7,6 +7,8 @@ import '../css/main.css';
 
 import Title from './title';
 import Slideimage from './slideimage';
+import Popup from './popup';
+
 
 
 export default class Archive extends React.Component {
@@ -57,9 +59,9 @@ export default class Archive extends React.Component {
 					afterImage="http://assets.myntassets.com/v1461563423/Lookgood/Feed/makeover/april/Makeover-22.04.16--8.jpg"
 					  />
 
-
-
-
+					<Popup 
+					content = "xxxx" />
+					
 				</div>
 			</div>
 		);

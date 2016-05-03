@@ -14,7 +14,8 @@ export default class Slideimage extends React.Component{
 			color:'#fff',
 			padding: '2% 0',
 			textAlign: 'center',
-			margin: 0
+			margin: 0,
+			left: '-100%'
 		}
 	}
 
@@ -32,7 +33,8 @@ export default class Slideimage extends React.Component{
 			// backgroundImage: 'url(http://assets.myntassets.com/v1461563423/Lookgood/Feed/makeover/april/Makeover-22.04.16--7.jpg)',
 			backgroundRepeat: 'no-repeat',
 			cursor: 'pointer',
-			position: 'relative'
+			position: 'relative',
+			zIndex: '999'
 		}
 	}
 
@@ -58,8 +60,12 @@ export default class Slideimage extends React.Component{
 			            // children is a callback which should accept the current value of
 			            // `style`
 
-			            <div className= "bgimage" style={{ width: x + '%', height: '100%', overflow: 'hidden', position: 'absolute', top: '0%' }}>
-							<img src = {this.props.afterImage} style={{ width: '100%', height: '100%'}} />
+			            <div className= "bgimage" style={{
+					                WebkitTransform: `translate(${x}%, 0)`,
+					                transform: `translate(${x}%, 0)`,
+					                height: '100%', overflow: 'hidden', position: 'absolute', top: '0%', width: '100%', left: '-100%'
+					              }} >
+							<img src = {this.props.afterImage} style={{ width: '100%'}} />
 						</div>
 			          }
 			        </Motion>
