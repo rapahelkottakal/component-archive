@@ -15,7 +15,7 @@
     "react": "~15.0.1",
     "react-imageloader": "~2.1.0",
     "react-motion": "~0.4.3",
-    "react-tap-event-plugin": "~1.0.0"
+    "react-tap-event-plugin": "~1.0.0",
     "react-slick": "~0.12.0",
     "lodash": "~4.11.1"
   },
