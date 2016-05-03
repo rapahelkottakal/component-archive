@@ -21,11 +21,6 @@ export default class Slideimage extends React.Component{
 
 	handleMouseDown() {
 		this.setState({open: !this.state.open});
-	}	
-
-	handleTouchStart(e) {
-		e.preventDefault();
-		this.handleMouseDown();
 	}
 
 	afterImageStyle(){
@@ -51,8 +46,7 @@ export default class Slideimage extends React.Component{
 				
 
 				<div style={ this.afterImageStyle() }
-						onClick={this.handleMouseDown.bind(this)}
-						onTouchStart={this.handleTouchStart}>
+						onClick={this.handleMouseDown.bind(this)}>
 						<img src = {this.props.beforeImage} style={{ width: '100%'}} />	
 				
 					<Motion style={{x: spring(this.state.open ? 100 : 0)}}>
