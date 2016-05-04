@@ -110,10 +110,10 @@ export default class ShowMore extends React.Component {
 
 			if (this.state.currentChild != key && this.state.open) {
 
-				imageRow.push(<img src={value.props.image} style={{ width: value.props.width, height: 'auto', opacity: 0.5 }} key={key} onClick={this.changeCurrentChild.bind(this,key)} />);
+				imageRow.push(<img src={value.props.image} style={{ width: value.props.width, height: 'auto', opacity: 0.5, display: 'inline-block' }} key={key} onClick={this.changeCurrentChild.bind(this,key)} />);
 			} else {
 
-				imageRow.push(<img src={value.props.image} style={{ width: value.props.width, height: 'auto', opacity: 1 }} key={key} onClick={this.changeCurrentChild.bind(this,key)} />);
+				imageRow.push(<img src={value.props.image} style={{ width: value.props.width, height: 'auto', opacity: 1, display: 'inline-block' }} key={key} onClick={this.changeCurrentChild.bind(this,key)} />);
 			}
 
 		});

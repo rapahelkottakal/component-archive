@@ -54,12 +54,23 @@ export default class Archive extends React.Component {
 			dots: true,
 			infinite: true,
 			speed: 250,
-			slidesToShow: 1,
-			slidesToScroll: 1,
+			slidesToShow: 3,
+			slidesToScroll: 2,
 			autoplay: true,
 			autoplaySpeed: 3000,
 			centerMode: true,
 			arrows: false
+		};
+
+		let imgStyle = {
+			width: '100%',
+			height: 'auto',
+			display: 'inline-block'
+		},
+
+			linkStyel = {
+			display: 'inline-block',
+			width: '33.33%'
 		};
 
 		return(
@@ -67,157 +78,131 @@ export default class Archive extends React.Component {
 
 				<div>
 
+					<img
+						src="http://assets.myntassets.com/v1462359560/radium/SIS/fragrance/Beauty-store-fragrance.jpg"
+						style={{ width: '100%', height: 'auto' }}
+					/>
+
+					<div style={{padding: 10, color: '#728968', fontWeight: 600}}>SHOP BY BRAND</div>
+					<hr width="10" align="left" style={{ maxWidth: 10, margin: 0, marginLeft: 10, borderTopColor: 'lightgray' }} />
+
+					<div>
+						<a style={linkStyel}>
+							<img src="http://assets.myntassets.com/v1462360006/radium/SIS/fragrance/boss-brnad-logo.jpg" style={imgStyle} />
+						</a>
+						<a style={linkStyel}>
+							<img src="http://assets.myntassets.com/v1462360007/radium/SIS/fragrance/versace-brnad-logo.jpg" style={imgStyle} />
+						</a>
+						<a style={linkStyel}>
+							<img src="http://assets.myntassets.com/v1462360009/radium/SIS/fragrance/dior-brnad-logo.jpg" style={imgStyle} />
+						</a>
+					</div>
+					<div>
+						<a style={linkStyel}>
+							<img src="http://assets.myntassets.com/v1462360011/radium/SIS/fragrance/dg-brnad-logo.jpg" style={imgStyle} />
+						</a>
+						<a style={linkStyel}>
+							<img src="http://assets.myntassets.com/v1462360013/radium/SIS/fragrance/ch-brnad-logo.jpg" style={imgStyle} />
+						</a>
+						<a style={linkStyel}>
+							<img src="http://assets.myntassets.com/v1462360033/radium/SIS/fragrance/hermes-brnad-logo.jpg" style={imgStyle} />
+						</a>
+					</div>
+
+					<div style={{padding: 10, color: '#728968', fontWeight: 600}}>SHOP BY TYPE</div>
+					<hr width="10" align="left" style={{ maxWidth: 10, margin: 0, marginLeft: 10, borderTopColor: 'lightgray' }} />
+
+					<Slider {...settings}>
+						<a href="http://www.myntra.com/women-deos-perfumes" target="_blank">
+							<img src="http://assets.myntassets.com/v1462360756/radium/SIS/fragrance/perfume-menu.jpg" style={{ width: '100%', height: 'auto' }} />
+						</a>
+						<a href="http://www.myntra.com/women-deos-perfumes" target="_blank">
+							<img src="http://assets.myntassets.com/v1462360758/radium/SIS/fragrance/deo-menu.jpg" style={{ width: '100%', height: 'auto' }} />
+						</a>
+						<a href="http://www.myntra.com/women-deos-perfumes" target="_blank">
+							<img src="http://assets.myntassets.com/v1462360756/radium/SIS/fragrance/body-mist-menu.jpg" style={{ width: '100%', height: 'auto' }} />
+						</a>
+						<a href="http://www.myntra.com/women-deos-perfumes" target="_blank">
+							<img src="http://assets.myntassets.com/v1462361594/radium/SIS/fragrance/aromatherapy-mist-menu.jpg" style={{ width: '100%', height: 'auto' }} />
+						</a>
+
+					</Slider>
+
+					<img
+						src="http://assets.myntassets.com/v1462361029/radium/SIS/fragrance/brand-card-fragrance.jpg"
+						style={{ width: '100%', height: 'auto', paddingTop: 10 }}
+					/>
+					<img
+						src="http://assets.myntassets.com/v1462361443/radium/SIS/fragrance/guide-to-fragrances.jpg"
+						style={{ width: '100%', height: 'auto' }}
+					/>
 					<ShowMore>
 						<ImageChild
 							image="http://assets.myntassets.com/v1462352818/radium/SIS/fragrance/fruity-menu.jpg"
 							width="33.33%"
 						>
-							<div>0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare lacus et porttitor sollicitudin. Phasellus a eros ac risus elementum efficitur ac in mi. Vivamus dapibus, metus eu viverra scelerisque, sapien nisi cursus neque, eu venenatis erat lectus at enim.</div>
+							<div style={{marginBottom: 10}}>These perfumes have a fresh aroma with distinct hints of fruity scents. They are not too overpowering making them perfect for occasions like date night. Ideal for summer.</div>
+							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
+								<img src="http://assets.myntassets.com/v1462361670/radium/SIS/fragrance/davidoff-1.jpg" style={imgStyle} />
+							</a>
+							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
+								<img src="http://assets.myntassets.com/v1462361671/radium/SIS/fragrance/calvin-klein-2.jpg" style={imgStyle} />
+							</a>
+							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
+								<img src="http://assets.myntassets.com/v1462361673/radium/SIS/fragrance/polic-3.jpg" style={imgStyle} />
+							</a>
 
 						</ImageChild>
 						<ImageChild
 							image="http://assets.myntassets.com/v1462352816/radium/SIS/fragrance/floral-menu.jpg"
 							width="33.33%"
 						>
-							<div>1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare lacus et porttitor sollicitudin. Phasellus a eros ac risus elementum efficitur ac in mi. Vivamus dapibus, metus eu viverra scelerisque, sapien nisi cursus neque, eu venenatis erat lectus at enim.</div>
+							<div style={{marginBottom: 10}}>These perfumes give off a lively and energetic vibe. They can be quite strong and are perfect for outdoor daytime activities like a sunday brunch with friends. Ideal for summer.</div>
+							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
+								<img src="http://assets.myntassets.com/v1462361670/radium/SIS/fragrance/davidoff-1.jpg" style={imgStyle} />
+							</a>
+							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
+								<img src="http://assets.myntassets.com/v1462361671/radium/SIS/fragrance/calvin-klein-2.jpg" style={imgStyle} />
+							</a>
+							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
+								<img src="http://assets.myntassets.com/v1462361673/radium/SIS/fragrance/polic-3.jpg" style={imgStyle} />
+							</a>
 							
 						</ImageChild>
 						<ImageChild
 							image="http://assets.myntassets.com/v1462354162/radium/SIS/fragrance/oceanic-menu.jpg"
 							width="33.33%"
 						>
-							<div>2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare lacus et porttitor sollicitudin. Phasellus a eros ac risus elementum efficitur ac in mi. Vivamus dapibus, metus eu viverra scelerisque, sapien nisi cursus neque, eu venenatis erat lectus at enim.</div>
+							<div style={{marginBottom: 10}}>Considered to be the most feminine scents of the lot, these sweet-smelling perfumes are quite timeless. Perfect for special occasions like a wedding or family dinner. Ideal for winter.</div>
+							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
+								<img src="http://assets.myntassets.com/v1462361670/radium/SIS/fragrance/davidoff-1.jpg" style={imgStyle} />
+							</a>
+							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
+								<img src="http://assets.myntassets.com/v1462361671/radium/SIS/fragrance/calvin-klein-2.jpg" style={imgStyle} />
+							</a>
+							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
+								<img src="http://assets.myntassets.com/v1462361673/radium/SIS/fragrance/polic-3.jpg" style={imgStyle} />
+							</a>
 							
 						</ImageChild>
 					</ShowMore>
 
-					<SliderGroup data={sliderGroupData}></SliderGroup>
 
-					<Title
-						text="React SIS Pages"
-						font= "Open Sans"
-						size="30"
-						color="white"
-						padding="20px"
-						align="right"
-						bgColor="slateblue"
-						bgImage="http://fmforums.com/uploads/attachments/monthly_2009_10/Background-tile.gif.11107119f39d13d71f261c93ace94ed2.gif"
-					>
 
-						<Title 
-							text="We can do a lot more."
-							font= "Open Sans"
-							color="white"
-							size="16"
-							padding="10px 0 0 0"
-							align="right"
-						/>
-						<Title 
-							text="This is only the beginning..."
-							font= "Open Sans"
-							color="white"
-							size="16"
-							padding="0px"
-							align="right"
-						/>
-						
-					</Title>
-
-					<Slideimage
-					textonimage="Tap to be amazed"
-					beforeImage="http://assets.myntassets.com/v1461563423/Lookgood/Feed/makeover/april/Makeover-22.04.16--7.jpg"
-					afterImage="http://assets.myntassets.com/v1461563423/Lookgood/Feed/makeover/april/Makeover-22.04.16--8.jpg"
-					  />
-
-					<Popup 
-					content = "xxxx" />
-
-					<FlipCard
-						front="http://assets.myntassets.com/v1461908504/Lookgood/Feed/Vocab/april/woh-cab-chevronprint-feedcard.gif"
-						back="http://assets.myntassets.com/v1461908455/Lookgood/Feed/Vocab/april/woh-cab-chevronprint.jpg"
-						link="http://www.myntra.com/chevron-print?userQuery=true&f=categories%3ADresses%2CKurtas%2CTops%3A%3Agender%3Amen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cwomen&sort=high&SRC=Lookgood6"
+					<img
+						src="http://assets.myntassets.com/v1462361827/radium/SIS/fragrance/ORIENTAL.jpg"
+						width="33.33%"
+					/>
+					<img
+						src="http://assets.myntassets.com/v1462361828/radium/SIS/fragrance/MUSKY.jpg"
+						width="33.33%"
+					/>
+					<img
+						src="http://assets.myntassets.com/v1462361828/radium/SIS/fragrance/WOODY.jpg"
+						width="33.33%"
 					/>
 
 
-					<Reveal
-						image="https://upload.wikimedia.org/wikipedia/commons/d/d2/Jeans_for_men.jpg"
-						btnTxt="Know more"
-						// btnSize={{width: 200, height: 100}}
-						// btnColor="red"
-						// btnBgColor="blue"
-						content="The best collection of jeans can be found here. What are you waiting for?"
-						// contentColor="yellow"
-						contentBgColor="hsla(230, 68%, 52%, 0.9)"
-						// shopBtnText="Click me now"
-						// shopLink="http://google.com"
-
-					/>
-
-					<Textonimage src ="http://assets.myntassets.com/v1460639223/Lookgood/Feed/Style-tips/april16/14/download.jpg"
-						text = "hi this is varun"
-						color = "red"
-						
-						>
-
-					</Textonimage>
-
-					<Textonimage src ="http://assets.myntassets.com/v1460639223/Lookgood/Feed/Style-tips/april16/14/download.jpg"
-						text = "hi thisasdfarun"
-						textPosition = "left"//center / left-top /right-bot
-						
-						>
-
-					</Textonimage>
-
-					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1460654675/city-tips-background_wy0nwb.jpg" width="100%" height="auto" />
-
-					<Title
-						text="Scalable"
-						font= "Open Sans"
-						size="30"
-						color="white"
-						padding="20px"
-						align="left"
-						bgColor="gray"
-						bgImage="http://templatesideas.com/wp-content/uploads/2010/12/Fiber-Carbon-Tiled-Pattern-background-vol.11.jpg"
-					>
-
-						<Title 
-							text="All these blocks are modular. This means, making any improvements or adding more 'components' to the archive, will be simple for anyone familiar with reactjs."
-							font= "Open Sans"
-							color="white"
-							size="16"
-							padding="0px"
-							align="left"
-						/>
-						
-					</Title>
-
-					<Reveal
-						image="http://static1.squarespace.com/static/5520e514e4b00f468f8d3de4/5645f7a3e4b0abd1d824dfba/565780c9e4b022a250f9f480/1448575197974/cyclist-dribbble.gif"
-						// btnTxt="Know more"
-						// btnSize={{width: 200, height: 100}}
-						// btnColor="red"
-						btnBgColor="hsla(0, 100%, 50%, 0.4)"
-						// content="The best collection of shoes can be found here."
-						// contentColor="yellow"
-						// contentBgColor="gray"
-						// shopBtnText="Click me now"
-						// shopLink="http://google.com"
-
-					/>
-					
-
-					<Title
-						text="Helping you look good"
-						font= "Open Sans"
-						size="25"
-						color="white"
-						padding="20px"
-						// align="right"
-						bgColor="slateblue"
-						bgImage="http://www.uniteourresources.com/wp-content/uploads/2012/07/black_woven_seamless_tile.jpg"
-					/>
 
 
 				</div>
