@@ -16,6 +16,9 @@ import FlipCard from './flip-card';
 import sliderGroupData from '../data/slider-group';
 import SliderGroup from './slide-group';
 
+import ShowMore from './showMore';
+import ImageChild from './imageChild';
+
 
 export default class Archive extends React.Component {
 
@@ -63,6 +66,30 @@ export default class Archive extends React.Component {
 			<div style={this.getContainerStyles()}>
 
 				<div>
+
+					<ShowMore>
+						<ImageChild
+							image="http://assets.myntassets.com/v1462352818/radium/SIS/fragrance/fruity-menu.jpg"
+							width="33.33%"
+						>
+							<div>0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare lacus et porttitor sollicitudin. Phasellus a eros ac risus elementum efficitur ac in mi. Vivamus dapibus, metus eu viverra scelerisque, sapien nisi cursus neque, eu venenatis erat lectus at enim.</div>
+
+						</ImageChild>
+						<ImageChild
+							image="http://assets.myntassets.com/v1462352816/radium/SIS/fragrance/floral-menu.jpg"
+							width="33.33%"
+						>
+							<div>1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare lacus et porttitor sollicitudin. Phasellus a eros ac risus elementum efficitur ac in mi. Vivamus dapibus, metus eu viverra scelerisque, sapien nisi cursus neque, eu venenatis erat lectus at enim.</div>
+							
+						</ImageChild>
+						<ImageChild
+							image="http://assets.myntassets.com/v1462354162/radium/SIS/fragrance/oceanic-menu.jpg"
+							width="33.33%"
+						>
+							<div>2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare lacus et porttitor sollicitudin. Phasellus a eros ac risus elementum efficitur ac in mi. Vivamus dapibus, metus eu viverra scelerisque, sapien nisi cursus neque, eu venenatis erat lectus at enim.</div>
+							
+						</ImageChild>
+					</ShowMore>
 
 					<SliderGroup data={sliderGroupData}></SliderGroup>
 
