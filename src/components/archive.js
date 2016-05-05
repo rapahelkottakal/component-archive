@@ -19,6 +19,9 @@ import SliderGroup from './slide-group';
 import ShowMore from './showMore';
 import ImageChild from './imageChild';
 
+import Expander from './expander';
+
+
 
 export default class Archive extends React.Component {
 
@@ -76,15 +79,11 @@ export default class Archive extends React.Component {
 		return(
 			<div style={this.getContainerStyles()}>
 
+			<Expander image="http://assets.myntassets.com/v1462425782/radium/SIS/eyes/eyes-header.jpg">
+			
+			
+
 				<div>
-
-					<img
-						src="http://assets.myntassets.com/v1462425782/radium/SIS/eyes/eyes-header.jpg"
-						style={{ width: '100%', height: 'auto' }}
-					/>					
-
-					<div style={{padding: 10, color: '#728968', fontWeight: 600}}>SHOP BY TYPE</div>
-					<hr width="10" align="left" style={{ maxWidth: 10, margin: 0, marginLeft: 10, borderTopColor: 'lightgray' }} />
 
 					<Slider {...settings}>
 						<a href="http://www.myntra.com" target="_blank">
@@ -143,7 +142,9 @@ export default class Archive extends React.Component {
 						src="http://assets.myntassets.com/v1462428246/radium/SIS/eyes/Beauty-store-mockup-eyes-text-2.jpg"
 						width="100%"
 					/>
-				</div>				
+				</div>
+
+			</Expander>				
 			</div>
 		);
 
