@@ -62,7 +62,8 @@ export default class ShowMore extends React.Component {
 		
 		let style = {
 			display: 'none',
-			padding: '15px 25px'
+			padding: '15px 25px',
+			backgroundColor:'#F7F7F7'
 		}
 
 		if (this.state.open) {

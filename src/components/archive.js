@@ -95,7 +95,8 @@ export default class Archive extends React.Component {
 		},
 			linkStyels = {
 			display: 'inline-block',
-			width: '25%'
+			width: '25%',
+			marginBottom:'10px'
 		};
 		return(
 			<div style={this.getContainerStyles()}>
@@ -127,7 +128,7 @@ export default class Archive extends React.Component {
 					</Slider>
 
 					<div style={{padding: 10, color: '#728968', fontWeight: 600}}>SHOP BY SKIN TONE</div>
-					<hr width="10" align="left" style={{ maxWidth: 10, margin: 0, marginLeft: 10, borderTopColor: 'lightgray' }} />
+					<hr width="10" align="left" style={{ maxWidth: 10, margin: 0, marginLeft: 10, borderTopColor: 'lightgray',  }} />
 
 					<div>
 						<a style={linkStyel}>
@@ -142,7 +143,7 @@ export default class Archive extends React.Component {
 					</div>
 
 					<div style={{padding: 10, color: '#728968', fontWeight: 600}}>SHOP BY SKIN TYPE</div>
-					<hr width="10" align="left" style={{ maxWidth: 10, margin: 0, marginLeft: 10, borderTopColor: 'lightgray' }} />
+					<hr width="10" align="left" style={{ maxWidth: 10, margin: 0, marginLeft: 10, borderTopColor: 'lightgray' ,marginBottom: 10, }} />
 
 
 					<div>
@@ -171,27 +172,27 @@ export default class Archive extends React.Component {
 
 					<Slider {...settingsSlide}>
 						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none', color:'#485160'}}>
-							<img src="http://assets.myntassets.com/v1462428404/radium/SIS/face/cleanse-tone-mois.jpg" style={{ width: '100%', height: 'auto' }} />
+							<img src="http://assets.myntassets.com/v1462428404/radium/SIS/face/cleanse-tone-mois.jpg" style={{ width: '80%', height: 'auto', textAlign:'center'}} />
 							<div style={textStyle}>Wash your face to make sure your skin in clean and hydrated. Apply a toner followed by a moisturiser.</div>
 						</a>
 						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none', color:'#485160'}}>
-							<img src="http://assets.myntassets.com/v1462428404/radium/SIS/face/apply-dots.jpg" style={{ width: '100%', height: 'auto' }} />
+							<img src="http://assets.myntassets.com/v1462428404/radium/SIS/face/apply-dots.jpg" style={{ width: '80%', height: 'auto', textAlign:'center' }} />
 							<div style={textStyle}>Apply dots of primer in the center of your face and work outwards.</div>
 						</a>
 						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none', color:'#485160'}}>
-							<img src="http://assets.myntassets.com/v1462428407/radium/SIS/face/start-edge.jpg" style={{ width: '100%', height: 'auto' }} />
+							<img src="http://assets.myntassets.com/v1462428407/radium/SIS/face/start-edge.jpg" style={{ width: '80%', height: 'auto', textAlign:'center' }} />
 							<div style={textStyle}>Start applying foundation from your nose area moving towards chin, cheek and forehead. Spread it evenly with no clumps or lines.</div>
 						</a>
 						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none', color:'#485160'}}>
-							<img src="http://assets.myntassets.com/v1462428409/radium/SIS/face/concealer.jpg" style={{ width: '100%', height: 'auto' }} />
+							<img src="http://assets.myntassets.com/v1462428409/radium/SIS/face/concealer.jpg" style={{ width: '80%', height: 'auto', textAlign:'center' }} />
 							<div style={textStyle}>Apply concealer under your eyes and areas that need covering up like blemishes and dark spots. Blend well.</div>
 						</a>
 						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none', color:'#485160'}}>
-							<img src="http://assets.myntassets.com/v1462428411/radium/SIS/face/dust-loose-powder.jpg" style={{ width: '100%', height: 'auto' }} />
+							<img src="http://assets.myntassets.com/v1462428411/radium/SIS/face/dust-loose-powder.jpg" style={{ width: '80%', height: 'auto', textAlign:'center' }} />
 							<div style={textStyle}>Dust on some loose powder using a powder brush from under the eyes to your cheeks.</div>
 						</a>						
 						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none', color:'#485160'}}>
-							<img src="http://assets.myntassets.com/v1462428414/radium/SIS/face/compact-powder.jpg" style={{ width: '100%', height: 'auto' }} />
+							<img src="http://assets.myntassets.com/v1462428414/radium/SIS/face/compact-powder.jpg" style={{ width: '80%', height: 'auto', textAlign:'center' }} />
 							<div style={textStyle}>Press on compact powder to set the make-up and to ensure it lasts long.</div>
 						</a>
 					</Slider>
