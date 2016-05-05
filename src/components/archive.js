@@ -73,6 +73,14 @@ export default class Archive extends React.Component {
 			centerMode: true,
 			arrows: false
 		};
+		let textStyle ={
+			textDecoration: 'none', 
+			padding: '0 5%', 
+			fontSize: '15px',
+			 letterSpacing:'1px',
+
+		}
+
 		let imgStyle = {
 			width: '100%',
 			height: 'auto',
@@ -161,23 +169,29 @@ export default class Archive extends React.Component {
 					/>					
 
 					<Slider {...settingsSlide}>
-						<a href="http://www.myntra.com/" target="_blank">
+						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none'}}>
 							<img src="http://assets.myntassets.com/v1462428404/radium/SIS/face/cleanse-tone-mois.jpg" style={{ width: '100%', height: 'auto' }} />
+							<div style={textStyle}>Wash your face to make sure your skin in clean and hydrated. Apply a toner followed by a moisturiser.</div>
 						</a>
-						<a href="http://www.myntra.com/" target="_blank">
+						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none'}}>
 							<img src="http://assets.myntassets.com/v1462428404/radium/SIS/face/apply-dots.jpg" style={{ width: '100%', height: 'auto' }} />
+							<div style={textStyle}>Apply dots of primer in the center of your face and work outwards.</div>
 						</a>
-						<a href="http://www.myntra.com/" target="_blank">
+						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none'}}>
 							<img src="http://assets.myntassets.com/v1462428407/radium/SIS/face/start-edge.jpg" style={{ width: '100%', height: 'auto' }} />
+							<div style={textStyle}>Start applying foundation from your nose area moving towards chin, cheek and forehead. Spread it evenly with no clumps or lines.</div>
 						</a>
-						<a href="http://www.myntra.com/" target="_blank">
+						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none'}}>
 							<img src="http://assets.myntassets.com/v1462428409/radium/SIS/face/concealer.jpg" style={{ width: '100%', height: 'auto' }} />
+							<div style={textStyle}>Apply concealer under your eyes and areas that need covering up like blemishes and dark spots. Blend well.</div>
 						</a>
-						<a href="http://www.myntra.com/" target="_blank">
+						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none'}}>
 							<img src="http://assets.myntassets.com/v1462428411/radium/SIS/face/dust-loose-powder.jpg" style={{ width: '100%', height: 'auto' }} />
+							<div style={textStyle}>Dust on some loose powder using a powder brush from under the eyes to your cheeks.</div>
 						</a>						
-						<a href="http://www.myntra.com/" target="_blank">
+						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none'}}>
 							<img src="http://assets.myntassets.com/v1462428414/radium/SIS/face/compact-powder.jpg" style={{ width: '100%', height: 'auto' }} />
+							<div style={textStyle}>Press on compact powder to set the make-up and to ensure it lasts long.</div>
 						</a>
 					</Slider>
 
