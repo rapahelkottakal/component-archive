@@ -62,6 +62,17 @@ export default class Archive extends React.Component {
 			arrows: false
 		};
 
+		var settingsSlide = {
+			dots: true,
+			infinite: true,
+			speed: 250,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			centerMode: true,
+			arrows: false
+		};
 		let imgStyle = {
 			width: '100%',
 			height: 'auto',
@@ -149,7 +160,7 @@ export default class Archive extends React.Component {
 						style={{ width: '50%', height: 'auto' }}
 					/>					
 
-					<Slider {...settings}>
+					<Slider {...settingsSlide}>
 						<a href="http://www.myntra.com/" target="_blank">
 							<img src="http://assets.myntassets.com/v1462428404/radium/SIS/face/cleanse-tone-mois.jpg" style={{ width: '100%', height: 'auto' }} />
 						</a>
