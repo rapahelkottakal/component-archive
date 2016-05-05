@@ -89,13 +89,13 @@ export default class Archive extends React.Component {
 				<Expander
 					image = "http://assets.myntassets.com/v1462426184/radium/SIS/face/Beauty-store-face.jpg"
 				>
-					<img src="http://assets.myntassets.com/v1462433126/radium/SIS/eyes/lips.jpg" />
+					<img src="http://assets.myntassets.com/v1462435894/radium/SIS/face/Beauty-store-face-mockupp.jpg" />
 				</Expander>
 
 				<Expander
 					image = "http://assets.myntassets.com/v1462425782/radium/SIS/eyes/eyes-header.jpg"
 				>
-					<img src="http://assets.myntassets.com/v1462433126/radium/SIS/eyes/lips.jpg" />
+					<img src="http://assets.myntassets.com/v1462431400/radium/SIS/eyes/Beauty-store-mockup-eyes.jpg" />
 					
 				</Expander>
 
