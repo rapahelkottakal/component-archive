@@ -61,6 +61,13 @@ export default class Archive extends React.Component {
 			centerMode: true,
 			arrows: false
 		};
+		
+		let dropText ={
+			marginBottom: '10',
+			fontSize:'15px',
+			letterSpacing:'1px',
+
+		}
 
 		let imgStyle = {
 			width: '100%',
@@ -141,7 +148,7 @@ export default class Archive extends React.Component {
 							image="http://assets.myntassets.com/v1462352818/radium/SIS/fragrance/fruity-menu.jpg"
 							width="33.33%"
 						>
-							<div style={{marginBottom: 10}}>These perfumes have a fresh aroma with distinct hints of fruity scents. They are not too overpowering making them perfect for occasions like date night. Ideal for summer.</div>
+							<div style={dropText}>These perfumes have a fresh aroma with distinct hints of fruity scents. They are not too overpowering making them perfect for occasions like date night. Ideal for summer.</div>
 							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
 								<img src="http://assets.myntassets.com/v1462361670/radium/SIS/fragrance/davidoff-1.jpg" style={imgStyle} />
 							</a>
@@ -157,7 +164,7 @@ export default class Archive extends React.Component {
 							image="http://assets.myntassets.com/v1462352816/radium/SIS/fragrance/floral-menu.jpg"
 							width="33.33%"
 						>
-							<div style={{marginBottom: 10}}>These perfumes give off a lively and energetic vibe. They can be quite strong and are perfect for outdoor daytime activities like a sunday brunch with friends. Ideal for summer.</div>
+							<div style={dropText}>These perfumes give off a lively and energetic vibe. They can be quite strong and are perfect for outdoor daytime activities like a sunday brunch with friends. Ideal for summer.</div>
 							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
 								<img src="http://assets.myntassets.com/v1462361670/radium/SIS/fragrance/davidoff-1.jpg" style={imgStyle} />
 							</a>
@@ -173,7 +180,7 @@ export default class Archive extends React.Component {
 							image="http://assets.myntassets.com/v1462354162/radium/SIS/fragrance/oceanic-menu.jpg"
 							width="33.33%"
 						>
-							<div style={{marginBottom: 10}}>Considered to be the most feminine scents of the lot, these sweet-smelling perfumes are quite timeless. Perfect for special occasions like a wedding or family dinner. Ideal for winter.</div>
+							<div style={dropText}>Considered to be the most feminine scents of the lot, these sweet-smelling perfumes are quite timeless. Perfect for special occasions like a wedding or family dinner. Ideal for winter.</div>
 							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
 								<img src="http://assets.myntassets.com/v1462361670/radium/SIS/fragrance/davidoff-1.jpg" style={imgStyle} />
 							</a>
