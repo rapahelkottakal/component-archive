@@ -222,10 +222,6 @@ export default class Archive extends React.Component {
 						src="http://assets.myntassets.com/v1462361828/radium/SIS/fragrance/WOODY.jpg"
 						width="33.33%"
 					/>
-
-
-
-
 				</div>
 
 			</Expander>
@@ -234,8 +230,6 @@ export default class Archive extends React.Component {
 
 			<Expander image="http://assets.myntassets.com/v1462425782/radium/SIS/eyes/eyes-header.jpg">
 			
-			
-
 				<div>
 
 					<Slider {...settings}>
@@ -275,12 +269,39 @@ export default class Archive extends React.Component {
 					afterImage="http://assets.myntassets.com/v1462429004/radium/SIS/eyes/smokey-eye-after.jpg"
 					/>
 
+					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>01</div>
+					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>Prep your eyes by applying moisturiser</p>
+					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
 
+					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
+					02</div>
+					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
+					Apply primer or foundation</p>
+					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
 
-					<img
-						src="http://assets.myntassets.com/v1462428246/radium/SIS/eyes/Beauty-store-mockup-eyes-text.jpg"
-						width="100%"
-					/>
+					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
+					03</div>
+					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
+					Use a medium-sized brush to apply a light blue shade all over the lid</p>
+					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
+
+					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
+					04</div>
+					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
+					Use a darker shade of blue on the crease and blend well</p>
+					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
+
+					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
+					05</div>
+					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
+					Trace your lash line with a navy blue or indigo eyeliner</p>
+					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
+
+					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
+					06</div>
+					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
+					Apply mascara for a dramatic effect</p>
+					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
 
 
 					<div style={{padding: 10, color: '#728968', fontWeight: 600}}>STEPS TO GET ELECTRIC BLUE EYES</div>
@@ -291,10 +312,54 @@ export default class Archive extends React.Component {
 					afterImage="http://assets.myntassets.com/v1462429147/radium/SIS/eyes/blue-eye-after.jpg"
 					/>
 
-					<img
-						src="http://assets.myntassets.com/v1462428246/radium/SIS/eyes/Beauty-store-mockup-eyes-text-2.jpg"
-						width="100%"
-					/>
+					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
+					01</div>
+					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
+					Moisturise your eyelids</p>
+					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
+
+					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
+					02</div>
+					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
+					Apply primer or foundation</p>
+					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
+
+					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
+					03</div>
+					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
+					Apply charcoal gray powder just above the crease of the lid</p>
+					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
+
+					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
+					04</div>
+					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
+					Trace your upper lash line with a black pencil</p>
+					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
+
+					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
+					05</div>
+					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
+					Gently smudge using your fingertip</p>
+					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
+
+					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
+					06</div>
+					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
+					Sweep gunmetal shade on your lower lash line</p>
+					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
+					
+					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
+					07</div>
+					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
+					Apply silver powder on the to the inner corner of the eyes</p>
+					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
+					
+					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
+					08</div>
+					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
+					Apply mascara</p>
+					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
+					
 				</div>
 
 			</Expander>
