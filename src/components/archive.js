@@ -19,8 +19,30 @@ import SliderGroup from './slide-group';
 import ShowMore from './showMore';
 import ImageChild from './imageChild';
 
+import Scroll from 'react-scroll';
+
+import { Link, Element, Events } from 'react-scroll';
+
 
 export default class Archive extends React.Component {
+
+	componentDidMount() {
+
+		Events.scrollEvent.register('begin', function() {
+		console.log("begin", arguments);
+	});
+
+		Events.scrollEvent.register('end', function() {
+		console.log("end", arguments);
+	});
+
+	}
+
+
+	componentWillUnmount() {
+		Events.scrollEvent.remove('begin');
+		Events.scrollEvent.remove('end');
+	}
 
 	getContainerStyles() {
 		return {
@@ -66,6 +88,8 @@ export default class Archive extends React.Component {
 			<div style={this.getContainerStyles()}>
 
 				<div>
+
+				    <Link activeClass="active" className="test1" to="flipper" spy={true} smooth={true} duration={500} >Test 1</Link>
 
 					<ShowMore>
 						<ImageChild
@@ -132,11 +156,15 @@ export default class Archive extends React.Component {
 					<Popup 
 					content = "xxxx" />
 
+					<Element name="flipper">
+
 					<FlipCard
 						front="http://assets.myntassets.com/v1461908504/Lookgood/Feed/Vocab/april/woh-cab-chevronprint-feedcard.gif"
 						back="http://assets.myntassets.com/v1461908455/Lookgood/Feed/Vocab/april/woh-cab-chevronprint.jpg"
 						link="http://www.myntra.com/chevron-print?userQuery=true&f=categories%3ADresses%2CKurtas%2CTops%3A%3Agender%3Amen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cwomen&sort=high&SRC=Lookgood6"
 					/>
+
+					</Element>
 
 
 					<Reveal
