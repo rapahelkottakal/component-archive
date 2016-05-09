@@ -20,6 +20,8 @@ export default class SlideGroup extends React.Component {
 	}
 
 	createSliders(object) {
+
+		console.log(this);
 		let settings = {
 			dots: true,
 			infinite: true,
@@ -31,8 +33,19 @@ export default class SlideGroup extends React.Component {
 			arrows: false
 		}
 
+
+
 		let sliders = this.props.data.map((sliders, key) => {
 
+			console.log(sliders.slides.length);
+			if(sliders.slides.length < 2) {
+				_.assignIn(settings, { infinite: false, autoplay: false } );
+			}
+
+			else {
+
+				_.assignIn(settings, { infinite: true, autoplay: true } );				
+			}
 			
 			return (
 				<div key={key} style={{ backgroundColor: sliders.bgColor}}>
@@ -45,7 +58,11 @@ export default class SlideGroup extends React.Component {
 		});
 
 		return sliders;
+
 	}
+
+
+
 
 		render() {
 

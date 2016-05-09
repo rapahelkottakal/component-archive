@@ -2,6 +2,7 @@ export default [
 	{
 		img: 'http://assets.myntassets.com/v1462785083/radium/SIS/footwear-heels/footwear-dictionary-B-min.jpg',
 		bgColor: '#F8F8F8',
+		sliderSection: true,
 		slides: [
 			{
 				img: 'http://assets.myntassets.com/v1462785770/radium/SIS/footwear-heels/Heels-block-heels-min.jpg',
