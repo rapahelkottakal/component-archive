@@ -23,18 +23,19 @@ import Scroll from 'react-scroll';
 
 import { Link, Element, Events } from 'react-scroll';
 
+import HScroll from './h-scroll';
 
 export default class Archive extends React.Component {
 
 	componentDidMount() {
 
 		Events.scrollEvent.register('begin', function() {
-		console.log("begin", arguments);
-	});
+			console.log("begin", arguments);
+		});
 
 		Events.scrollEvent.register('end', function() {
-		console.log("end", arguments);
-	});
+			console.log("end", arguments);
+		});
 
 	}
 
@@ -46,6 +47,7 @@ export default class Archive extends React.Component {
 
 	getContainerStyles() {
 		return {
+			// overflowX: 'hidden',
 			minHeight: window.innerHeight,
 			// backgroundColor: 'tomato',
 			position: 'absolute',
@@ -84,13 +86,26 @@ export default class Archive extends React.Component {
 			arrows: false
 		};
 
+		let linkStyle = {
+			display: 'inline-block',
+			backgroundColor: 'tomato',
+			width: 100,
+			height: 50
+		};
+
 		return(
 			<div style={this.getContainerStyles()}>
 
-				<div>
+				<HScroll childWidth={100}>
+					<Link activeClass="active" className="inactive" style={linkStyle} to="opener" spy={true} offset={-50} smooth={true} duration={500} >Opener</Link>
+					<Link activeClass="active" className="inactive" style={linkStyle} to="sliders" spy={true} offset={-50} smooth={true} duration={500} >Sliders</Link>
+					<Link activeClass="active" className="inactive" style={linkStyle} to="makeover" spy={true} offset={-50} smooth={true} duration={500} >Makeover</Link>
+					<Link activeClass="active" className="inactive" style={linkStyle} to="flipper" spy={true} offset={-50} smooth={true} duration={500} >Flipper</Link>
+					<Link activeClass="active" className="inactive" style={linkStyle} to="reveal" spy={true} offset={-50} smooth={true} duration={500} >Reveal</Link>
+				</HScroll>
+				<div style={{marginTop: 50}}>
 
-				    <Link activeClass="active" className="test1" to="flipper" spy={true} smooth={true} duration={500} >Test 1</Link>
-
+					<Element name="opener">
 					<ShowMore>
 						<ImageChild
 							image="http://assets.myntassets.com/v1462352818/radium/SIS/fragrance/fruity-menu.jpg"
@@ -114,9 +129,13 @@ export default class Archive extends React.Component {
 							
 						</ImageChild>
 					</ShowMore>
+					</Element>
 
+					<Element name="sliders">
 					<SliderGroup data={sliderGroupData}></SliderGroup>
+					</Element>
 
+					<Element name="makeover">
 					<Title
 						text="React SIS Pages"
 						font= "Open Sans"
@@ -155,6 +174,7 @@ export default class Archive extends React.Component {
 
 					<Popup 
 					content = "xxxx" />
+					</Element>
 
 					<Element name="flipper">
 
@@ -167,6 +187,7 @@ export default class Archive extends React.Component {
 					</Element>
 
 
+					<Element name="reveal">
 					<Reveal
 						image="https://upload.wikimedia.org/wikipedia/commons/d/d2/Jeans_for_men.jpg"
 						btnTxt="Know more"
@@ -180,6 +201,7 @@ export default class Archive extends React.Component {
 						// shopLink="http://google.com"
 
 					/>
+					</Element>
 
 					<Textonimage src ="http://assets.myntassets.com/v1460639223/Lookgood/Feed/Style-tips/april16/14/download.jpg"
 						text = "hi this is varun"

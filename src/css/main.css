@@ -18,3 +18,11 @@ html {
   display: table;
   clear: both;
 }
+
+.inactive {
+	opacity: 0.75
+}
+
+.active {
+	opacity: 1
+}
