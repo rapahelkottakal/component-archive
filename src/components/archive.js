@@ -19,6 +19,8 @@ import SliderGroup from './slide-group';
 import ShowMore from './showMore';
 import ImageChild from './imageChild';
 
+import Example from './videoTest';
+
 
 export default class Archive extends React.Component {
 
@@ -69,9 +71,8 @@ export default class Archive extends React.Component {
 
 					<SliderGroup data={sliderGroupData}></SliderGroup>
 
-
 				</div>
-				
+				<div><Example></Example></div>
 			</div>
 
 		);
