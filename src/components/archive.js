@@ -25,6 +25,10 @@ import { Link, Element, Events } from 'react-scroll';
 
 import HScroll from './h-scroll';
 
+import SplitSlider from './split-slider';
+
+import YouTube from 'react-youtube';
+
 export default class Archive extends React.Component {
 
 	componentDidMount() {
@@ -68,6 +72,12 @@ export default class Archive extends React.Component {
 	// 	}
 	// }
 
+	_onReady(event) {
+		console.log(event);
+		// access to player in all event handlers via event.target 
+		// event.target.pauseVideo();
+	}
+
 
 	render() {
 
@@ -92,6 +102,22 @@ export default class Archive extends React.Component {
 			width: 100,
 			height: 50
 		};
+
+		const opts = {
+	      height: 'auto',
+	      width: '100%',
+	      playerVars: { // https://developers.google.com/youtube/player_parameters 
+	        // autoplay: 1,
+	        disablekb: 0,
+	        controls: 0,
+	        enablejsapi: 1,
+	        iv_load_policy: 3,
+	        modestbranding: 1,
+	        playsinline: 0,
+	        rel: 0,
+	        showinfo: 0
+	      }
+	    };
 
 		return(
 			<div style={this.getContainerStyles()}>
@@ -202,6 +228,17 @@ export default class Archive extends React.Component {
 
 					/>
 					</Element>
+
+
+					<SplitSlider
+						before="http://assets.myntassets.com/v1461563423/Lookgood/Feed/makeover/april/Makeover-22.04.16--7.jpg" 
+						after="http://assets.myntassets.com/v1461563423/Lookgood/Feed/makeover/april/Makeover-22.04.16--8.jpg" />
+
+					<YouTube
+				        videoId="Yx9N57TbZiI"
+				        opts={opts}
+				        onReady={this._onReady}
+				      />
 
 					<Textonimage src ="http://assets.myntassets.com/v1460639223/Lookgood/Feed/Style-tips/april16/14/download.jpg"
 						text = "hi this is varun"
