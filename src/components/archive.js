@@ -29,6 +29,8 @@ import SplitSlider from './split-slider';
 
 import YouTube from 'react-youtube';
 
+import PinchZoom from './pinch-zoom';
+
 export default class Archive extends React.Component {
 
 	componentDidMount() {
@@ -228,6 +230,10 @@ export default class Archive extends React.Component {
 
 					/>
 					</Element>
+
+					<PinchZoom
+						image="http://assets.myntassets.com/v1463048534/radium/Lookbook/5.6/ethnic-look-1-image1.jpg"
+						ratio={1.45} />
 
 
 					<SplitSlider
