@@ -74,7 +74,7 @@ export default class Archive extends React.Component {
 	// }
 
 	_onReady(event) {
-		console.log(event);
+		// console.log(event);
 		// access to player in all event handlers via event.target 
 		// event.target.pauseVideo();
 	}
@@ -85,7 +85,7 @@ export default class Archive extends React.Component {
 
 		if (event) {
 			key = event.target.innerHTML;
-			console.log(key);
+			// console.log(key);
 		}
 
 
