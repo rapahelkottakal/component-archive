@@ -15,8 +15,9 @@ export default class Archive extends React.Component {
 	constructor() {
 		super();
 
-		let key, before, after, text, dayLink, nightLink;
+		let key, keyTitle, before, after, text, dayLink, nightLink;
 		key = 'Round';
+		keyTitle = 'Round face';
 		before = "http://assets.myntassets.com/v1463390917/SIS/jewellery-faceshape/jewellery-face-shape-guide-round-night-min.jpg";
 		after = "http://assets.myntassets.com/v1463390917/SIS/jewellery-faceshape/jewellery-face-shape-guide-round-day-min.jpg";
 		text = "Add length to your face with lovely drop earrings. Go for long, angular designs that’ll give your face more definition and steer away from circular discs and hoops.";
@@ -24,6 +25,7 @@ export default class Archive extends React.Component {
 		nightLink = "http://www.myntra.com/earrings";
 		this.state = {
 			key,
+			keyTitle,
 			before,
 			after,
 			text,
@@ -83,7 +85,7 @@ export default class Archive extends React.Component {
 
 	setSplitter(event) {
 
-		let key, before, after, text, dayLink, nightLink;
+		let key, keyTitle, before, after, text, dayLink, nightLink;
 
 		if (event) {
 			key = event.target.innerHTML;
@@ -93,18 +95,20 @@ export default class Archive extends React.Component {
 
 		switch(key) {
 			case 'Diamond':
-				before = "http://assets.myntassets.com/v1463390916/SIS/jewellery-faceshape/jewellery-face-shape-guide-diamond-night-min.jpg";
+				before = "http://assets.myntassets.com/v1463397867/SIS/jewellery-faceshape/jewellery-face-shape-guide-diamond-night-min.jpg";
 				after = "http://assets.myntassets.com/v1463390916/SIS/jewellery-faceshape/jewellery-face-shape-guide-diamond-day-min.jpg";
 				text = "Long earrings with soft curves are great to soften the definition around the jawline. Steer clear of diamond shaped and other geometric danglers that don’t complement the angles of your face.";
 				dayLink = "http://www.myntra.com/earrings";
 				nightLink = "http://www.myntra.com/earrings";
+				keyTitle = "Diamond-shaped face"
 				break;
 			case 'Heart':
-				before = "http://assets.myntassets.com/v1463390916/SIS/jewellery-faceshape/jewellery-face-shape-guide-heart-night-min.jpg";
+				before = "http://assets.myntassets.com/v1463397867/SIS/jewellery-faceshape/jewellery-face-shape-guide-heart-night-min.jpg";
 				after = "http://assets.myntassets.com/v1463390916/SIS/jewellery-faceshape/jewellery-face-shape-guide-heart-day-min.jpg";
 				text = "Go for earrings with elongated curves that highlight your striking cheekbones. You might want to stay clear of hoops, tiny studs and other rounded designs that could make your face seem wider.";
 				dayLink = "http://www.myntra.com/earrings";
 				nightLink = "http://www.myntra.com/earrings";
+				keyTitle = "Heart-shaped face"
 				break;
 			case 'Oval':
 				before = "http://assets.myntassets.com/v1463390916/SIS/jewellery-faceshape/jewellery-face-shape-guide-oval-night-min.jpg";
@@ -112,6 +116,7 @@ export default class Archive extends React.Component {
 				text = "You’re the luckiest one of the lot because you can wear all types of earrings! Earrings only enhance your face shape and make your features look sharper. Choose from a wide variety of studs as well as danglers.";
 				dayLink = "http://www.myntra.com/earrings";
 				nightLink = "http://www.myntra.com/earrings";
+				keyTitle = "Oval face"
 				break;
 			case 'Square':
 				before = "http://assets.myntassets.com/v1463390917/SIS/jewellery-faceshape/jewellery-face-shape-guide-sqaure-night-min.jpg";
@@ -119,6 +124,7 @@ export default class Archive extends React.Component {
 				text = "Go for rounded designs that soften your cheekbones and jawline. Stick to the narrower, slimmer varieties though, as wide ones might make your face seem broader.";
 				dayLink = "http://www.myntra.com/earrings";
 				nightLink = "http://www.myntra.com/earrings";
+				keyTitle = "Square face"
 				break;
 			default:
 				before = "http://assets.myntassets.com/v1463390917/SIS/jewellery-faceshape/jewellery-face-shape-guide-round-night-min.jpg";
@@ -126,11 +132,13 @@ export default class Archive extends React.Component {
 				text = "Add length to your face with lovely drop earrings. Go for long, angular designs that’ll give your face more definition and steer away from circular discs and hoops.";
 				dayLink = "http://www.myntra.com/earrings";
 				nightLink = "http://www.myntra.com/earrings";
+				keyTitle = "Round face"
 				break;
 		}
 
 		this.setState({
 			key,
+			keyTitle,
 			before,
 			after,
 			text,
@@ -188,7 +196,7 @@ export default class Archive extends React.Component {
 			fontSize: 13,
 			lineHeight: '16px',
 			textAlign: 'center',
-			padding: '32px 16px',
+			padding: 16,
 			color: '#525252'
 		}
 
@@ -220,6 +228,16 @@ export default class Archive extends React.Component {
 			display: 'inline-block',
 			textAlign: 'center',
 			width: '50%'
+		}
+
+		let titleStyle = {
+			backgroundColor: '#fff',
+			textTransform: 'uppercase',
+			color: '#4D4C4D',
+			fontWeight: 600,
+			textAlign: 'center',
+			letterSpacing: 2,
+			padding: '8px 0'
 		}
 
 		return(
@@ -263,6 +281,7 @@ export default class Archive extends React.Component {
 				</Element>
 
 				<Element name="active">
+					<div style={titleStyle}>{this.state.keyTitle}</div>
 					{this.renderSplitter()}
 					<div style={shopBtnWrapper}>
 						<a target="_blank" href={this.state.dayLink} style={shopBtn}>Shop <strong>day</strong></a>
