@@ -17,25 +17,14 @@ export default class SplitSlider extends React.Component {
 			x = e.touches[0].clientX,
 			spliterWidth = Math.round(x / width * 100);
 
-		// console.log(e.touches);
 
-		let setObject = {
-			position: spliterWidth
-
-		}
-
-		this.setState(setObject);
+		this.props.setSplitState(spliterWidth);
 	}
 
-	handleMove(e) {
-		console.log('touch', e.touches[0].clientX);
-	}
+	// handleMove(e) {
+	// 	console.log('touch', e.touches[0].clientX);
+	// }
 
-	resetPosition() {
-		this.setState({
-			position: 50
-		});
-	}
 
 	render() {
 
@@ -55,7 +44,7 @@ export default class SplitSlider extends React.Component {
 			position: 'absolute',
 			top: 0,
 			left: 0,
-			width: this.state.position + '%',
+			width: this.props.split + '%',
 			height: '100%',
 			backgroundImage: 'url('+ this.props.after +')',
 			backgroundSize: 'cover',
