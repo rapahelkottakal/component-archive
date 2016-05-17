@@ -1,6 +1,6 @@
 export default [
 	{
-		img: 'http://assets.myntassets.com/v1462785083/radium/SIS/footwear-heels/footwear-dictionary-B-min.jpg',
+		img: 'http://assets.myntassets.com/v1463463743/radium/SIS/footwear-heels/b-min.jpg',
 		bgColor: '#F8F8F8',
 		sliderSection: true,
 		slides: [
@@ -11,7 +11,7 @@ export default [
 		]
 	},
 	{
-		img: 'http://assets.myntassets.com/v1462785082/radium/SIS/footwear-heels/footwear-dictionary-F-min.jpg',
+		img: 'http://assets.myntassets.com/v1463463743/radium/SIS/footwear-heels/f-min.jpg',
 		bgColor: '#F8F8F8',
 		slides: [
 			{
@@ -21,7 +21,7 @@ export default [
 		]
 	},
 	{
-		img: 'http://assets.myntassets.com/v1462785083/radium/SIS/footwear-heels/footwear-dictionary-K-min.jpg',
+		img: 'http://assets.myntassets.com/v1463463743/radium/SIS/footwear-heels/k-min.jpg',
 		bgColor: '#F8F8F8',
 		slides: [
 			{
@@ -31,7 +31,7 @@ export default [
 		]
 	},
 	{
-		img: 'http://assets.myntassets.com/v1462785083/radium/SIS/footwear-heels/footwear-dictionary-M-min.jpg',
+		img: 'http://assets.myntassets.com/v1463463743/radium/SIS/footwear-heels/m-min.jpg',
 		bgColor: '#F8F8F8',
 		slides: [
 			{
@@ -41,7 +41,7 @@ export default [
 		]
 	},
 	{
-		img: 'http://assets.myntassets.com/v1462785083/radium/SIS/footwear-heels/footwear-dictionary-P-min.jpg',
+		img: 'http://assets.myntassets.com/v1463463743/radium/SIS/footwear-heels/p-min.jpg',
 		bgColor: '#F8F8F8',
 		slides: [
 			{
@@ -59,7 +59,7 @@ export default [
 		]
 	},
 	{
-		img: 'http://assets.myntassets.com/v1462785083/radium/SIS/footwear-heels/footwear-dictionary-S-min.jpg',
+		img: 'http://assets.myntassets.com/v1463463743/radium/SIS/footwear-heels/s-min.jpg',
 		bgColor: '#F8F8F8',
 		slides: [
 			{
@@ -77,7 +77,7 @@ export default [
 		]
 	},
 	{
-		img: 'http://assets.myntassets.com/v1462785082/radium/SIS/footwear-heels/footwear-dictionary-W-min.jpg',
+		img: 'http://assets.myntassets.com/v1463463744/radium/SIS/footwear-heels/w-min.jpg',
 		bgColor: '#F8F8F8',
 		slides: [
 			{
