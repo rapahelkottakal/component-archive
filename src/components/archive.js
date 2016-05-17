@@ -25,7 +25,8 @@ export default class Archive extends React.Component {
 	getContainerStyles() {
 		return {
 			minHeight: window.innerHeight,
-			// backgroundColor: 'tomato',
+			backgroundImage: 'url(http://assets.myntassets.com/v1463475227/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-printed-background.png)',
+			backgroundColor: 'black',
 			position: 'absolute',
 			top: 0,
 			left: 0,
@@ -65,177 +66,171 @@ export default class Archive extends React.Component {
 		return(
 			<div style={this.getContainerStyles()}>
 
-				<div>
+				<div style={{display: 'block'}}>
 
-					<ShowMore>
-						<ImageChild
-							image="http://assets.myntassets.com/v1462352818/radium/SIS/fragrance/fruity-menu.jpg"
-							width="33.33%"
-						>
-							<div>0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare lacus et porttitor sollicitudin. Phasellus a eros ac risus elementum efficitur ac in mi. Vivamus dapibus, metus eu viverra scelerisque, sapien nisi cursus neque, eu venenatis erat lectus at enim.</div>
+					<img style={{display: 'block', margin: '4% 0px 11%'}} src="http://assets.myntassets.com/v1463475001/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-header.png" width="100%" height="auto" />
 
-						</ImageChild>
-						<ImageChild
-							image="http://assets.myntassets.com/v1462352816/radium/SIS/fragrance/floral-menu.jpg"
-							width="33.33%"
-						>
-							<div>1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare lacus et porttitor sollicitudin. Phasellus a eros ac risus elementum efficitur ac in mi. Vivamus dapibus, metus eu viverra scelerisque, sapien nisi cursus neque, eu venenatis erat lectus at enim.</div>
-							
-						</ImageChild>
-						<ImageChild
-							image="http://assets.myntassets.com/v1462354162/radium/SIS/fragrance/oceanic-menu.jpg"
-							width="33.33%"
-						>
-							<div>2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare lacus et porttitor sollicitudin. Phasellus a eros ac risus elementum efficitur ac in mi. Vivamus dapibus, metus eu viverra scelerisque, sapien nisi cursus neque, eu venenatis erat lectus at enim.</div>
-							
-						</ImageChild>
-					</ShowMore>
+					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-1-image1.jpg" width="100%" height="auto" />
+					
+					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463474983/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-rustic-charm.png" width="100%" height="auto" />
 
-					<SliderGroup data={sliderGroupData}></SliderGroup>
-
-					<Title
-						text="React SIS Pages"
+					<Title 
+						text="Exude old world elegance by pairing a halter neck blouse with an ethnic skirt in earthy hues."
 						font= "Open Sans"
-						size="30"
-						color="white"
-						padding="20px"
-						align="right"
-						bgColor="slateblue"
-						bgImage="http://fmforums.com/uploads/attachments/monthly_2009_10/Background-tile.gif.11107119f39d13d71f261c93ace94ed2.gif"
-					>
-
-						<Title 
-							text="We can do a lot more."
-							font= "Open Sans"
-							color="white"
-							size="16"
-							padding="10px 0 0 0"
-							align="right"
-						/>
-						<Title 
-							text="This is only the beginning..."
-							font= "Open Sans"
-							color="white"
-							size="16"
-							padding="0px"
-							align="right"
-						/>
-						
-					</Title>
-
-					<Slideimage
-					textonimage="Tap to be amazed"
-					beforeImage="http://assets.myntassets.com/v1461563423/Lookgood/Feed/makeover/april/Makeover-22.04.16--7.jpg"
-					afterImage="http://assets.myntassets.com/v1461563423/Lookgood/Feed/makeover/april/Makeover-22.04.16--8.jpg"
-					  />
-
-					<Popup 
-					content = "xxxx" />
-
-					<FlipCard
-						front="http://assets.myntassets.com/v1461908504/Lookgood/Feed/Vocab/april/woh-cab-chevronprint-feedcard.gif"
-						back="http://assets.myntassets.com/v1461908455/Lookgood/Feed/Vocab/april/woh-cab-chevronprint.jpg"
-						link="http://www.myntra.com/chevron-print?userQuery=true&f=categories%3ADresses%2CKurtas%2CTops%3A%3Agender%3Amen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cwomen&sort=high&SRC=Lookgood6"
-					/>
-
-
-					<Reveal
-						image="https://upload.wikimedia.org/wikipedia/commons/d/d2/Jeans_for_men.jpg"
-						btnTxt="Know more"
-						// btnSize={{width: 200, height: 100}}
-						// btnColor="red"
-						// btnBgColor="blue"
-						content="The best collection of jeans can be found here. What are you waiting for?"
-						// contentColor="yellow"
-						contentBgColor="hsla(230, 68%, 52%, 0.9)"
-						// shopBtnText="Click me now"
-						// shopLink="http://google.com"
-
-					/>
-
-					<Textonimage src ="http://assets.myntassets.com/v1460639223/Lookgood/Feed/Style-tips/april16/14/download.jpg"
-						text = "hi this is varun"
-						color = "red"
-						
-						>
-
-					</Textonimage>
-
-					<Textonimage src ="http://assets.myntassets.com/v1460639223/Lookgood/Feed/Style-tips/april16/14/download.jpg"
-						text = "hi thisasdfarun"
-						textPosition = "left"//center / left-top /right-bot
-						
-						>
-
-					</Textonimage>
-
-					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1460654675/city-tips-background_wy0nwb.jpg" width="100%" height="auto" />
-
-					<Title
-						text="Scalable"
-						font= "Open Sans"
-						size="30"
-						color="white"
-						padding="20px"
+						color="#c6a13a"
+						size="16"
+						padding="1% 8% 1% 20%"
 						align="left"
-						bgColor="gray"
-						bgImage="http://templatesideas.com/wp-content/uploads/2010/12/Fiber-Carbon-Tiled-Pattern-background-vol.11.jpg"
-					>
-
-						<Title 
-							text="All these blocks are modular. This means, making any improvements or adding more 'components' to the archive, will be simple for anyone familiar with reactjs."
-							font= "Open Sans"
-							color="white"
-							size="16"
-							padding="0px"
-							align="left"
-						/>
-						
-					</Title>
-
-					<Reveal
-						image="http://static1.squarespace.com/static/5520e514e4b00f468f8d3de4/5645f7a3e4b0abd1d824dfba/565780c9e4b022a250f9f480/1448575197974/cyclist-dribbble.gif"
-						// btnTxt="Know more"
-						// btnSize={{width: 200, height: 100}}
-						// btnColor="red"
-						btnBgColor="hsla(0, 100%, 50%, 0.4)"
-						// content="The best collection of shoes can be found here."
-						// contentColor="yellow"
-						// contentBgColor="gray"
-						// shopBtnText="Click me now"
-						// shopLink="http://google.com"
-
 					/>
+
+					<img style={{display: 'block', margin: '4% 0',fontFamily: 'Open Sans',fontSize: '16px', color: 'rgb(198, 161, 58)', float:'right', width:'80%'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-1-image2.jpg" width="100%" height="auto" />
+					
+					<Title 
+						text="Tie up your hair in a bun and accessorise with a head chain. And yes, don't forget the bindi!"
+						font= "Open Sans"
+						color="#c6a13a"
+						size="16"
+						padding="1% 8% 1% 20%"
+						align="left"
+					/>
+
+					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-1-image3.jpg" width="100%" height="auto" />
+
+					<a href="#" target="_blanck"><img style={{display: 'block', margin: ' 7% 0 16%'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-shop-button.png" width="100%" height="auto" /></a>
+
+
+
+
+
+
+
+					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463478290/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-2-image1.jpg" width="100%" height="auto" />
+					
+					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463478290/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-festive-brights.png" width="100%" height="auto" />
+
+					<Title 
+						text="A flared anarkali in a sunny shade is a great pick for summer festivities."
+						font= "Open Sans"
+						color="#c6a13a"
+						size="16"
+						padding="1% 8% 1% 20%"
+						align="left"
+					/>
+
+					<img style={{display: 'block', margin: '4% 0',fontFamily: 'Open Sans',fontSize: '16px', color: 'rgb(198, 161, 58)', float:'right', width:'80%'}} src="http://assets.myntassets.com/v1463478290/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-2-image2.jpg" width="100%" height="auto" />
+		
+					<Title 
+						text="Play perfect match with a silver statement necklace. The much needed traditional touch comes from a sleek bun adorned with flowers."
+						font= "Open Sans"
+						color="#c6a13a"
+						size="16"
+						padding="1% 8% 1% 20%"
+						align="left"
+					/>
+
+					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463478290/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-2-image3.jpg" width="100%" height="auto" />
+
+					<a href="#" target="_blanck"><img style={{display: 'block', margin: ' 7% 0 16%'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-shop-button.png" width="100%" height="auto" /></a>
+
+
+
+
+
+					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463479157/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-3-image1.jpg" width="100%" height="auto" />
+					
+					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463479157/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-vibrant-vibes.png" width="100%" height="auto" />
+
+					<Title 
+						text="Celebrate the magic of colours by layering a bright ethnic jacket over an embellished kurta and palazzos."
+						font= "Open Sans"
+						color="#c6a13a"
+						size="16"
+						padding="1% 8% 1% 20%"
+						align="left"
+					/>
+
+					<img style={{display: 'block', margin: '4% 0',fontFamily: 'Open Sans',fontSize: '16px', color: 'rgb(198, 161, 58)', float:'right', width:'80%'}} src="http://assets.myntassets.com/v1463479157/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-3-image2.jpg" width="100%" height="auto" />
+		
+					<Title 
+						text="Braid your hair and finish off the look with gold and pearl earrings."
+						font= "Open Sans"
+						color="#c6a13a"
+						size="16"
+						padding="1% 8% 1% 20%"
+						align="left"
+					/>
+
+					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463479157/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-3-image3.jpg" width="100%" height="auto" />
+
+					<a href="#" target="_blanck"><img style={{display: 'block', margin: ' 7% 0 16%'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-shop-button.png" width="100%" height="auto" /></a>
+
 					
 
-					<Title
-						text="Helping you look good"
+
+
+					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463479475/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-4-image1.jpg" width="100%" height="auto" />
+					
+					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463479475/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-ethereal-elegance.png" width="100%" height="auto" />
+
+					<Title 
+						text="Look timeless in a brocade silk saree."
 						font= "Open Sans"
-						size="25"
-						color="white"
-						padding="20px"
-						// align="right"
-						bgColor="slateblue"
-						bgImage="http://www.uniteourresources.com/wp-content/uploads/2012/07/black_woven_seamless_tile.jpg"
+						color="#c6a13a"
+						size="16"
+						padding="1% 8% 1% 20%"
+						align="left"
 					/>
 
+					<img style={{display: 'block', margin: '4% 0',fontFamily: 'Open Sans',fontSize: '16px', color: 'rgb(198, 161, 58)', float:'right', width:'80%'}} src="http://assets.myntassets.com/v1463479475/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-4-image2.jpg" width="100%" height="auto" />
+		
+					<Title 
+						text="Complement it with a pair of your trusted jhumkas and a dainty neckpiece. Nothing more, nothing less!"
+						font= "Open Sans"
+						color="#c6a13a"
+						size="16"
+						padding="1% 8% 1% 20%"
+						align="left"
+					/>
 
-				</div>
-				
+					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463479475/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-4-image3.jpg" width="100%" height="auto" />
+
+					<a href="#" target="_blanck"><img style={{display: 'block', margin: ' 7% 0 16%'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-shop-button.png" width="100%" height="auto" /></a>
+
+					
+
+
+
+
+
+					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463479842/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-5-image1.jpg" width="100%" height="auto" />
+					
+					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463479842/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-pastel-traditions.png" width="100%" height="auto" />
+
+					<Title 
+						text="Give your ethnic look an understated twist with a lehenga in pastel colours."
+						font= "Open Sans"
+						color="#c6a13a"
+						size="16"
+						padding="1% 8% 1% 20%"
+						align="left"
+					/>
+
+					<img style={{display: 'block', margin: '4% 0',fontFamily: 'Open Sans',fontSize: '16px', color: 'rgb(198, 161, 58)', float:'right', width:'80%'}} src="http://assets.myntassets.com/v1463479842/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-5-image2.jpg" width="100%" height="auto" />
+		
+					<Title 
+						text="Go easy on the accessories and make-up. A stunning maang tikka is just what you need to stand out!"
+						font= "Open Sans"
+						color="#c6a13a"
+						size="16"
+						padding="1% 8% 1% 20%"
+						align="left"
+					/>
+
+					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463479843/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-5-image3.jpg" width="100%" height="auto" />
+
+					<a href="#" target="_blanck"><img style={{display: 'block', margin: ' 7% 0 16%'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-shop-button.png" width="100%" height="auto" /></a>
+				</div>				
 			</div>
-			
-		
-				
-				
-
-
-
 		);
-
 	}
-
-
-	
-		
-
 }
