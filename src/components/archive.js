@@ -87,9 +87,17 @@ export default class Archive extends React.Component {
 
 		let key, keyTitle, before, after, text, dayLink, nightLink;
 
-		if (event) {
+		
+
+		if (event && event.target.tagName == "DIV") {
 			key = event.target.innerHTML;
 			// console.log(key);
+		} else if (event && event.target.tagName == "IMG") {
+			key = event.target.alt;
+			// console.log(key);
+		} else if(event && event.target.tagName == "A") {
+			key = event.target.getAttribute('data-key')
+			// console.log(event.target.tagName);
 		}
 
 
@@ -246,35 +254,35 @@ export default class Archive extends React.Component {
 					<div style={{textAlign: 'center', color: '#fff', textTransform: 'uppercase', letterSpacing: 2, paddingTop: 32}}>Choose your</div>
 					<div style={{textAlign: 'center', color: '#fff', textTransform: 'uppercase', letterSpacing: 2, fontSize: 32}}>Face shape</div>
 					<hr style={{borderTop: '1px solid #fff'}} width="30%" />
-					<Link style={linkStyle} to="active" spy={true} smooth={true} duration={500} onClick={this.setSplitter.bind(this)} >
+					<Link style={linkStyle} data-key="Round" to="active" spy={true} smooth={true} duration={500} onClick={this.setSplitter.bind(this)} >
 						<img src="http://assets.myntassets.com/v1463138629/SIS/jewellery-faceshape/jewellery-face-shape-guide-round-min.jpg"
-							alt="Round face shape"
+							alt="Round"
 							
 							style={thumb} />
 						<div style={thumbText}>Round</div>
 					</Link>
-					<Link style={linkStyle} to="active" spy={true} smooth={true} duration={500} onClick={this.setSplitter.bind(this)} >
+					<Link style={linkStyle} data-key="Square" to="active" spy={true} smooth={true} duration={500} onClick={this.setSplitter.bind(this)} >
 						<img src="http://assets.myntassets.com/v1463139489/SIS/jewellery-faceshape/jewellery-face-shape-guide-square-min.jpg"
-						alt="Square face shape"
+						alt="Square"
 						
 						style={thumb}/>
 						<div style={thumbText}>Square</div>
 					</Link>
-					<Link style={linkStyle} to="active" spy={true} smooth={true} duration={500} onClick={this.setSplitter.bind(this)} >
+					<Link style={linkStyle} data-key="Oval" to="active" spy={true} smooth={true} duration={500} onClick={this.setSplitter.bind(this)} >
 						<img src="http://assets.myntassets.com/v1463138629/SIS/jewellery-faceshape/jewellery-face-shape-guide-oval-min.jpg"
-						alt="Oval face shape"
+						alt="Oval"
 						style={thumb}/>
 						<div style={thumbText}>Oval</div>
 					</Link>
-					<Link style={linkStyle} to="active" spy={true} smooth={true} duration={500} onClick={this.setSplitter.bind(this)} >
+					<Link style={linkStyle} data-key="Heart" to="active" spy={true} smooth={true} duration={500} onClick={this.setSplitter.bind(this)} >
 						<img src="http://assets.myntassets.com/v1463138629/SIS/jewellery-faceshape/jewellery-face-shape-guide-heart-min.jpg"
-						alt="Heart face shape"
+						alt="Heart"
 						style={thumb}/>
 						<div style={thumbText}>Heart</div>
 					</Link>
-					<Link style={linkStyle} to="active" spy={true} smooth={true} duration={500} onClick={this.setSplitter.bind(this)} >
+					<Link style={linkStyle} data-key="Diamond" to="active" spy={true} smooth={true} duration={500} onClick={this.setSplitter.bind(this)} >
 						<img src="http://assets.myntassets.com/v1463138629/SIS/jewellery-faceshape/jewellery-face-shape-guide-diamond-min.jpg"
-						alt="Diamond face shape"
+						alt="Diamond"
 						style={thumb}/>
 						<div style={thumbText}>Diamond</div>
 					</Link>
