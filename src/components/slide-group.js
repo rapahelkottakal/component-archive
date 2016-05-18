@@ -46,15 +46,34 @@ export default class SlideGroup extends React.Component {
 
 				_.assignIn(settings, { infinite: true, autoplay: true } );				
 			}
+
+
+			if(sliders.slides.length < 2) {
+
+				return (
+					<div key={key} style={{ backgroundColor: sliders.bgColor}}>
+						<img src={sliders.img} style={{ width: '100%', height: 'auto' }} />
+						<Slider {...settings}>
+								{this.createSlide(sliders.slides)}
+						</Slider>
+					</div>
+				);
+			} else {
+
+				return (
+					<div key={key} style={{ backgroundColor: sliders.bgColor}}>
+						<img src={sliders.img} style={{ width: '100%', height: 'auto' }} />
+						<div style={{position: 'relative'}}>
+							<div style={{ position: 'absolute', top: '35%', left: 0, fontSize: 32, paddingLeft: 4, zIndex: 99, color: '#B2B2B2' }}>&lsaquo;</div>
+							<Slider {...settings}>
+									{this.createSlide(sliders.slides)}
+							</Slider>
+							<div style={{ position: 'absolute', top: '35%', right: 0, fontSize: 32, paddingRight: 4, zIndex: 99, color: '#B2B2B2' }}>&rsaquo;</div>
+						</div>
+					</div>
+				);
+			}
 			
-			return (
-				<div key={key} style={{ backgroundColor: sliders.bgColor}}>
-					<img src={sliders.img} style={{ width: '100%', height: 'auto' }} />
-					<Slider {...settings}>
-							{this.createSlide(sliders.slides)}
-					</Slider>
-				</div>
-			);
 		});
 
 		return sliders;
