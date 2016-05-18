@@ -21,8 +21,8 @@ export default class Archive extends React.Component {
 		before = "http://assets.myntassets.com/v1463469186/radium/SIS/jewellery-faceshape/jewellery-face-shape-guide-round-night-min.jpg";
 		after = "http://assets.myntassets.com/v1463469186/radium/SIS/jewellery-faceshape/jewellery-face-shape-guide-round-day-min.jpg";
 		text = "Add length to your face with lovely drop earrings. Go for long, angular designs that’ll give your face more definition and steer away from circular discs and hoops.";
-		dayLink = "http://www.myntra.com/earrings";
-		nightLink = "http://www.myntra.com/earrings";
+		dayLink = "http://www.myntra.com/tear-drop-earings-for-day?SRC=Radium";
+		nightLink = "http://www.myntra.com/chandelier-earrings-for-night?SRC=Radium";
 		this.state = {
 			key,
 			keyTitle,
@@ -106,40 +106,40 @@ export default class Archive extends React.Component {
 				before = "http://assets.myntassets.com/v1463469185/radium/SIS/jewellery-faceshape/jewellery-face-shape-guide-diamond-night-min.jpg";
 				after = "http://assets.myntassets.com/v1463469185/radium/SIS/jewellery-faceshape/jewellery-face-shape-guide-diamond-day-min.jpg";
 				text = "Long earrings with soft curves are great to soften the definition around the jawline. Steer clear of diamond shaped and other geometric danglers that don’t complement the angles of your face.";
-				dayLink = "http://www.myntra.com/earrings";
-				nightLink = "http://www.myntra.com/earrings";
+				dayLink = "http://www.myntra.com/earrings?f=Type_article_attr%3Aear%2520cuff&SRC=Radium";
+				nightLink = "http://www.myntra.com/shoulder-duster-earrings?SRC=Radium";
 				keyTitle = "Diamond-shaped face"
 				break;
 			case 'Heart':
 				before = "http://assets.myntassets.com/v1463469185/radium/SIS/jewellery-faceshape/jewellery-face-shape-guide-heart-night-min.jpg";
 				after = "http://assets.myntassets.com/v1463469185/radium/SIS/jewellery-faceshape/jewellery-face-shape-guide-heart-day-min.jpg";
 				text = "Go for earrings with elongated curves that highlight your striking cheekbones. You might want to stay clear of hoops, tiny studs and other rounded designs that could make your face seem wider.";
-				dayLink = "http://www.myntra.com/earrings";
-				nightLink = "http://www.myntra.com/earrings";
+				dayLink = "http://www.myntra.com/drop-earrings-for-day?SRC=Radium";
+				nightLink = "http://www.myntra.com/earrings?f=Type_article_attr%3Ajhumkas&SRC=Radium";
 				keyTitle = "Heart-shaped face"
 				break;
 			case 'Oval':
 				before = "http://assets.myntassets.com/v1463469185/radium/SIS/jewellery-faceshape/jewellery-face-shape-guide-oval-night-min.jpg";
 				after = "http://assets.myntassets.com/v1463469185/radium/SIS/jewellery-faceshape/jewellery-face-shape-guide-oval-day-min.jpg";
 				text = "You’re the luckiest one of the lot because you can wear all types of earrings! Earrings only enhance your face shape and make your features look sharper. Choose from a wide variety of studs as well as danglers.";
-				dayLink = "http://www.myntra.com/earrings";
-				nightLink = "http://www.myntra.com/earrings";
+				dayLink = "http://www.myntra.com/earrings?f=Type_article_attr%3Astuds&SRC=Radium";
+				nightLink = "http://www.myntra.com/earrings?f=Type_article_attr%3Achandbali$SRC=Radium";
 				keyTitle = "Oval face"
 				break;
 			case 'Square':
 				before = "http://assets.myntassets.com/v1463469186/radium/SIS/jewellery-faceshape/jewellery-face-shape-guide-sqaure-night-min.jpg";
 				after = "http://assets.myntassets.com/v1463469186/radium/SIS/jewellery-faceshape/jewellery-face-shape-guide-square-day-min.jpg";
 				text = "Go for rounded designs that soften your cheekbones and jawline. Stick to the narrower, slimmer varieties though, as wide ones might make your face seem broader.";
-				dayLink = "http://www.myntra.com/earrings";
-				nightLink = "http://www.myntra.com/earrings";
+				dayLink = "http://www.myntra.com/thin-hoops-fora-day?SRC=Radium";
+				nightLink = "http://www.myntra.com/slim-danglers-for-night?SRC=Radium";
 				keyTitle = "Square face"
 				break;
 			default:
 				before = "http://assets.myntassets.com/v1463469186/radium/SIS/jewellery-faceshape/jewellery-face-shape-guide-round-night-min.jpg";
 				after = "http://assets.myntassets.com/v1463469186/radium/SIS/jewellery-faceshape/jewellery-face-shape-guide-round-day-min.jpg";
 				text = "Add length to your face with lovely drop earrings. Go for long, angular designs that’ll give your face more definition and steer away from circular discs and hoops.";
-				dayLink = "http://www.myntra.com/earrings";
-				nightLink = "http://www.myntra.com/earrings";
+				dayLink = "http://www.myntra.com/tear-drop-earings-for-day?SRC=Radium";
+				nightLink = "http://www.myntra.com/chandelier-earrings-for-night?SRC=Radium";
 				keyTitle = "Round face"
 				break;
 		}
