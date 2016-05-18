@@ -51,24 +51,40 @@ export default class Textonimage extends React.Component {
 			bgcolor = this.props.backgroundColor ? this.props.backgroundColor : 'rgba(0, 0, 0, 0.41)',
 			padding = this.props.padding ? this.props.padding : '10px 10px',
 			style = {
+				height : 'auto',
 				color : colortxt,
-				backgroundColor : bgcolor,
 				padding : padding,
 				position: 'absolute',
-				fontSize : '14px',
+				fontSize : '15px',
 				textAlign : 'center',
-				
-				// top: '35%',
-	   //  		left: '35%',
+				color: '#494949',
+				fontFamily: 'Open Sans',
+				position: 'absolute',
+				textAlign: 'left',
+				// top: '53%',
+				// left: '32%',
 			};
 
 			switch (this.props.textPosition)
 			{			   
-			   case 'left' : style.top = '35%', style.right ='5%';
+			   case 'left' : style.top = '53%', style.left ='32%';
 			   break;
 
-			   case 'right' : style.top = '35%', style.left ='5%';
+			   case 'right' : style.top = '55%', style.right ='42%', style.textAlign = 'right';
 			   break;
+
+			   case 'customeTop' : style.top = this.props.cTop + '%', style.left ='32%';
+			   break;
+
+			   case 'customeTop2' : style.top = this.props.cTop + '%', style.src = this.props.imgHeight + '%', style.right ='38%', style.textAlign = 'right';
+			   break;
+
+			   case 'customeTop3' : style.top = this.props.cTop + '%', style.right ='41%', style.textAlign = 'right';
+			   break;
+
+
+
+
 			   
 			   default: style.top = '35%', style.right ='55%';
 			}

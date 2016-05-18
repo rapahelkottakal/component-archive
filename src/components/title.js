@@ -10,6 +10,7 @@ export default class Title extends React.Component {
 			padding = this.props.padding ? this.props.padding : '10px 15px',
 			align = this.props.align ? this.props.align : 'center',
 			bgColor = this.props.bgColor,
+			margin = this.props.margin,
 			bgImage = this.props.bgImage ? 'url(' + this.props.bgImage + ')' : null;
 
 		return {
@@ -18,6 +19,7 @@ export default class Title extends React.Component {
 			color,
 			padding,
 			textAlign: align,
+			margin,
 			backgroundColor : bgColor,
 			backgroundImage: bgImage
 		}

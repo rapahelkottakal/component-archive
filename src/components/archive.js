@@ -67,175 +67,121 @@ export default class Archive extends React.Component {
 
 				<div>
 
-					<ShowMore>
-						<ImageChild
-							image="http://assets.myntassets.com/v1462352818/radium/SIS/fragrance/fruity-menu.jpg"
-							width="33.33%"
-						>
-							<div>0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare lacus et porttitor sollicitudin. Phasellus a eros ac risus elementum efficitur ac in mi. Vivamus dapibus, metus eu viverra scelerisque, sapien nisi cursus neque, eu venenatis erat lectus at enim.</div>
-
-						</ImageChild>
-						<ImageChild
-							image="http://assets.myntassets.com/v1462352816/radium/SIS/fragrance/floral-menu.jpg"
-							width="33.33%"
-						>
-							<div>1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare lacus et porttitor sollicitudin. Phasellus a eros ac risus elementum efficitur ac in mi. Vivamus dapibus, metus eu viverra scelerisque, sapien nisi cursus neque, eu venenatis erat lectus at enim.</div>
-							
-						</ImageChild>
-						<ImageChild
-							image="http://assets.myntassets.com/v1462354162/radium/SIS/fragrance/oceanic-menu.jpg"
-							width="33.33%"
-						>
-							<div>2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare lacus et porttitor sollicitudin. Phasellus a eros ac risus elementum efficitur ac in mi. Vivamus dapibus, metus eu viverra scelerisque, sapien nisi cursus neque, eu venenatis erat lectus at enim.</div>
-							
-						</ImageChild>
-					</ShowMore>
-
-					<SliderGroup data={sliderGroupData}></SliderGroup>
-
-					<Title
-						text="React SIS Pages"
+					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1463547769/radium/SIS/lyla-loves/Lyla-Loves-logo-unit.jpg" width="100%" height="auto" />
+					<Title 
+						text="Lyla Loves is a UK based accessories brand that is famous for binding bohemian themes with a strong sense of individuality. Their dreamy yet unique designs are what set them apart from the rest."
 						font= "Open Sans"
-						size="30"
-						color="white"
-						padding="20px"
+						color="#494949"
+						size="15"
+						padding="3% 5% 9%"
+						align="center"
+					/>	
+
+					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1463562367/radium/SIS/lyla-loves/gold-arrow.jpg" width="100%" height="auto" />
+					<Title 
+						text="The logo includes elements that represents a strong woman with a powerful sense of uniqueness. She has a dreamcatcher hand chain, butterflies in her hair, an elemental tattoo on her arm, arrows in her hand, turquoise head chain and feather earrings. Here’s what each one means."
+						font= "Open Sans"
+						color="#494949"
+						size="15"
+						padding="3% 5% 9%"
+						align="center"
+					/>
+
+					<Textonimage src ="http://assets.myntassets.com/v1463548260/radium/SIS/lyla-loves/butterflies.png"
+						text = "They signify change, rebirth and also new beginnings."
+						textPosition = "left" >
+					</Textonimage>
+
+					<Textonimage src ="http://assets.myntassets.com/v1463549562/radium/SIS/lyla-loves/feathers.png"
+						text = "They symbolise evolution, wisdom and a sense of freedom. "
+						textPosition = "right" >
+					</Textonimage>
+
+					<Textonimage src ="http://assets.myntassets.com/v1463549470/radium/SIS/lyla-loves/arrows.png"
+						text = "Individually they symbolize defence and protection. A bundle of arrows denote strength."
+						textPosition = "customeTop"
+						cTop={40} >
+					</Textonimage>
+
+					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1463549973/radium/SIS/lyla-loves/elemental-symbols.png" width="100%" height="auto" />
+
+					<Title 
+						text="They show all the qualities a person needs to possess. Fire stands for strength, earth means practicality, air is for thoughtfulness and water means emotions."
+						font= 'Open Sans'
+						color="#494949"
+						size="15"
+						padding="1% 40% 2% 6%"
 						align="right"
-						bgColor="slateblue"
-						bgImage="http://fmforums.com/uploads/attachments/monthly_2009_10/Background-tile.gif.11107119f39d13d71f261c93ace94ed2.gif"
-					>
-
-						<Title 
-							text="We can do a lot more."
-							font= "Open Sans"
-							color="white"
-							size="16"
-							padding="10px 0 0 0"
-							align="right"
-						/>
-						<Title 
-							text="This is only the beginning..."
-							font= "Open Sans"
-							color="white"
-							size="16"
-							padding="0px"
-							align="right"
-						/>
-						
-					</Title>
-
-					<Slideimage
-					textonimage="Tap to be amazed"
-					beforeImage="http://assets.myntassets.com/v1461563423/Lookgood/Feed/makeover/april/Makeover-22.04.16--7.jpg"
-					afterImage="http://assets.myntassets.com/v1461563423/Lookgood/Feed/makeover/april/Makeover-22.04.16--8.jpg"
-					  />
-
-					<Popup 
-					content = "xxxx" />
-
-					<FlipCard
-						front="http://assets.myntassets.com/v1461908504/Lookgood/Feed/Vocab/april/woh-cab-chevronprint-feedcard.gif"
-						back="http://assets.myntassets.com/v1461908455/Lookgood/Feed/Vocab/april/woh-cab-chevronprint.jpg"
-						link="http://www.myntra.com/chevron-print?userQuery=true&f=categories%3ADresses%2CKurtas%2CTops%3A%3Agender%3Amen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cwomen&sort=high&SRC=Lookgood6"
+						margin="-30% 0 0 0"
 					/>
 
+					<Textonimage src ="http://assets.myntassets.com/v1463549919/radium/SIS/lyla-loves/dreamcathcer.png"
+						text = "They are a symbol of positivity and foster good dreams."
+						textPosition = "left" >
+					</Textonimage>
 
-					<Reveal
-						image="https://upload.wikimedia.org/wikipedia/commons/d/d2/Jeans_for_men.jpg"
-						btnTxt="Know more"
-						// btnSize={{width: 200, height: 100}}
-						// btnColor="red"
-						// btnBgColor="blue"
-						content="The best collection of jeans can be found here. What are you waiting for?"
-						// contentColor="yellow"
-						contentBgColor="hsla(230, 68%, 52%, 0.9)"
-						// shopBtnText="Click me now"
-						// shopLink="http://google.com"
 
+
+
+					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1463550063/radium/SIS/lyla-loves/Turquoise.png" width="100%" height="auto" />
+
+					<Title 
+						text="It’s a healing stone. And the blue colour of the stone is supposed to bring happiness and good fortune, especially when given as a gift."
+						font= 'Open Sans'
+						color="#494949"
+						size="15"
+						padding="3% 43% 2% 6%"
+						align="right"
+						margin="-30% 0 0 0"
 					/>
 
-					<Textonimage src ="http://assets.myntassets.com/v1460639223/Lookgood/Feed/Style-tips/april16/14/download.jpg"
-						text = "hi this is varun"
-						color = "red"
-						
-						>
+					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1463550131/radium/SIS/lyla-loves/Things-to-watch-out-for.jpg" width="100%" height="auto" />
 
-					</Textonimage>
 
-					<Textonimage src ="http://assets.myntassets.com/v1460639223/Lookgood/Feed/Style-tips/april16/14/download.jpg"
-						text = "hi thisasdfarun"
-						textPosition = "left"//center / left-top /right-bot
-						
-						>
-
-					</Textonimage>
-
-					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1460654675/city-tips-background_wy0nwb.jpg" width="100%" height="auto" />
-
-					<Title
-						text="Scalable"
-						font= "Open Sans"
-						size="30"
-						color="white"
-						padding="20px"
+					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1463550181/radium/SIS/lyla-loves/midi-rings.jpg" width="100%" height="auto" />
+					<Title 
+						text="Stylish and delicate, midi rings add a boho-chic touch to any look instantly.  "
+						font= 'Open Sans'
+						color="#494949"
+						size="15"
+						padding="1% 14% 9%"
 						align="left"
-						bgColor="gray"
-						bgImage="http://templatesideas.com/wp-content/uploads/2010/12/Fiber-Carbon-Tiled-Pattern-background-vol.11.jpg"
-					>
-
-						<Title 
-							text="All these blocks are modular. This means, making any improvements or adding more 'components' to the archive, will be simple for anyone familiar with reactjs."
-							font= "Open Sans"
-							color="white"
-							size="16"
-							padding="0px"
-							align="left"
-						/>
-						
-					</Title>
-
-					<Reveal
-						image="http://static1.squarespace.com/static/5520e514e4b00f468f8d3de4/5645f7a3e4b0abd1d824dfba/565780c9e4b022a250f9f480/1448575197974/cyclist-dribbble.gif"
-						// btnTxt="Know more"
-						// btnSize={{width: 200, height: 100}}
-						// btnColor="red"
-						btnBgColor="hsla(0, 100%, 50%, 0.4)"
-						// content="The best collection of shoes can be found here."
-						// contentColor="yellow"
-						// contentBgColor="gray"
-						// shopBtnText="Click me now"
-						// shopLink="http://google.com"
-
 					/>
-					
 
-					<Title
-						text="Helping you look good"
+					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1463550292/radium/SIS/lyla-loves/statement-rings.jpg" width="100%" height="auto" />
+					<Title 
+						text="Make a statement, literally! These neckpieces are a sure head-turner."
 						font= "Open Sans"
-						size="25"
-						color="white"
-						padding="20px"
-						// align="right"
-						bgColor="slateblue"
-						bgImage="http://www.uniteourresources.com/wp-content/uploads/2012/07/black_woven_seamless_tile.jpg"
+						color="#494949"
+						size="15"
+						padding="1% 10% 9%"
+						align="right"
 					/>
 
+					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1463550371/radium/SIS/lyla-loves/shoulder-duster.jpg" width="100%" height="auto" />
+					<Title 
+						text="These tasseled beauties will up your glam quotient by several notches. "
+						font= "Open Sans"
+						color="#494949"
+						size="15"
+						padding="1% 14% 9%"
+						align="left"
+					/>
 
-				</div>
-				
+					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1463550432/radium/SIS/lyla-loves/bracelets.jpg" width="100%" height="auto" />
+					<Title 
+						text="Dainty bracelets are all the rage. You can never go wrong with this one!"
+						font= "Open Sans"
+						color="#494949"
+						size="15"
+						padding="1% 10% 9%"
+						align="right"
+					/>
+					<a href="http://www.myntra.com/lyla-loves?SRC=Lookgood6"> 
+					<img style={{display: 'block', marginBottom: '10%'}} src="http://assets.myntassets.com/v1463556750/radium/SIS/lyla-loves/explore-collection.jpg" width="100%" height="auto" />
+					</a>
+				</div>				
 			</div>
-			
-		
-				
-				
-
-
-
 		);
-
 	}
-
-
-	
-		
-
 }
