@@ -1,24 +1,10 @@
 import React from 'react';
-import Slider from 'react-slick';
 
 import 'normalize.css/normalize.css';
 import '../css/main.css';
 
 import Textonimage from './text-on-image'
-import Reveal from './reveal';
 import Title from './title';
-
-import Slideimage from './slideimage';
-import Popup from './popup';
-
-
-import FlipCard from './flip-card';
-import sliderGroupData from '../data/slider-group';
-import SliderGroup from './slide-group';
-
-import ShowMore from './showMore';
-import ImageChild from './imageChild';
-
 
 export default class Archive extends React.Component {
 
@@ -69,7 +55,7 @@ export default class Archive extends React.Component {
 
 					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1463547769/radium/SIS/lyla-loves/Lyla-Loves-logo-unit.jpg" width="100%" height="auto" />
 					<Title 
-						text="Lyla Loves is a UK based accessories brand that is famous for binding bohemian themes with a strong sense of individuality. Their dreamy yet unique designs are what set them apart from the rest."
+						text="Lyla Loves is a UK-based accessories brand that is famous for marrying bohemian themes with a strong sense of individuality. Their dreamy yet unique designs are what set them apart from the rest."
 						font= "Open Sans"
 						color="#494949"
 						size="15"
@@ -98,7 +84,7 @@ export default class Archive extends React.Component {
 					</Textonimage>
 
 					<Textonimage src ="http://assets.myntassets.com/v1463549470/radium/SIS/lyla-loves/arrows.png"
-						text = "Individually they symbolize defence and protection. A bundle of arrows denote strength."
+						text = "Individually they symbolise defence and protection. A bundle of arrows denote strength."
 						textPosition = "customeTop"
 						cTop={40} >
 					</Textonimage>
