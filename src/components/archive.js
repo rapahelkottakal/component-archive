@@ -50,12 +50,25 @@ export default class Archive extends React.Component {
 			arrows: false
 		};
 
+		let goLink = {
+			display: 'block',
+			textAlign: 'center',
+			textTransform: 'uppercase',
+			padding: '16px 0',
+			fontSize: 13,
+			backgroundColor: '#B2B2B2',
+			color: 'white',
+			textDecoration: 'none'
+		}
+
 		return(
 			<div style={this.getContainerStyles()}>
 
 				<div>
 
 					<SliderGroup data={sliderGroupData}></SliderGroup>
+
+					<a style={goLink} href="http://www.myntra.com/radium/SIS/footwear-flats/">Go to flats store</a>
 
 
 				</div>
