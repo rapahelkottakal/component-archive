@@ -1,23 +1,10 @@
 import React from 'react';
-import Slider from 'react-slick';
 
 import 'normalize.css/normalize.css';
 import '../css/main.css';
 
-import Textonimage from './text-on-image'
-import Reveal from './reveal';
-import Title from './title';
-
-import Slideimage from './slideimage';
-import Popup from './popup';
-
-
-import FlipCard from './flip-card';
 import sliderGroupData from '../data/slider-group';
 import SliderGroup from './slide-group';
-
-import ShowMore from './showMore';
-import ImageChild from './imageChild';
 
 
 export default class Archive extends React.Component {
