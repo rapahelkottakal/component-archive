@@ -65,16 +65,16 @@ export default class Archive extends React.Component {
 
 					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1463655780/radium/SIS/lyla-loves/earrings.jpg" width="100%" height="auto" />
 					
-					<a target="_blank" href="http://www.myntra.com/lyla-loves?f=Type_article_attr%3Aear%2520cuff%3A%3Acategories%3AEarrings&SRC=Lookgood6"> 
+					<a target="_blank" href="http://www.myntra.com/lyla-loves?f=Type_article_attr%3Aear%2520cuff%3A%3Acategories%3AEarrings&SRC=Radium"> 
 					<img style={{display: 'block', float:'left'}} src="http://assets.myntassets.com/v1463655839/radium/SIS/lyla-loves/ear-cuffs.jpg" width="50%" height="auto" />
 					</a>
-					<a target="_blank" href="http://www.myntra.com/lyla-loves?f=Type_article_attr%3Adrops%2520or%2520hoops%3A%3Acategories%3AEarrings&SRC=Lookgood6"> 
+					<a target="_blank" href="http://www.myntra.com/lyla-loves?f=Type_article_attr%3Adrops%2520or%2520hoops%3A%3Acategories%3AEarrings&SRC=Radium"> 
 					<img style={{display: 'block', float:'left'}} src="http://assets.myntassets.com/v1463655839/radium/SIS/lyla-loves/drops.jpg" width="50%" height="auto" />
 					</a>
 
 
 					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1463655891/radium/SIS/lyla-loves/nekclaces.jpg" width="100%" height="auto" />
-					<a target="_blank" href="http://www.myntra.com/lyla-loves?f=categories%3ANecklaces%2520%2526%2520Chains%2CPendant&SRC=Lookgood6"> 
+					<a target="_blank" href="http://www.myntra.com/lyla-loves?f=categories%3ANecklaces%2520%2526%2520Chains%2CPendant&SRC=Radium"> 
 					<img style={{display: 'block', marginBottom:'5%'}} src="http://assets.myntassets.com/v1463662366/radium/SIS/lyla-loves/necklaces-images.jpg" width="100%" height="auto" />
 					</a>
 
@@ -186,7 +186,7 @@ export default class Archive extends React.Component {
 					/>
 
 					
-					<a target="_blank" href="http://www.myntra.com/lyla-loves?SRC=Lookgood6"> 
+					<a target="_blank" href="http://www.myntra.com/lyla-loves?SRC=Radium"> 
 					<img style={{display: 'block', marginBottom: '10%'}} src="http://assets.myntassets.com/v1463556750/radium/SIS/lyla-loves/explore-collection.jpg" width="100%" height="auto" />
 					</a>
 				</div>				
