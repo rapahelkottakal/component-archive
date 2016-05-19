@@ -71,14 +71,13 @@ export default class Archive extends React.Component {
 
 				<div>
 
-
 					<div>
 						<div style={linedTitle}>Formal trouser & shirt</div>
 						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463643610/radium/SIS/footwear-guide/Model.jpg" />
 						<div style={linedTitle}>Pick a pair &raquo;</div>
 						<ShowMore name="formal">
 							<ImageChild
-								image="http://assets.myntassets.com/v1463643609/radium/SIS/footwear-guide/Mocassins.jpg"
+								image="http://assets.myntassets.com/v1463648769/radium/SIS/footwear-guide/Mocassins.jpg"
 								width="33.33%"
 								title="Mocassins"
 							>
@@ -90,7 +89,7 @@ export default class Archive extends React.Component {
 
 							</ImageChild>
 							<ImageChild
-								image="http://assets.myntassets.com/v1463643609/radium/SIS/footwear-guide/Ballerinas.jpg"
+								image="http://assets.myntassets.com/v1463648363/radium/SIS/footwear-guide/Ballerinas.jpg"
 								width="33.33%"
 								title="Ballerinas"
 							>
@@ -102,7 +101,7 @@ export default class Archive extends React.Component {
 								
 							</ImageChild>
 							<ImageChild
-								image="http://assets.myntassets.com/v1463643609/radium/SIS/footwear-guide/Brogues.jpg"
+								image="http://assets.myntassets.com/v1463648663/radium/SIS/footwear-guide/Brogues.jpg"
 								width="33.33%"
 								title="Solid brogues"
 							>

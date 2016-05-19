@@ -121,7 +121,7 @@ export default class ShowMore extends React.Component {
 			if (this.state.currentChild != key && this.state.open) {
 
 				imageRow.push(
-					<Link to={this.props.name} smooth={true} style={{ width: value.props.width, height: 'auto', display: 'inline-block', verticalAlign: 'top'}} key={key}>
+					<Link to={this.props.name} offset={-190} smooth={true} style={{ width: value.props.width, height: 'auto', display: 'inline-block', verticalAlign: 'top'}} key={key}>
 						<img 
 							src={value.props.image}
 							style={{ width: '100%', height: 'auto', opacity: 0.5 }}
@@ -132,7 +132,7 @@ export default class ShowMore extends React.Component {
 			} else {
 
 				imageRow.push(
-					<Link to={this.props.name} smooth={true} style={{ width: value.props.width, height: 'auto', display: 'inline-block', verticalAlign: 'top'}} key={key}>
+					<Link to={this.props.name} offset={-190} smooth={true} style={{ width: value.props.width, height: 'auto', display: 'inline-block', verticalAlign: 'top'}} key={key}>
 						<img src={value.props.image}
 							style={{ width: '100%', height: 'auto', opacity: 1 }}
 							onClick={this.changeCurrentChild.bind(this,key)} />
