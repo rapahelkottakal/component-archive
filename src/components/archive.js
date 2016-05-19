@@ -73,7 +73,7 @@ export default class Archive extends React.Component {
 
 					<div>
 						<div style={linedTitle}>Formal trouser & shirt</div>
-						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463643610/radium/SIS/footwear-guide/Model.jpg" />
+						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463650375/radium/SIS/footwear-guide/Model.jpg" />
 						<div style={linedTitle}>Pick a pair &raquo;</div>
 						<ShowMore name="formal">
 							<ImageChild
@@ -101,7 +101,7 @@ export default class Archive extends React.Component {
 								
 							</ImageChild>
 							<ImageChild
-								image="http://assets.myntassets.com/v1463648663/radium/SIS/footwear-guide/Brogues.jpg"
+								image="http://assets.myntassets.com/v1463653904/radium/SIS/footwear-guide/Brogues.jpg"
 								width="33.33%"
 								title="Solid brogues"
 							>
@@ -117,11 +117,11 @@ export default class Archive extends React.Component {
 
 					<div>
 						<div style={linedTitle}>Maxi dress</div>
-						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463564895/radium/SIS/footwear-guide/maxidress-min.jpg" />
+						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463654593/radium/SIS/footwear-guide/Models.jpg" />
 						<div style={linedTitle}>Pick a pair &raquo;</div>
 						<ShowMore name="maxi">
 							<ImageChild
-								image="http://assets.myntassets.com/v1463564894/radium/SIS/footwear-guide/ballerinas-min.jpg"
+								image="http://assets.myntassets.com/v1463654593/radium/SIS/footwear-guide/Sandals.jpg"
 								width="33.33%"
 								title="Laser-cut sandals"
 							>
@@ -133,7 +133,7 @@ export default class Archive extends React.Component {
 
 							</ImageChild>
 							<ImageChild
-								image="http://assets.myntassets.com/v1463564894/radium/SIS/footwear-guide/strappyflats-min.jpg"
+								image="http://assets.myntassets.com/v1463654593/radium/SIS/footwear-guide/StrappyFlats.jpg"
 								width="33.33%"
 								title="Strappy flats"
 							>
@@ -145,12 +145,56 @@ export default class Archive extends React.Component {
 								
 							</ImageChild>
 							<ImageChild
-								image="http://assets.myntassets.com/v1463564893/radium/SIS/footwear-guide/espadrilles-min.jpg"
+								image="http://assets.myntassets.com/v1463654593/radium/SIS/footwear-guide/Espadrilles.jpg"
 								width="33.33%"
 								title="Printed espadrilles"
 							>
 								<div>
 									<div style={showMoreTitle}>Relaxed</div>
+									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+								
+							</ImageChild>
+						</ShowMore>
+					</div>
+
+					<div>
+						<div style={linedTitle}>Jeans & T-shirt</div>
+						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463654962/radium/SIS/footwear-guide/Model-jeans-shirts.jpg" />
+						<div style={linedTitle}>Pick a pair &raquo;</div>
+						<ShowMore name="jeans">
+							<ImageChild
+								image="http://assets.myntassets.com/v1463654929/radium/SIS/footwear-guide/hightops.jpg"
+								width="33.33%"
+								title="high-tops"
+							>
+								<div>
+									<div style={showMoreTitle}>Tomboy</div>
+									<div style={showMoreText}>{showMoreTextObj.contemporary}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+
+							</ImageChild>
+							<ImageChild
+								image="http://assets.myntassets.com/v1463654929/radium/SIS/footwear-guide/StripedBallerinas.jpg"
+								width="33.33%"
+								title="striped ballerinas"
+							>
+								<div>
+									<div style={showMoreTitle}>Relaxed</div>
+									<div style={showMoreText}>{showMoreTextObj.artsy}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+								
+							</ImageChild>
+							<ImageChild
+								image="http://assets.myntassets.com/v1463654929/radium/SIS/footwear-guide/Strappy.jpg"
+								width="33.33%"
+								title="strappy flats"
+							>
+								<div>
+									<div style={showMoreTitle}>Girl-next-door</div>
 									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
 									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
