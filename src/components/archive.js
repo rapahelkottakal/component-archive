@@ -121,6 +121,20 @@ export default class Archive extends React.Component {
 
 
 
+
+
+
+					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1463562367/radium/SIS/lyla-loves/gold-arrow.jpg" width="100%" height="auto" />
+					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1463547941/radium/SIS/lyla-loves/decoding-the-logo.jpg" width="100%" height="auto" />
+					<Title 
+						text="The logo includes elements that represents a strong woman with a powerful sense of uniqueness. She has a dreamcatcher hand chain, butterflies in her hair, an elemental tattoo on her arm, arrows in her hand, turquoise head chain and feather earrings. Here’s what each one means."
+						font= "Open Sans"
+						color="#494949"
+						size="15"
+						padding="3% 5% 9%"
+						align="center"
+					/>
+
 					<Textonimage src ="http://assets.myntassets.com/v1463548260/radium/SIS/lyla-loves/butterflies.png"
 						text = "They signify change, rebirth and also new beginnings."
 						textPosition = "left" >
