@@ -3,6 +3,10 @@ import {Motion, spring} from 'react-motion';
 
 import _ from 'lodash';
 
+import Scroll from 'react-scroll';
+
+import { Link, Element, Events } from 'react-scroll';
+
 export default class ShowMore extends React.Component {
 
 	// componentDidMount() {
@@ -25,8 +29,8 @@ export default class ShowMore extends React.Component {
 		super(props);
 
 		this.state = {
-			currentChild: -1,
-			open: false
+			currentChild: 0,
+			open: true
 		}
 	}
 
@@ -42,7 +46,7 @@ export default class ShowMore extends React.Component {
 	getRowStyles() {
 
 		let style = {
-			
+			padding: '0 8px'
 		}
 
 		// if (this.state.fliped) {
@@ -62,7 +66,8 @@ export default class ShowMore extends React.Component {
 		
 		let style = {
 			display: 'none',
-			padding: '15px 25px'
+			padding: '15px 25px',
+			textAlign:'center'
 		}
 
 		if (this.state.open) {
@@ -94,7 +99,7 @@ export default class ShowMore extends React.Component {
 		});
 
 		if (this.state.open && this.state.currentChild == key) {
-			this.closeShowMore();
+			// this.closeShowMore();
 		} else {
 			this.openShowMore();
 		}
@@ -102,7 +107,12 @@ export default class ShowMore extends React.Component {
 
 	createImageRow() {
 
-		let imageRow = [];
+		let imageRow = [],
+			textStyle = {
+				textAlign: 'center',
+				textTransform: 'uppercase',
+				fontSize: 12
+			};
 
 		_.forEach(this.props.children, (value,key) => {
 					
@@ -110,10 +120,25 @@ export default class ShowMore extends React.Component {
 
 			if (this.state.currentChild != key && this.state.open) {
 
-				imageRow.push(<img src={value.props.image} style={{ width: value.props.width, height: 'auto', opacity: 0.5 }} key={key} onClick={this.changeCurrentChild.bind(this,key)} />);
+				imageRow.push(
+					<Link to={this.props.name} smooth={true} style={{ width: value.props.width, height: 'auto', display: 'inline-block', verticalAlign: 'top'}} key={key}>
+						<img 
+							src={value.props.image}
+							style={{ width: '100%', height: 'auto', opacity: 0.5 }}
+							onClick={this.changeCurrentChild.bind(this,key)} />
+						<div style={textStyle}>{value.props.title}</div>
+					</Link>
+					);
 			} else {
 
-				imageRow.push(<img src={value.props.image} style={{ width: value.props.width, height: 'auto', opacity: 1 }} key={key} onClick={this.changeCurrentChild.bind(this,key)} />);
+				imageRow.push(
+					<Link to={this.props.name} smooth={true} style={{ width: value.props.width, height: 'auto', display: 'inline-block', verticalAlign: 'top'}} key={key}>
+						<img src={value.props.image}
+							style={{ width: '100%', height: 'auto', opacity: 1 }}
+							onClick={this.changeCurrentChild.bind(this,key)} />
+						<div style={textStyle}>{value.props.title}</div>
+					</Link>
+				);
 			}
 
 		});
@@ -135,7 +160,7 @@ export default class ShowMore extends React.Component {
 		// console.log(this.props.children);
 
 		return(
-			<div style={this.getContainerStyles()} >
+			<Element name={this.props.name} style={this.getContainerStyles()} >
 				<div style={this.getRowStyles()}>
 					{this.createImageRow()}
 				</div>
@@ -144,7 +169,7 @@ export default class ShowMore extends React.Component {
 		           	{this.createInsideContent()}
 
 				</div>
-			</div>
+			</Element>
 		);
 	}
 }
