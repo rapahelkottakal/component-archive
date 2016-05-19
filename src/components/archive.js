@@ -72,26 +72,26 @@ export default class Archive extends React.Component {
 				<div>
 
 					<div>
-						<div style={linedTitle}>Formal trouser & shirt</div>
-						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463643610/radium/SIS/footwear-guide/Model.jpg" />
+						<div style={linedTitle}>Shirt dress</div>
+						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463653686/SIS/footwear-dictionary/Heels/shirt/Model.jpg" />
 						<div style={linedTitle}>Pick a pair &raquo;</div>
-						<ShowMore name="formal">
+						<ShowMore name="shirt">
 							<ImageChild
-								image="http://assets.myntassets.com/v1463648769/radium/SIS/footwear-guide/Mocassins.jpg"
+								image="http://assets.myntassets.com/v1463653687/SIS/footwear-dictionary/Heels/shirt/Pumps.jpg"
 								width="33.33%"
-								title="Mocassins"
+								title="leather pumps"
 							>
 								<div>
-									<div style={showMoreTitle}>Relaxed</div>
-									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
+									<div style={showMoreTitle}>trendsetter</div>
+									<div style={showMoreText}>{showMoreTextObj.trendsetter}</div>
 									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 
 							</ImageChild>
 							<ImageChild
-								image="http://assets.myntassets.com/v1463648363/radium/SIS/footwear-guide/Ballerinas.jpg"
+								image="http://assets.myntassets.com/v1463653687/SIS/footwear-dictionary/Heels/shirt/WovenWedges.jpg"
 								width="33.33%"
-								title="Ballerinas"
+								title="woven wedges"
 							>
 								<div>
 									<div style={showMoreTitle}>Classic</div>
@@ -101,13 +101,57 @@ export default class Archive extends React.Component {
 								
 							</ImageChild>
 							<ImageChild
-								image="http://assets.myntassets.com/v1463648663/radium/SIS/footwear-guide/Brogues.jpg"
+								image="http://assets.myntassets.com/v1463653686/SIS/footwear-dictionary/Heels/shirt/Flatforms.jpg"
 								width="33.33%"
-								title="Solid brogues"
+								title="Flatforms"
+							>
+								<div>
+									<div style={showMoreTitle}>relaxed</div>
+									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+								
+							</ImageChild>
+						</ShowMore>
+					</div>
+
+					<div>
+						<div style={linedTitle}>Jeans & T-shirt</div>
+						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463655234/SIS/footwear-dictionary/Heels/Jeans/Model.jpg" />
+						<div style={linedTitle}>Pick a pair &raquo;</div>
+						<ShowMore name="Jeans">
+							<ImageChild
+								image="http://assets.myntassets.com/v1463655234/SIS/footwear-dictionary/Heels/Jeans/Leather.jpg"
+								width="33.33%"
+								title="leather pumps"
 							>
 								<div>
 									<div style={showMoreTitle}>Contemporary</div>
 									<div style={showMoreText}>{showMoreTextObj.contemporary}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+
+							</ImageChild>
+							<ImageChild
+								image="http://assets.myntassets.com/v1463655234/SIS/footwear-dictionary/Heels/Jeans/Anklestrap.jpg"
+								width="33.33%"
+								title="ankle-strap heels"
+							>
+								<div>
+									<div style={showMoreTitle}>classic</div>
+									<div style={showMoreText}>{showMoreTextObj.classic}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+								
+							</ImageChild>
+							<ImageChild
+								image="http://assets.myntassets.com/v1463655235/SIS/footwear-dictionary/Heels/Jeans/Slingback.jpg"
+								width="33.33%"
+								title="slingback platforms"
+							>
+								<div>
+									<div style={showMoreTitle}>girl-Next-Door</div>
+									<div style={showMoreText}>{showMoreTextObj.girlNextDoor}</div>
 									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
@@ -117,40 +161,84 @@ export default class Archive extends React.Component {
 
 					<div>
 						<div style={linedTitle}>Maxi dress</div>
-						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463564895/radium/SIS/footwear-guide/maxidress-min.jpg" />
+						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463655889/SIS/footwear-dictionary/Heels/Maxi%20dress/Model.jpg" />
 						<div style={linedTitle}>Pick a pair &raquo;</div>
-						<ShowMore name="maxi">
+						<ShowMore name="Maxi">
 							<ImageChild
-								image="http://assets.myntassets.com/v1463564894/radium/SIS/footwear-guide/ballerinas-min.jpg"
+								image="http://assets.myntassets.com/v1463655890/SIS/footwear-dictionary/Heels/Maxi%20dress/WovenWedges.jpg"
 								width="33.33%"
-								title="Laser-cut sandals"
+								title="woven wedges"
 							>
 								<div>
-									<div style={showMoreTitle}>Contemporary</div>
-									<div style={showMoreText}>{showMoreTextObj.contemporary}</div>
+									<div style={showMoreTitle}>girl-Next-Door</div>
+									<div style={showMoreText}>{showMoreTextObj.girlNextDoor}</div>
 									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 
 							</ImageChild>
 							<ImageChild
-								image="http://assets.myntassets.com/v1463564894/radium/SIS/footwear-guide/strappyflats-min.jpg"
+								image="http://assets.myntassets.com/v1463655889/SIS/footwear-dictionary/Heels/Maxi%20dress/Metallic.jpg"
 								width="33.33%"
-								title="Strappy flats"
+								title="metallic peep-toes"
 							>
 								<div>
-									<div style={showMoreTitle}>Artsy</div>
-									<div style={showMoreText}>{showMoreTextObj.artsy}</div>
+									<div style={showMoreTitle}>elegant</div>
+									<div style={showMoreText}>{showMoreTextObj.elegant}</div>
 									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
 							</ImageChild>
 							<ImageChild
-								image="http://assets.myntassets.com/v1463564893/radium/SIS/footwear-guide/espadrilles-min.jpg"
+								image="http://assets.myntassets.com/v1463655889/SIS/footwear-dictionary/Heels/Maxi%20dress/PartyWear.jpg"
 								width="33.33%"
-								title="Printed espadrilles"
+								title="party wear ankle-straps"
 							>
 								<div>
-									<div style={showMoreTitle}>Relaxed</div>
+									<div style={showMoreTitle}>contemporary</div>
+									<div style={showMoreText}>{showMoreTextObj.contemporary}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+								
+							</ImageChild>
+						</ShowMore>
+					</div>
+
+					<div>
+						<div style={linedTitle}>Kurta & leggings</div>
+						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463656555/SIS/footwear-dictionary/Heels/Kurta/Model.jpg" />
+						<div style={linedTitle}>Pick a pair &raquo;</div>
+						<ShowMore name="Kurta">
+							<ImageChild
+								image="http://assets.myntassets.com/v1463656554/SIS/footwear-dictionary/Heels/Kurta/ClassicPumpd.jpg"
+								width="33.33%"
+								title="classic pumps"
+							>
+								<div>
+									<div style={showMoreTitle}>trendsetter</div>
+									<div style={showMoreText}>{showMoreTextObj.trendsetter}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+
+							</ImageChild>
+							<ImageChild
+								image="http://assets.myntassets.com/v1463656554/SIS/footwear-dictionary/Heels/Kurta/ElegantAnklestrap.jpg"
+								width="33.33%"
+								title="elegant ankle-straps"
+							>
+								<div>
+									<div style={showMoreTitle}>classic</div>
+									<div style={showMoreText}>{showMoreTextObj.classic}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+								
+							</ImageChild>
+							<ImageChild
+								image="http://assets.myntassets.com/v1463656555/SIS/footwear-dictionary/Heels/Kurta/WovenWedges.jpg"
+								width="33.33%"
+								title="woven wedges"
+							>
+								<div>
+									<div style={showMoreTitle}>relaxed</div>
 									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
 									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
@@ -158,6 +246,96 @@ export default class Archive extends React.Component {
 							</ImageChild>
 						</ShowMore>
 					</div>
+
+					<div>
+						<div style={linedTitle}>Formal trousers & shirt</div>
+						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463657826/SIS/footwear-dictionary/Heels/formal/Model.jpg" />
+						<div style={linedTitle}>Pick a pair &raquo;</div>
+						<ShowMore name="Formal">
+							<ImageChild
+								image="http://assets.myntassets.com/v1463657826/SIS/footwear-dictionary/Heels/formal/kittenheels.jpg"
+								width="33.33%"
+								title="kitten heels"
+							>
+								<div>
+									<div style={showMoreTitle}>girl-Next-Door</div>
+									<div style={showMoreText}>{showMoreTextObj.girlNextDoor}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+
+							</ImageChild>
+							<ImageChild
+								image="http://assets.myntassets.com/v1463657827/SIS/footwear-dictionary/Heels/formal/WorkWearPumps.jpg"
+								width="33.33%"
+								title="work wear pumps"
+							>
+								<div>
+									<div style={showMoreTitle}>classic</div>
+									<div style={showMoreText}>{showMoreTextObj.classic}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+								
+							</ImageChild>
+							<ImageChild
+								image="http://assets.myntassets.com/v1463657827/SIS/footwear-dictionary/Heels/formal/SolidAnkleStraps.jpg"
+								width="33.33%"
+								title="solid ankle-straps"
+							>
+								<div>
+									<div style={showMoreTitle}>elegant</div>
+									<div style={showMoreText}>{showMoreTextObj.elegant}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+								
+							</ImageChild>
+						</ShowMore>
+					</div>
+
+					<div>
+						<div style={linedTitle}>Shorts & tank top</div>
+						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463657321/SIS/footwear-dictionary/Heels/shorts/Model.jpg" />
+						<div style={linedTitle}>Pick a pair &raquo;</div>
+						<ShowMore name="Shorts">
+							<ImageChild
+								image="http://assets.myntassets.com/v1463657321/SIS/footwear-dictionary/Heels/shorts/Flatforms.jpg"
+								width="33.33%"
+								title="casual flatforms"
+							>
+								<div>
+									<div style={showMoreTitle}>contemporary</div>
+									<div style={showMoreText}>{showMoreTextObj.contemporary}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+
+							</ImageChild>
+							<ImageChild
+								image="http://assets.myntassets.com/v1463657321/SIS/footwear-dictionary/Heels/shorts/OpenToe.jpg"
+								width="33.33%"
+								title="open-toe sandals"
+							>
+								<div>
+									<div style={showMoreTitle}>trendsetter</div>
+									<div style={showMoreText}>{showMoreTextObj.trendsetter}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+								
+							</ImageChild>
+							<ImageChild
+								image="http://assets.myntassets.com/v1463657321/SIS/footwear-dictionary/Heels/shorts/Boots.jpg"
+								width="33.33%"
+								title="stiletto boots"
+							>
+								<div>
+									<div style={showMoreTitle}>tomboy</div>
+									<div style={showMoreText}>{showMoreTextObj.tomboy}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+								
+							</ImageChild>
+						</ShowMore>
+					</div>
+
+
 
 
 				</div>
