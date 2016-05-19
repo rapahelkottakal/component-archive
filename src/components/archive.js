@@ -203,6 +203,148 @@ export default class Archive extends React.Component {
 						</ShowMore>
 					</div>
 
+					<div>
+						<div style={linedTitle}>Kurta & leggings</div>
+						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463660420/radium/SIS/footwear-guide/Model-kurta.jpg" />
+						<div style={linedTitle}>Pick a pair &raquo;</div>
+						<ShowMore name="kurta">
+							<ImageChild
+								image="http://assets.myntassets.com/v1463660450/radium/SIS/footwear-guide/kurta-Juttis.jpg"
+								width="33.33%"
+								title="ethnic juttis"
+							>
+								<div>
+									<div style={showMoreTitle}>Elegant</div>
+									<div style={showMoreText}>{showMoreTextObj.contemporary}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+
+							</ImageChild>
+							<ImageChild
+								image="http://assets.myntassets.com/v1463660450/radium/SIS/footwear-guide/kurta-OpenToe.jpg"
+								width="33.33%"
+								title="open-toe flats"
+							>
+								<div>
+									<div style={showMoreTitle}>Girl-next-door</div>
+									<div style={showMoreText}>{showMoreTextObj.artsy}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+								
+							</ImageChild>
+							<ImageChild
+								image="http://assets.myntassets.com/v1463660449/radium/SIS/footwear-guide/kurta-Festive.jpg"
+								width="33.33%"
+								title="festive sandals"
+							>
+								<div>
+									<div style={showMoreTitle}>Artsy</div>
+									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+								
+							</ImageChild>
+						</ShowMore>
+					</div>
+
+
+
+
+
+
+					<div>
+						<div style={linedTitle}>Shorts & tank top</div>
+						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463660961/radium/SIS/footwear-guide/shorts-Shorts.jpg" />
+						<div style={linedTitle}>Pick a pair &raquo;</div>
+						<ShowMore name="kurta">
+							<ImageChild
+								image="http://assets.myntassets.com/v1463660961/radium/SIS/footwear-guide/shorts-gladiators.jpg"
+								width="33.33%"
+								title="gladiators"
+							>
+								<div>
+									<div style={showMoreTitle}>Trendsetter</div>
+									<div style={showMoreText}>{showMoreTextObj.contemporary}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+
+							</ImageChild>
+							<ImageChild
+								image="http://assets.myntassets.com/v1463660961/radium/SIS/footwear-guide/shorts-FlipFlops.jpg"
+								width="33.33%"
+								title="flip-flops"
+							>
+								<div>
+									<div style={showMoreTitle}>Relaxed</div>
+									<div style={showMoreText}>{showMoreTextObj.artsy}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+								
+							</ImageChild>
+							<ImageChild
+								image="http://assets.myntassets.com/v1463660961/radium/SIS/footwear-guide/shorts-Sneakers.jpg"
+								width="33.33%"
+								title="sneakers"
+							>
+								<div>
+									<div style={showMoreTitle}>Tomboy</div>
+									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+								
+							</ImageChild>
+						</ShowMore>
+					</div>
+
+
+
+
+
+
+					<div>
+						<div style={linedTitle}>Shirt dress</div>
+						<img style={{ width: '60%', display: 'block', margin: '0 auto' }} src="http://assets.myntassets.com/v1463661452/radium/SIS/footwear-guide/Model-shirtd.jpg" />
+						<div style={linedTitle}>Pick a pair &raquo;</div>
+						<ShowMore name="shirtdress">
+							<ImageChild
+								image="http://assets.myntassets.com/v1463661452/radium/SIS/footwear-guide/sd-Gladiators.jpg"
+								width="33.33%"
+								title="buckled gladiators"
+							>
+								<div>
+									<div style={showMoreTitle}>Contemporary</div>
+									<div style={showMoreText}>{showMoreTextObj.contemporary}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+
+							</ImageChild>
+							<ImageChild
+								image="http://assets.myntassets.com/v1463661452/radium/SIS/footwear-guide/sd-Plimsoles.jpg"
+								width="33.33%"
+								title="printed plimsolls"
+							>
+								<div>
+									<div style={showMoreTitle}>Relaxed</div>
+									<div style={showMoreText}>{showMoreTextObj.artsy}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+								
+							</ImageChild>
+							<ImageChild
+								image="http://assets.myntassets.com/v1463661452/radium/SIS/footwear-guide/sd-Sneakers.jpg"
+								width="33.33%"
+								title="white sneakers"
+							>
+								<div>
+									<div style={showMoreTitle}>Tomboy</div>
+									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
+									<a href="http://www.myntra.com/shoes" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+								</div>
+								
+							</ImageChild>
+						</ShowMore>
+					</div>
+
 
 				</div>
 				
