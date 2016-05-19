@@ -74,8 +74,8 @@ export default class Archive extends React.Component {
 
 
 					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1463655891/radium/SIS/lyla-loves/nekclaces.jpg" width="100%" height="auto" />
-					<a target="_blank" href="http://www.myntra.com/lyla-loves?f=categories%3ANecklaces%2520%2526%2520Chains&SRC=Lookgood6"> 
-					<img style={{display: 'block', marginBottom:'11%'}} src="http://assets.myntassets.com/v1463655923/radium/SIS/lyla-loves/necklaces-images.jpg" width="100%" height="auto" />
+					<a target="_blank" href="http://www.myntra.com/lyla-loves?f=categories%3ANecklaces%2520%2526%2520Chains%2CPendant&SRC=Lookgood6"> 
+					<img style={{display: 'block', marginBottom:'5%'}} src="http://assets.myntassets.com/v1463662366/radium/SIS/lyla-loves/necklaces-images.jpg" width="100%" height="auto" />
 					</a>
 
 					<img style={{display: 'block'}} src="http://assets.myntassets.com/v1463550131/radium/SIS/lyla-loves/Things-to-watch-out-for.jpg" width="100%" height="auto" />
