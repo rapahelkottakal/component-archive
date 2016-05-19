@@ -233,7 +233,7 @@ export default class Archive extends React.Component {
 								
 							</ImageChild>
 							<ImageChild
-								image="http://assets.myntassets.com/v1463656555/SIS/footwear-dictionary/Heels/Kurta/WovenWedges.jpg"
+								image="http://assets.myntassets.com/v1463665195/SIS/footwear-dictionary/Heels/Kurta/WovenWedges.jpg"
 								width="33.33%"
 								title="woven wedges"
 							>
