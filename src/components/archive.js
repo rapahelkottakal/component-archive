@@ -79,12 +79,12 @@ export default class Archive extends React.Component {
 							<ImageChild
 								image="http://assets.myntassets.com/v1463648769/radium/SIS/footwear-guide/Mocassins.jpg"
 								width="33.33%"
-								title="Mocassins"
+								title="loafers & moccasins"
 							>
 								<div>
 									<div style={showMoreTitle}>Relaxed</div>
 									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
-									<a href="http://www.myntra.com/women-moccasins?SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+									<a href="http://www.myntra.com/women-casual-shoes?f=Shoe_Type_article_attr%3Aloafers%2520%252F%2520mocassins&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 
 							</ImageChild>
@@ -103,7 +103,7 @@ export default class Archive extends React.Component {
 							<ImageChild
 								image="http://assets.myntassets.com/v1463653904/radium/SIS/footwear-guide/Brogues.jpg"
 								width="33.33%"
-								title="Solid brogues"
+								title="brogues"
 							>
 								<div>
 									<div style={showMoreTitle}>Contemporary</div>
@@ -140,7 +140,7 @@ export default class Archive extends React.Component {
 								<div>
 									<div style={showMoreTitle}>Artsy</div>
 									<div style={showMoreText}>{showMoreTextObj.artsy}</div>
-									<a href="http://www.myntra.com/women-flats?f=Occasion_article_attr%3Acomfortline%2Cdaily%2520%252F%2520casual%3A%3AShoe_Type_article_attr%3At-strap%2520%252F%2520thong%2520sandals&sort=popularity&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+									<a href="http://www.myntra.com/women-flats?f=Occasion_article_attr%3Adaily%2520%252F%2520casual%3A%3APattern_article_attr%3Asolid%3A%3AShoe_Type_article_attr%3At-strap%2520%252F%2520thong%2520sandals&sort=popularity&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
 							</ImageChild>
@@ -171,8 +171,8 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Tomboy</div>
-									<div style={showMoreText}>{showMoreTextObj.contemporary}</div>
-									<a href="http://www.myntra.com/women-flats?f=Ankle_Height_article_attr%3Ahigh%2520tops&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+									<div style={showMoreText}>{showMoreTextObj.tomboy}</div>
+									<a href="http://www.myntra.com/women-casual-shoes?f=Ankle_Height_article_attr%3Ahigh%2520tops&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 
 							</ImageChild>
@@ -183,20 +183,20 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Relaxed</div>
-									<div style={showMoreText}>{showMoreTextObj.artsy}</div>
-									<a href="http://www.myntra.com/women-flats?f=Pattern_article_attr%3Aprinted%3A%3AShoe_Type_article_attr%3Aballerina%2520%252F%2520flat%2520shoes&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
+									<a href="http://www.myntra.com/women-flats?f=Pattern_article_attr%3Astriped%3A%3AShoe_Type_article_attr%3Aballerina%2520%252F%2520flat%2520shoes&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
 							</ImageChild>
 							<ImageChild
 								image="http://assets.myntassets.com/v1463654929/radium/SIS/footwear-guide/Strappy.jpg"
 								width="33.33%"
-								title="strappy flats"
+								title="t-straps flats"
 							>
 								<div>
 									<div style={showMoreTitle}>Girl-next-door</div>
-									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
-									<a href="http://www.myntra.com/women-flats?f=Occasion_article_attr%3Acomfortline%2Cdaily%2520%252F%2520casual%3A%3AShoe_Type_article_attr%3At-strap%2520%252F%2520thong%2520sandals&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+									<div style={showMoreText}>{showMoreTextObj.girlNextDoor}</div>
+									<a href="http://www.myntra.com/women-flats?f=Shoe_Type_article_attr%3At-strap%2520%252F%2520thong%2520sandals&sort=popularity&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
 							</ImageChild>
@@ -215,7 +215,7 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Elegant</div>
-									<div style={showMoreText}>{showMoreTextObj.contemporary}</div>
+									<div style={showMoreText}>{showMoreTextObj.elegant}</div>
 									<a href="http://www.myntra.com/women-Juttis?f=Occasion_article_attr%3Aethnic%2520-%2520festive&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 
@@ -227,8 +227,8 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Girl-next-door</div>
-									<div style={showMoreText}>{showMoreTextObj.artsy}</div>
-									<a href="http://www.myntra.com/women-flats?f=Occasion_article_attr%3Aethnic%2520-%2520festive%3A%3AShoe_Type_article_attr%3At-strap%2520%252F%2520thong%2520sandals&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+									<div style={showMoreText}>{showMoreTextObj.girlNextDoor}</div>
+									<a href="http://www.myntra.com/women-flats?f=Toe_Shape_article_attr%3Aopen%2520toe&sort=popularity&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
 							</ImageChild>
@@ -239,8 +239,8 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Artsy</div>
-									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
-									<a href="http://www.myntra.com/women-flats?f=Toe_Shape_article_attr%3Aopen%2520toe&sort=popularity&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+									<div style={showMoreText}>{showMoreTextObj.artsy}</div>
+									<a href="http://www.myntra.com/women-flats?f=Shoe_Type_article_attr%3At-strap%2520%252F%2520thong%2520sandals%3A%3ASurface_Ornamentation_article_attr%3Aethnic%2520-%2520embellished&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
 							</ImageChild>
@@ -264,7 +264,7 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Trendsetter</div>
-									<div style={showMoreText}>{showMoreTextObj.contemporary}</div>
+									<div style={showMoreText}>{showMoreTextObj.trendsetter}</div>
 									<a href="http://www.myntra.com/women-flats?f=Shoe_Type_article_attr%3Agladiators&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 
@@ -276,7 +276,7 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Relaxed</div>
-									<div style={showMoreText}>{showMoreTextObj.artsy}</div>
+									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
 									<a href="http://www.myntra.com/flip-flops?f=Pattern_article_attr%3Acolour%2520block%2Cprinted%2Csolid%2Cstriped%3A%3Agender%3Amen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cwomen&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
@@ -288,7 +288,7 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Tomboy</div>
-									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
+									<div style={showMoreText}>{showMoreTextObj.tomboy}</div>
 									<a href="http://www.myntra.com/women-casual-shoes?f=Shoe_Type_article_attr%3Asneakers&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
@@ -325,7 +325,7 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Relaxed</div>
-									<div style={showMoreText}>{showMoreTextObj.artsy}</div>
+									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
 									<a href="http://www.myntra.com/women-casual-shoes?f=Pattern_article_attr%3Aprinted%3A%3AUpper_Material_article_attr%3Acanvas%2520%252F%2520fabric&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
@@ -337,7 +337,7 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Tomboy</div>
-									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
+									<div style={showMoreText}>{showMoreTextObj.tomboy}</div>
 									<a href="http://www.myntra.com/women-casual-shoes?f=Pattern_article_attr%3Asolid%3A%3AShoe_Type_article_attr%3Asneakers%3A%3Acolour%3Awhite&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
