@@ -171,7 +171,7 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Tomboy</div>
-									<div style={showMoreText}>{showMoreTextObj.contemporary}</div>
+									<div style={showMoreText}>{showMoreTextObj.tomboy}</div>
 									<a href="http://www.myntra.com/women-casual-shoes?f=Ankle_Height_article_attr%3Ahigh%2520tops&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 
@@ -183,7 +183,7 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Relaxed</div>
-									<div style={showMoreText}>{showMoreTextObj.artsy}</div>
+									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
 									<a href="http://www.myntra.com/women-flats?f=Pattern_article_attr%3Astriped%3A%3AShoe_Type_article_attr%3Aballerina%2520%252F%2520flat%2520shoes&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
@@ -195,7 +195,7 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Girl-next-door</div>
-									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
+									<div style={showMoreText}>{showMoreTextObj.girlNextDoor}</div>
 									<a href="http://www.myntra.com/women-flats?f=Shoe_Type_article_attr%3At-strap%2520%252F%2520thong%2520sandals&sort=popularity&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
@@ -264,7 +264,7 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Trendsetter</div>
-									<div style={showMoreText}>{showMoreTextObj.contemporary}</div>
+									<div style={showMoreText}>{showMoreTextObj.trendsetter}</div>
 									<a href="http://www.myntra.com/women-flats?f=Shoe_Type_article_attr%3Agladiators&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 
@@ -276,7 +276,7 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Relaxed</div>
-									<div style={showMoreText}>{showMoreTextObj.artsy}</div>
+									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
 									<a href="http://www.myntra.com/flip-flops?f=Pattern_article_attr%3Acolour%2520block%2Cprinted%2Csolid%2Cstriped%3A%3Agender%3Amen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cmen%2520women%2Cwomen&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
@@ -288,7 +288,7 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Tomboy</div>
-									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
+									<div style={showMoreText}>{showMoreTextObj.tomboy}</div>
 									<a href="http://www.myntra.com/women-casual-shoes?f=Shoe_Type_article_attr%3Asneakers&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
@@ -325,7 +325,7 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Relaxed</div>
-									<div style={showMoreText}>{showMoreTextObj.artsy}</div>
+									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
 									<a href="http://www.myntra.com/women-casual-shoes?f=Pattern_article_attr%3Aprinted%3A%3AUpper_Material_article_attr%3Acanvas%2520%252F%2520fabric&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
@@ -337,7 +337,7 @@ export default class Archive extends React.Component {
 							>
 								<div>
 									<div style={showMoreTitle}>Tomboy</div>
-									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
+									<div style={showMoreText}>{showMoreTextObj.tomboy}</div>
 									<a href="http://www.myntra.com/women-casual-shoes?f=Pattern_article_attr%3Asolid%3A%3AShoe_Type_article_attr%3Asneakers%3A%3Acolour%3Awhite&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
