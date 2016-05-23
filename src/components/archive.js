@@ -145,7 +145,7 @@ export default class Archive extends React.Component {
 								
 							</ImageChild>
 							<ImageChild
-								image="http://assets.myntassets.com/v1463655235/SIS/footwear-dictionary/Heels/Jeans/Slingback.jpg"
+								image="http://assets.myntassets.com/v1463996487/SIS/footwear-dictionary/Heels/Jeans/Slingback.jpg"
 								width="33.33%"
 								title="slingback platforms"
 							>
