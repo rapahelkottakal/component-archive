@@ -11,7 +11,7 @@ export default class Archive extends React.Component {
 	getContainerStyles() {
 		return {
 			minHeight: window.innerHeight,
-			backgroundImage: 'url(http://assets.myntassets.com/v1463734373/radium/Lookbook/ethnic-look-book-printed-background.jpg)',
+			// backgroundImage: 'url(http://assets.myntassets.com/v1463734373/radium/Lookbook/ethnic-look-book-printed-background.jpg)',
 			backgroundColor: 'black',
 			position: 'absolute',
 			top: 0,
