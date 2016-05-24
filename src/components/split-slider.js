@@ -7,16 +7,9 @@ export default class SplitSlider extends React.Component {
 		super();
 		this.state = {
 			position: 50,
+			onfirsttap:true,
 			touche0x: null,
-			touche0y: null,
-			touche1x: null,
-			touche1y: null,
-			touche2x: null,
-			touche2y: null,
-			touche3x: null,
-			touche3y: null,
-			touche4x: null,
-			touche4y: null,
+			touche0y: null
 
 		}
 	}
@@ -29,7 +22,8 @@ export default class SplitSlider extends React.Component {
 
 		let width = e.target.parentElement.offsetWidth,
 			x = e.touches[0].clientX,
-			spliterWidth = Math.round(x / width * 100);
+			spliterWidth = Math.round(x / width * 100),
+			textToslide = 'slide';
 
 		// console.log(e.touches);
 
@@ -40,33 +34,17 @@ export default class SplitSlider extends React.Component {
 
 		}
 
-		if (e.touches[1]) {
-			_.assignIn(setObject, {
-				touche1x: e.touches[1].clientX,
-				touche1y: e.touches[1].clientY
+		if (e.onfirsttap == 'true') {
+			_.assignIn(setObject, {		
+				onfirsttap: 'slide'
+			});
+		}else{
+			_.assignIn(setObject, {			
+				onfirsttap: "slide"
 			});
 		}
 
-		if (e.touches[2]) {
-			_.assignIn(setObject, {
-				touche2x: e.touches[2].clientX,
-				touche2y: e.touches[2].clientY
-			});
-		}
-
-		if (e.touches[3]) {
-			_.assignIn(setObject, {
-				touche3x: e.touches[3].clientX,
-				touche3y: e.touches[3].clientY
-			});
-		}
-
-		if (e.touches[4]) {
-			_.assignIn(setObject, {
-				touche4x: e.touches[4].clientX,
-				touche4y: e.touches[4].clientY
-			});
-		}
+		
 
 		this.setState(setObject);
 	}
@@ -89,11 +67,30 @@ export default class SplitSlider extends React.Component {
 			display: 'block'
 		}
 
+		let sliderText = {
+			position: 'absolute',
+		    top: '40%',
+		    left: '50%',
+		    zIndex: 9999,
+		    backgroundColor: '#FD60E1',
+		    color: '#fff',
+		    fontSize: '16px',
+		    display: 'block',
+		    width: '56px',
+		    height: '30px',
+		    textAlign: 'center',
+		    verticalAlign: 'middle',
+		    paddingTop: '5px',
+		    marginLeft: '-28px',
+		    marginTop: '-15px',
+		}
+
 		let afterImage = {
 			position: 'absolute',
 			top: 0,
 			left: 0,
 			width: this.state.position + '%',
+			maxWidth: '100%',
 			height: '100%',
 			backgroundImage: 'url('+ this.props.after +')',
 			backgroundSize: 'cover',
@@ -105,17 +102,8 @@ export default class SplitSlider extends React.Component {
 					<div style={outsideWrapper} onTouchStart={this.handleClick.bind(this)} onTouchMove={this.handleClick.bind(this)}  >
 						<img style={imageStyle} src={this.props.before} />
 						<div style={afterImage}></div>
+						<div style={sliderText}>{this.state.onfirsttap}</div>
 					</div>
-					<div>T0 X - {this.state.touche0x}</div>
-					<div>T0 Y - {this.state.touche0y}</div>
-					<div>T1 X - {this.state.touche1x}</div>
-					<div>T1 Y - {this.state.touche1y}</div>
-					<div>T2 X - {this.state.touche2x}</div>
-					<div>T2 Y - {this.state.touche2y}</div>
-					<div>T3 X - {this.state.touche3x}</div>
-					<div>T3 Y - {this.state.touche3y}</div>
-					<div>T4 X - {this.state.touche4x}</div>
-					<div>T4 Y - {this.state.touche4y}</div>
 
 				</div>
 
