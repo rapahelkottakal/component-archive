@@ -67,7 +67,7 @@ export default class Archive extends React.Component {
 
 					<SliderGroup data={sliderGroupData}></SliderGroup>
 
-					<a style={goLink} href="http://www.myntra.com/radium/SIS/footwear-heels/">Go to heels store</a>
+					<a style={goLink} href="http://www.myntra.com/radium/SIS/footwear-heels/">Go to heels dictionary</a>
 
 
 				</div>
