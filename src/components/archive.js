@@ -84,8 +84,8 @@ export default class Archive extends React.Component {
 			<div style={this.getContainerStyles()}>
 
 				<SplitSlider
-					before="http://assets.myntassets.com/v1464093176/Lookgood/Feed/makeover/may/mo-ritwik2.jpg" 
-					after="http://assets.myntassets.com/v1464093176/Lookgood/Feed/makeover/may/mo-ritwik.jpg" />
+					before="http://assets.myntassets.com/v1464171977/Lookgood/Feed/makeover/may/mo-ritwik-before.jpg" 
+					after="http://assets.myntassets.com/v1464171977/Lookgood/Feed/makeover/may/mo-ritwik-after.jpg" />
 			</div>
 		);
 	}

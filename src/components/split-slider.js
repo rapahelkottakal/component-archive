@@ -7,9 +7,9 @@ export default class SplitSlider extends React.Component {
 		super();
 		this.state = {
 			position: 50,
-			onfirsttap:true,
-			touche0x: null,
-			touche0y: null
+			onfirsttap: false,
+			// touche0x: null,
+			// touche0y: null
 
 		}
 	}
@@ -29,21 +29,25 @@ export default class SplitSlider extends React.Component {
 
 		let setObject = {
 			position: spliterWidth,
-			touche0x: e.touches[0].clientX,
-			touche0y: e.touches[0].clientY,
+			// touche0x: e.touches[0].clientX,
+			// touche0y: e.touches[0].clientY
 
 		}
+		// console.log(this.state.onfirsttap)
 
-		if (e.onfirsttap == 'true') {
-			_.assignIn(setObject, {		
-				onfirsttap: 'slide'
-			});
-		}else{
-			_.assignIn(setObject, {			
-				onfirsttap: "slide"
-			});
-		}
+		// if (this.state.onfirsttap) {
+		// 	_.assignIn(setObject, {		
+		// 		onfirsttap: 'slide'
+		// 	});
+		// }else{
+		// 	_.assignIn(setObject, {			
+		// 		onfirsttap: null
+		// 	});
+		// }
 
+		_.assignIn(setObject, {		
+			onfirsttap: true
+		});
 		
 
 		this.setState(setObject);
@@ -74,7 +78,7 @@ export default class SplitSlider extends React.Component {
 		    zIndex: 9999,
 		    backgroundColor: '#FD60E1',
 		    color: '#fff',
-		    fontSize: '16px',
+		    fontSize: '15px',
 		    display: 'block',
 		    width: '56px',
 		    height: '30px',
@@ -83,6 +87,15 @@ export default class SplitSlider extends React.Component {
 		    paddingTop: '5px',
 		    marginLeft: '-28px',
 		    marginTop: '-15px',
+			borderRadius: '4px',
+			fontWeight: 'bold',
+			textTransform: 'uppercase'
+		}
+
+		if (this.state.onfirsttap) {
+			_.assignIn(sliderText, {
+				display: 'none'
+			})
 		}
 
 		let afterImage = {
@@ -102,7 +115,7 @@ export default class SplitSlider extends React.Component {
 					<div style={outsideWrapper} onTouchStart={this.handleClick.bind(this)} onTouchMove={this.handleClick.bind(this)}  >
 						<img style={imageStyle} src={this.props.before} />
 						<div style={afterImage}></div>
-						<div style={sliderText}>{this.state.onfirsttap}</div>
+						<div style={sliderText}>slide</div>
 					</div>
 
 				</div>
