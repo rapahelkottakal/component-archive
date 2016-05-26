@@ -101,7 +101,7 @@ export default class Archive extends React.Component {
 								
 							</ImageChild>
 							<ImageChild
-								image="http://assets.myntassets.com/v1463653686/SIS/footwear-dictionary/Heels/shirt/Flatforms.jpg"
+								image="http://assets.myntassets.com/v1464243411/SIS/footwear-dictionary/Heels/shirt/flatforms-for-shirt-dress.jpg"
 								width="33.33%"
 								title="Flatforms"
 							>
