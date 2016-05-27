@@ -26,3 +26,18 @@ html {
 .active {
 	opacity: 1
 }
+
+iframe .ytp-large-play-button.ytp-touch-device .ytp-icon-large-play-button, .ytp-cued-thumbnail-overlay:hover .ytp-icon-large-play-button {
+    background: no-repeat url(http://assets.myntassets.com/v1464329854/SIS/quiz-post/QUIZ-clothing.jpg) 0 -2113px !important;
+    background-size: 147px 2587px;
+    width: 360px;
+    height: 448px;
+    padding: '5%';
+}
+
+iframe .ytp-icon-large-play-button {
+    background: no-repeat url(http://assets.myntassets.com/v1464329854/SIS/quiz-post/QUIZ-clothing.jpg) -38px -1501px !important;
+    background-size: 147px 2587px;
+    width: 360px;
+    height: 448px;
+}
