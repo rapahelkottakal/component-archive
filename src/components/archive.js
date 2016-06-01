@@ -22,7 +22,7 @@ export default class Archive extends React.Component {
 		console.log(this.state.value1);
 		console.log(this.state.value2);
 		if (this.state.value1 == 30 && this.state.value2 == 24) {
-			this.result = '30B';
+			this.setState = '30B';
 		}else if(this.state.value1 == 32 && this.state.value2 == 25){
 			this.result = '32B';
 		}else if(this.state.value1 == 34 && this.state.value2 == 27){
@@ -47,7 +47,7 @@ export default class Archive extends React.Component {
 
 				<button type="submit" onClick={this.onClick.bind(this)}>Show the size</button>
 
-				<p>Result:</p> <p class="result">{this.result}</p>
+				<p>Result: {this.state.result}</p>
 
 			</div>	
 		);
