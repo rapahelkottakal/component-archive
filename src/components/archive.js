@@ -49,6 +49,8 @@ export default class Archive extends React.Component {
 			<div style={this.getContainerStyles()}>
 
 				<div>
+					<p>This page contains three looks. Tap the articles on the right to reveal the layered looks.</p>
+					<p><strong>Note:</strong> This is a test page.</p>
 					<Layering imgData={layeringData.anarkali} />
 					<Layering imgData={layeringData.ethnicSkirt} />
 					<Layering imgData={layeringData.longKurtas} />
