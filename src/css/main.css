@@ -18,3 +18,9 @@ html {
   display: table;
   clear: both;
 }
+input{
+	width: 100px;
+	background-color: #F1EBEB;
+	padding: 2%;
+	margin: 9%;
+}
