@@ -25,8 +25,8 @@ export default class ShowMore extends React.Component {
 		super(props);
 
 		this.state = {
-			currentChild: -1,
-			open: false
+			currentChild: 0,
+			open: true
 		}
 	}
 
@@ -110,10 +110,10 @@ export default class ShowMore extends React.Component {
 
 			if (this.state.currentChild != key && this.state.open) {
 
-				imageRow.push(<img src={value.props.image} style={{ width: value.props.width, height: 'auto', opacity: 0.5 }} key={key} onClick={this.changeCurrentChild.bind(this,key)} />);
+				imageRow.push(<img src={value.props.image} style={{ width: value.props.width, height: 'auto', padding: 10 }} key={key} onClick={this.changeCurrentChild.bind(this,key)} />);
 			} else {
 
-				imageRow.push(<img src={value.props.image} style={{ width: value.props.width, height: 'auto', opacity: 1 }} key={key} onClick={this.changeCurrentChild.bind(this,key)} />);
+				imageRow.push(<img src={value.props.image} style={{ width: value.props.width, height: 'auto', padding: 0 }} key={key} onClick={this.changeCurrentChild.bind(this,key)} />);
 			}
 
 		});
