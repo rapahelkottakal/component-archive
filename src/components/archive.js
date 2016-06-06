@@ -49,6 +49,7 @@ export default class Archive extends React.Component {
 				// filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#3fd1ff', endColorstr='#0081aa',GradientType=1 )"
 			},
 			title: {
+				marginTop: 8,
 				fontSize: 20,
 				fontFamily: 'Lora, serif'
 			},
@@ -109,7 +110,7 @@ export default class Archive extends React.Component {
 						textDecoration: 'underline',
 						textTransform:'uppercase',
 						padding: '16px 0'
-					}}><strong>Choose a colour</strong></div>
+					}}><strong>Pick your wall colour</strong></div>
 
 					<ShowMore>
 						<ImageChild
