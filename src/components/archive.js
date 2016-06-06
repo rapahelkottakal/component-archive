@@ -84,6 +84,11 @@ export default class Archive extends React.Component {
 			color:'#485160',
 
 		}
+		let textoption1 ={
+
+			fontSize:'14px',
+			padding:'0px 5px',
+		}
 
 		let imgStyle = {
 			width: '100%',
@@ -95,371 +100,82 @@ export default class Archive extends React.Component {
 			linkStyel = {
 			display: 'inline-block',
 			width: '33.33%'
-		},
-			linkStyels = {
-			display: 'inline-block',
-			width: '25%'
 		};
+
 
 		return(
 			<div style={this.getContainerStyles()}>
 
+			<div className='textoption1'>Did you know that 80% of women wear the wrong size bra? Straps riding up the back, cups being a size too small or shoulder straps digging into the skin — these are all problems caused by not wearing the right size. Here’s how to find the right one. </div>
 
-			<Expander image="http://assets.myntassets.com/v1462359560/radium/SIS/fragrance/Beauty-store-fragrance.jpg">
+			<div style={{padding:'5px', fontSize:'18px', fontWeight:800, textAlign: 'center', marginBottom: '2%' }}> TAP TO KNOW MORE</div>
+
+			<Expander image="http://assets.myntassets.com/v1465211219/reactive/bra-guide/measure-yourself.jpg">
 				<div>
-					<div>
-						<a style={linkStyel}>
-							<img src="http://assets.myntassets.com/v1462360006/radium/SIS/fragrance/boss-brnad-logo.jpg" style={imgStyle} />
-						</a>
-						<a style={linkStyel}>
-							<img src="http://assets.myntassets.com/v1462360007/radium/SIS/fragrance/versace-brnad-logo.jpg" style={imgStyle} />
-						</a>
-						<a style={linkStyel}>
-							<img src="http://assets.myntassets.com/v1462360009/radium/SIS/fragrance/dior-brnad-logo.jpg" style={imgStyle} />
-						</a>
-					</div>
-					<div>
-						<a style={linkStyel}>
-							<img src="http://assets.myntassets.com/v1462360011/radium/SIS/fragrance/dg-brnad-logo.jpg" style={imgStyle} />
-						</a>
-						<a style={linkStyel}>
-							<img src="http://assets.myntassets.com/v1462360013/radium/SIS/fragrance/ch-brnad-logo.jpg" style={imgStyle} />
-						</a>
-						<a style={linkStyel}>
-							<img src="http://assets.myntassets.com/v1462360033/radium/SIS/fragrance/hermes-brnad-logo.jpg" style={imgStyle} />
-						</a>
+					<div style={{fontWeight:800, fontSize:'18px', padding: '5%'}}>BAND SIZE</div>
+						<a>
+								<img style={{width:'100%'}} src="http://assets.myntassets.com/v1465218039/reactive/bra-guide/bra-guide-band-size.jpg" />
+						</a>				
+					<div className='textoption1'> The best way is to measure your band size first, just under your breasts and around your chest with a soft tape measure.</div>
+					
+					<div className='textoption1' style={{backgroundColor:'#e6e6e6', marginBottom:'5px'}}>
+						<div style={{marginBottom:'10px'}}>If you get an even number— add 4 inches to find your band size.</div>
+						<div>If you get an odd number— add 5 inches to find your band size.</div>
 					</div>
 
-					<div style={{padding: 10, color: '#728968', fontWeight: 600}}>SHOP BY TYPE</div>
-					<hr width="10" align="left" style={{ maxWidth: 10, margin: 0, marginLeft: 10, borderTopColor: 'lightgray' }} />
+					<div style={{color:'#fff', backgroundColor:'#00a99d', padding:'5px', fontSize:'12px', marginBottom:'5px', padding: '2% 10%'}}>
+						For example- If you get 31 inches 31+5= 36 inches 
+					</div>
 
-					<Slider {...settings}>
-						<a href="http://www.myntra.com/women-deos-perfumes" target="_blank">
-							<img src="http://assets.myntassets.com/v1462360756/radium/SIS/fragrance/perfume-menu.jpg" style={{ width: '100%', height: 'auto' }} />
-						</a>
-						<a href="http://www.myntra.com/women-deos-perfumes" target="_blank">
-							<img src="http://assets.myntassets.com/v1462360758/radium/SIS/fragrance/deo-menu.jpg" style={{ width: '100%', height: 'auto' }} />
-						</a>
-						<a href="http://www.myntra.com/women-deos-perfumes" target="_blank">
-							<img src="http://assets.myntassets.com/v1462360756/radium/SIS/fragrance/body-mist-menu.jpg" style={{ width: '100%', height: 'auto' }} />
-						</a>
-						<a href="http://www.myntra.com/women-deos-perfumes" target="_blank">
-							<img src="http://assets.myntassets.com/v1462361594/radium/SIS/fragrance/aromatherapy-mist-menu.jpg" style={{ width: '100%', height: 'auto' }} />
-						</a>
-
-					</Slider>
-
-					<img
-						src="http://assets.myntassets.com/v1462361029/radium/SIS/fragrance/brand-card-fragrance.jpg"
-						style={{ width: '100%', height: 'auto', paddingTop: 10 }}
-					/>
-					<img
-						src="http://assets.myntassets.com/v1462361443/radium/SIS/fragrance/guide-to-fragrances.jpg"
-						style={{ width: '100%', height: 'auto' }}
-					/>
-					<ShowMore>
-						<ImageChild
-							image="http://assets.myntassets.com/v1462352818/radium/SIS/fragrance/fruity-menu.jpg"
-							width="33.33%"
-						>
-							<div style={{marginBottom: 10}}>These perfumes have a fresh aroma with distinct hints of fruity scents. They are not too overpowering making them perfect for occasions like date night. Ideal for summer.</div>
-							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
-								<img src="http://assets.myntassets.com/v1462361670/radium/SIS/fragrance/davidoff-1.jpg" style={imgStyle} />
-							</a>
-							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
-								<img src="http://assets.myntassets.com/v1462361671/radium/SIS/fragrance/calvin-klein-2.jpg" style={imgStyle} />
-							</a>
-							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
-								<img src="http://assets.myntassets.com/v1462361673/radium/SIS/fragrance/polic-3.jpg" style={imgStyle} />
-							</a>
-
-						</ImageChild>
-						<ImageChild
-							image="http://assets.myntassets.com/v1462352816/radium/SIS/fragrance/floral-menu.jpg"
-							width="33.33%"
-						>
-							<div style={{marginBottom: 10}}>These perfumes give off a lively and energetic vibe. They can be quite strong and are perfect for outdoor daytime activities like a sunday brunch with friends. Ideal for summer.</div>
-							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
-								<img src="http://assets.myntassets.com/v1462361670/radium/SIS/fragrance/davidoff-1.jpg" style={imgStyle} />
-							</a>
-							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
-								<img src="http://assets.myntassets.com/v1462361671/radium/SIS/fragrance/calvin-klein-2.jpg" style={imgStyle} />
-							</a>
-							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
-								<img src="http://assets.myntassets.com/v1462361673/radium/SIS/fragrance/polic-3.jpg" style={imgStyle} />
-							</a>
-							
-						</ImageChild>
-						<ImageChild
-							image="http://assets.myntassets.com/v1462354162/radium/SIS/fragrance/oceanic-menu.jpg"
-							width="33.33%"
-						>
-							<div style={{marginBottom: 10}}>Considered to be the most feminine scents of the lot, these sweet-smelling perfumes are quite timeless. Perfect for special occasions like a wedding or family dinner. Ideal for winter.</div>
-							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
-								<img src="http://assets.myntassets.com/v1462361670/radium/SIS/fragrance/davidoff-1.jpg" style={imgStyle} />
-							</a>
-							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
-								<img src="http://assets.myntassets.com/v1462361671/radium/SIS/fragrance/calvin-klein-2.jpg" style={imgStyle} />
-							</a>
-							<a href="http://www.myntra.com/women-deos-perfumes" style={linkStyel} target="_blank">
-								<img src="http://assets.myntassets.com/v1462361673/radium/SIS/fragrance/polic-3.jpg" style={imgStyle} />
-							</a>
-							
-						</ImageChild>
-					</ShowMore>
-
-
-
-					<img
-						src="http://assets.myntassets.com/v1462361827/radium/SIS/fragrance/ORIENTAL.jpg"
-						width="33.33%"
-					/>
-					<img
-						src="http://assets.myntassets.com/v1462361828/radium/SIS/fragrance/MUSKY.jpg"
-						width="33.33%"
-					/>
-					<img
-						src="http://assets.myntassets.com/v1462361828/radium/SIS/fragrance/WOODY.jpg"
-						width="33.33%"
-					/>
 				</div>
 
+				<div>
+					<div style={{fontWeight:800, fontSize:'18px', padding: '5%', marginBottom:'5px'}}>CUP SIZE</div>
+						<a>
+								<img style={{width:'100%'}} src="http://assets.myntassets.com/v1465218039/reactive/bra-guide/bra-guide-cup-size.jpg" />
+						</a>				
+					<div className='textoption1'> For the cup size, you’d have to wrap the measuring tape around the fullest part of your breast, pulling it firmly, but not too tight or loose. Now subtract this measurement from your band size to get your perfect cup size.</div>
+					
+					<div className='textoption1' style={{backgroundColor:'#e6e6e6', marginBottom:'5px'}}>
+						<div style={{marginBottom:'10px'}}>Use the following chart to pick the right cup size:  </div>
+						<div>AA= Less than 1″, A=1″, B=2″, C=3′, D=4″, DD=5″..</div>
+					</div>
+
+					<div style={{color:'#fff', backgroundColor:'#00a99d', padding:'5px', fontSize:'12px', marginBottom:'5px', padding: '2% 10%' }}>
+						For example- If your cup size is 36 inches and band size is 34 inches- you will be a B cup with a size of 34B.
+					</div>
+
+				</div>
 			</Expander>
 
+			<Expander image="http://assets.myntassets.com/v1465211219/reactive/bra-guide/useful-hacks.jpg">
+				<div>
+					<div className='textoption1'>1. A well-fitted bra will be tight enough to let you slide two fingers comfortably under the band.</div>
+					<div className='textoption1'>2. Always try on a bra under a fitted white tee. If it looks fine then, it will look fine with almost anything else. </div>
+					<div className='textoption1'>3. When wearing a new bra, be sure to start with the furthest and loosest hook as the bra will loosen up and stretch over time. </div>
+					<div className='textoption1'>4. Your nipple point should be halfway between your shoulder and your elbow when looking at yourself in a mirror, from the side view. If it is lower, it means you’re not wearing the right size.</div>
+					<div className='textoption1'>5. Your bra’s underwire must sit flat and not dig into your skin in any way. The centre point of your bra must lay flush against your chest, without gaping.</div>
+					<div className='textoption1'>6. We recommend you buy a bra with wider straps if you have a large breast size as they offer both comfort and extra support. </div>
+					<div className='textoption1'>7. See if the fit is right by pulling your elbows back to ensure there is no spillage over the cups.</div>
 
+				</div>
+			</Expander>
 
-			<Expander image="http://assets.myntassets.com/v1462425782/radium/SIS/eyes/eyes-header.jpg">
+			<Expander image="http://assets.myntassets.com/v1465211218/reactive/bra-guide/caring-for-your-bras.jpg">
+				<div>
+					<div>
+						<a>
+							<img style={{width:'100%'}} src="http://assets.myntassets.com/v1465218039/reactive/bra-guide/bra-guide-hand-wash.jpg" />
+						</a>
+					</div>
+					<div className='textoption1'>Always make sure to hand wash your bras as this will ensure they will last longer. If washing them in a machine, use the gentle cycle and wash them inside a garment bag. Air-dry your bras as excess heat will cause the fabric to stretch out and even tear, over a period of time.</div>
+					
+				</div>
+			</Expander>		
+
 			
-				<div>
-
-					<Slider {...settings}>
-						<a href="http://www.myntra.com" target="_blank">
-							<img src="http://assets.myntassets.com/v1462425884/radium/SIS/eyes/eyeshadow-menu.jpg" style={{ width: '100%', height: 'auto' }} />
-						</a>
-						<a href="http://www.myntra.com" target="_blank">
-							<img src="http://assets.myntassets.com/v1462425883/radium/SIS/eyes/mascara-menu.jpg" style={{ width: '100%', height: 'auto' }} />
-						</a>
-						<a href="http://www.myntra.com" target="_blank">
-							<img src="http://assets.myntassets.com/v1462425882/radium/SIS/eyes/eyeliner-menu.jpg" style={{ width: '100%', height: 'auto' }} />
-						</a>
-						<a href="http://www.myntra.com" target="_blank">
-							<img src="http://assets.myntassets.com/v1462426869/radium/SIS/eyes/cleanser-menu.jpg" style={{ width: '100%', height: 'auto' }} />
-						</a>
-					</Slider>
-
-					<div style={{padding: 10, color: '#728968', fontWeight: 600}}>SHOP BY COLLECTION</div>
-					<hr width="10" align="left" style={{ maxWidth: 10, margin: 0, marginLeft: 10, borderTopColor: 'lightgray' }} />
-
-
-					<img
-						src="http://assets.myntassets.com/v1462428495/radium/SIS/eyes/day-collection.jpg"
-						style={{ width: '50%', height: 'auto', paddingTop: 10 }}
-					/>
-					<img
-						src="http://assets.myntassets.com/v1462428495/radium/SIS/eyes/night-collection-.jpg"
-						style={{ width: '50%', height: 'auto' }}
-					/>
-
-
-					<div style={{padding: 10, color: '#728968', fontWeight: 600}}>STEPS TO GET SMOKEY EYES</div>
-					<hr width="10" align="left" style={{ maxWidth: 10, margin: 0, marginLeft: 10, borderTopColor: 'lightgray' }} />
-
-					<Slideimage
-					beforeImage="http://assets.myntassets.com/v1462429004/radium/SIS/eyes/smokey-eye-before.jpg"
-					afterImage="http://assets.myntassets.com/v1462429004/radium/SIS/eyes/smokey-eye-after.jpg"
-					/>
-
-					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>01</div>
-					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>Prep your eyes by applying moisturiser</p>
-					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
-
-					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
-					02</div>
-					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
-					Apply primer or foundation</p>
-					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
-
-					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
-					03</div>
-					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
-					Use a medium-sized brush to apply a light blue shade all over the lid</p>
-					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
-
-					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
-					04</div>
-					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
-					Use a darker shade of blue on the crease and blend well</p>
-					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
-
-					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
-					05</div>
-					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
-					Trace your lash line with a navy blue or indigo eyeliner</p>
-					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
-
-					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
-					06</div>
-					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
-					Apply mascara for a dramatic effect</p>
-					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
-
-
-					<div style={{padding: 10, color: '#728968', fontWeight: 600}}>STEPS TO GET ELECTRIC BLUE EYES</div>
-					<hr width="10" align="left" style={{ maxWidth: 10, margin: 0, marginLeft: 10, borderTopColor: 'lightgray' }} />
-					
-					<Slideimage
-					beforeImage="http://assets.myntassets.com/v1462429147/radium/SIS/eyes/blue-eye-before.jpg"
-					afterImage="http://assets.myntassets.com/v1462429147/radium/SIS/eyes/blue-eye-after.jpg"
-					/>
-
-					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
-					01</div>
-					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
-					Moisturise your eyelids</p>
-					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
-
-					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
-					02</div>
-					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
-					Apply primer or foundation</p>
-					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
-
-					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
-					03</div>
-					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
-					Apply charcoal gray powder just above the crease of the lid</p>
-					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
-
-					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
-					04</div>
-					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
-					Trace your upper lash line with a black pencil</p>
-					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
-
-					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
-					05</div>
-					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
-					Gently smudge using your fingertip</p>
-					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
-
-					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
-					06</div>
-					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
-					Sweep gunmetal shade on your lower lash line</p>
-					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
-					
-					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
-					07</div>
-					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
-					Apply silver powder on the to the inner corner of the eyes</p>
-					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
-					
-					<div style={{padding: '13px 10px 10px 26px', color: 'rgb(222, 190, 223)', fontWeight: 600, fontSize: '23px', width: '17%', float: 'left', fontFamily: 'Open Sans'}}>
-					08</div>
-					<p style={{fontSize: '14px', width: '83%', padding: '3px 0 0', fontStyle: 'italic', fontWeight: 'bold' , color: '#A3A3A3'}}>
-					Apply mascara</p>
-					<hr width="100" align="left" style={{ margin: 0, marginLeft: 10, borderTopColor: 'lightgray', width: '92%' , borderTop: '1px dashed #efe4ea' }} />
-					
-				</div>
-
-			</Expander>
-
-
-			<Expander image="http://assets.myntassets.com/v1462430974/radium/SIS/face/Beauty-store-face.jpg">
-
-				<div>
-
-				<Slider {...settings}>
-						<a href="http://www.myntra.com/" target="_blank">
-							<img src="http://assets.myntassets.com/v1462426190/radium/SIS/face/foundation-menu.jpg" style={{ width: '100%', height: 'auto' }} />
-						</a>
-						<a href="http://www.myntra.com/" target="_blank">
-							<img src="http://assets.myntassets.com/v1462426197/radium/SIS/face/bb-cream-menu.jpg" style={{ width: '100%', height: 'auto' }} />
-						</a>
-						<a href="http://www.myntra.com/" target="_blank">
-							<img src="http://assets.myntassets.com/v1462426201/radium/SIS/face/face-primer-menu.jpg" style={{ width: '100%', height: 'auto' }} />
-						</a>
-						<a href="http://www.myntra.com/" target="_blank">
-							<img src="http://assets.myntassets.com/v1462426204/radium/SIS/face/blush-menu.jpg" style={{ width: '100%', height: 'auto' }} />
-						</a>
-
-					</Slider>
-
-					<div style={{padding: 10, color: '#728968', fontWeight: 600}}>SHOP BY SKIN TONE</div>
-					<hr width="10" align="left" style={{ maxWidth: 10, margin: 0, marginLeft: 10, borderTopColor: 'lightgray' }} />
-
-					<div>
-						<a style={linkStyel}>
-							<img src="http://assets.myntassets.com/v1462427337/radium/SIS/face/fair-menu.jpg" style={imgStyle} />
-						</a>
-						<a style={linkStyel}>
-							<img src="http://assets.myntassets.com/v1462427340/radium/SIS/face/wheatish-menu.jpg" style={imgStyle} />
-						</a>
-						<a style={linkStyel}>
-							<img src="http://assets.myntassets.com/v1462427343/radium/SIS/face/dark-menu.jpg" style={imgStyle} />
-						</a>
-					</div>
-
-					<div style={{padding: 10, color: '#728968', fontWeight: 600}}>SHOP BY SKIN TYPE</div>
-					<hr width="10" align="left" style={{ maxWidth: 10, margin: 0, marginLeft: 10, borderTopColor: 'lightgray' }} />
-
-
-					<div>
-						<a style={linkStyels}>
-							<img src="http://assets.myntassets.com/v1462427593/radium/SIS/face/normal-skin-menu.jpg" style={imgStyle} />
-						</a>
-						<a style={linkStyels}>
-							<img src="http://assets.myntassets.com/v1462427596/radium/SIS/face/oily-skin-menu.jpg" style={imgStyle} />
-						</a>
-						<a style={linkStyels}>
-							<img src="http://assets.myntassets.com/v1462427602/radium/SIS/face/dry-skin-menu.jpg" style={imgStyle} />
-						</a>
-						<a style={linkStyels}>
-							<img src="http://assets.myntassets.com/v1462427608/radium/SIS/face/sensitive-ski-menu.jpg" style={imgStyle} />
-						</a>
-					</div>
-
-					<img
-						src="http://assets.myntassets.com/v1462429095/radium/SIS/face/foundation-gif.gif"
-						style={{ width: '100%', height: 'auto' }}
-					/>
-					<img
-						src="http://assets.myntassets.com/v1462429190/radium/SIS/face/steps-to-apply-base.jpg"
-						style={{ width: '50%', height: 'auto' }}
-					/>					
-
-					<Slider {...settingsSlide}>
-						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none', color:'#485160'}}>
-							<img src="http://assets.myntassets.com/v1462428404/radium/SIS/face/cleanse-tone-mois.jpg" style={{ width: '100%', height: 'auto' }} />
-							<div style={textStyle}>Wash your face to make sure your skin in clean and hydrated. Apply a toner followed by a moisturiser.</div>
-						</a>
-						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none', color:'#485160'}}>
-							<img src="http://assets.myntassets.com/v1462428404/radium/SIS/face/apply-dots.jpg" style={{ width: '100%', height: 'auto' }} />
-							<div style={textStyle}>Apply dots of primer in the center of your face and work outwards.</div>
-						</a>
-						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none', color:'#485160'}}>
-							<img src="http://assets.myntassets.com/v1462428407/radium/SIS/face/start-edge.jpg" style={{ width: '100%', height: 'auto' }} />
-							<div style={textStyle}>Start applying foundation from your nose area moving towards chin, cheek and forehead. Spread it evenly with no clumps or lines.</div>
-						</a>
-						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none', color:'#485160'}}>
-							<img src="http://assets.myntassets.com/v1462428409/radium/SIS/face/concealer.jpg" style={{ width: '100%', height: 'auto' }} />
-							<div style={textStyle}>Apply concealer under your eyes and areas that need covering up like blemishes and dark spots. Blend well.</div>
-						</a>
-						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none', color:'#485160'}}>
-							<img src="http://assets.myntassets.com/v1462428411/radium/SIS/face/dust-loose-powder.jpg" style={{ width: '100%', height: 'auto' }} />
-							<div style={textStyle}>Dust on some loose powder using a powder brush from under the eyes to your cheeks.</div>
-						</a>						
-						<a href="http://www.myntra.com/" target="_blank" style={{textDecoration: 'none', color:'#485160'}}>
-							<img src="http://assets.myntassets.com/v1462428414/radium/SIS/face/compact-powder.jpg" style={{ width: '100%', height: 'auto' }} />
-							<div style={textStyle}>Press on compact powder to set the make-up and to ensure it lasts long.</div>
-						</a>
-					</Slider>
-
-				</div>
-
-			</Expander>
-
-
+			<div style={{color:'#fff', backgroundColor:'#00a99d', padding:'5px', fontSize:'14px', fontWeight:600, marginTop:'10%', textAlign: 'center' }}><a href="http://www.myntra.com/bras?SRC=Radium" target="_blank"> SHOP BRAS </a> </div>
+	
 			</div>
 		);
 
