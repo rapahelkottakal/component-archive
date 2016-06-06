@@ -42,7 +42,7 @@ export default class ShowMore extends React.Component {
 	getRowStyles() {
 
 		let style = {
-			
+			padding: '0 16px'
 		}
 
 		// if (this.state.fliped) {
@@ -62,7 +62,7 @@ export default class ShowMore extends React.Component {
 		
 		let style = {
 			display: 'none',
-			padding: '15px 25px'
+			padding: '15px 0'
 		}
 
 		if (this.state.open) {
@@ -94,7 +94,7 @@ export default class ShowMore extends React.Component {
 		});
 
 		if (this.state.open && this.state.currentChild == key) {
-			this.closeShowMore();
+			// this.closeShowMore();
 		} else {
 			this.openShowMore();
 		}
@@ -110,10 +110,20 @@ export default class ShowMore extends React.Component {
 
 			if (this.state.currentChild != key && this.state.open) {
 
-				imageRow.push(<img src={value.props.image} style={{ width: value.props.width, height: 'auto', padding: 10 }} key={key} onClick={this.changeCurrentChild.bind(this,key)} />);
+				imageRow.push(
+					<div style={{width: value.props.width, height: 'auto', display: 'inline-block', textAlign: 'center', verticalAlign: 'top'}} key={key}>
+						<img src={value.props.image} style={{ width: '100%', height: 'auto', padding: 10, display: 'block' }} onClick={this.changeCurrentChild.bind(this,key)} />
+						<div style={{fontSize: 11}}>{value.props.text}</div>
+					</div>
+					);
 			} else {
 
-				imageRow.push(<img src={value.props.image} style={{ width: value.props.width, height: 'auto', padding: 0 }} key={key} onClick={this.changeCurrentChild.bind(this,key)} />);
+				imageRow.push(
+					<div style={{width: value.props.width, height: 'auto', display: 'inline-block', textAlign: 'center'}} key={key}>
+						<img src={value.props.image} style={{ width: '100%', height: 'auto', padding: 0, display: 'block' }} onClick={this.changeCurrentChild.bind(this,key)} />
+						<div style={{fontSize: 11}}><strong>{value.props.text}</strong></div>
+					</div>
+					);
 			}
 
 		});
