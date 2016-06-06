@@ -113,16 +113,16 @@ export default class ShowMore extends React.Component {
 			if (this.state.currentChild != key && this.state.open) {
 
 				imageRow.push(
-					<Link to="container" smooth={true} style={{width: value.props.width, height: 'auto', display: 'inline-block', textAlign: 'center', verticalAlign: 'top'}} key={key}>
-						<img src={value.props.image} style={{ width: '100%', height: 'auto', padding: 10, display: 'block' }} onClick={this.changeCurrentChild.bind(this,key)} />
+					<Link to="container" smooth={true} style={{width: value.props.width, height: 'auto', display: 'inline-block', textAlign: 'center', verticalAlign: 'top'}} key={key} onClick={this.changeCurrentChild.bind(this,key)}>
+						<img src={value.props.image} style={{ width: '100%', height: 'auto', padding: 20, display: 'block' }} />
 						<div style={{fontSize: 11}}>{value.props.text}</div>
 					</Link>
 					);
 			} else {
 
 				imageRow.push(
-					<Link to="container" smooth={true} style={{width: value.props.width, height: 'auto', display: 'inline-block', textAlign: 'center'}} key={key}>
-						<img src={value.props.image} style={{ width: '100%', height: 'auto', padding: 0, display: 'block' }} onClick={this.changeCurrentChild.bind(this,key)} />
+					<Link to="container" smooth={true} style={{width: value.props.width, height: 'auto', display: 'inline-block', textAlign: 'center'}} key={key} onClick={this.changeCurrentChild.bind(this,key)}>
+						<img src={value.props.image} style={{ width: '100%', height: 'auto', padding: 10, display: 'block' }} />
 						<div style={{fontSize: 11}}><strong>{value.props.text}</strong></div>
 					</Link>
 					);
