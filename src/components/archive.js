@@ -87,7 +87,7 @@ export default class Archive extends React.Component {
 						<div style={{
 							fontSize: 32,
 							fontFamily: 'Lora, serif'
-						}}>Comlementary</div>
+						}}>Complementary</div>
 						<div style={{
 							fontSize: 20,
 							letterSpacing: 7,
