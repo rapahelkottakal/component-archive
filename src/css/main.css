@@ -24,3 +24,16 @@ input{
 	padding: 2%;
 	margin: 9%;
 }
+.specialbutton{
+	/*background-color: #fff;*/
+}
+
+.specialbutton .active{
+	background-color: #C9E5F3;
+	color: #fff;
+}
+
+.specialbutton1.active1{
+	background-color: #C9E5F3;
+	color: #fff;
+}
