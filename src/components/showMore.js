@@ -1,5 +1,7 @@
 import React from 'react';
-import {Motion, spring} from 'react-motion';
+
+import Scroll from 'react-scroll';
+import { Link, Element, Events } from 'react-scroll';
 
 import _ from 'lodash';
 
@@ -111,18 +113,18 @@ export default class ShowMore extends React.Component {
 			if (this.state.currentChild != key && this.state.open) {
 
 				imageRow.push(
-					<div style={{width: value.props.width, height: 'auto', display: 'inline-block', textAlign: 'center', verticalAlign: 'top'}} key={key}>
+					<Link to="container" smooth={true} style={{width: value.props.width, height: 'auto', display: 'inline-block', textAlign: 'center', verticalAlign: 'top'}} key={key}>
 						<img src={value.props.image} style={{ width: '100%', height: 'auto', padding: 10, display: 'block' }} onClick={this.changeCurrentChild.bind(this,key)} />
 						<div style={{fontSize: 11}}>{value.props.text}</div>
-					</div>
+					</Link>
 					);
 			} else {
 
 				imageRow.push(
-					<div style={{width: value.props.width, height: 'auto', display: 'inline-block', textAlign: 'center'}} key={key}>
+					<Link to="container" smooth={true} style={{width: value.props.width, height: 'auto', display: 'inline-block', textAlign: 'center'}} key={key}>
 						<img src={value.props.image} style={{ width: '100%', height: 'auto', padding: 0, display: 'block' }} onClick={this.changeCurrentChild.bind(this,key)} />
 						<div style={{fontSize: 11}}><strong>{value.props.text}</strong></div>
-					</div>
+					</Link>
 					);
 			}
 
@@ -149,11 +151,11 @@ export default class ShowMore extends React.Component {
 				<div style={this.getRowStyles()}>
 					{this.createImageRow()}
 				</div>
-	            <div style={this.getOpenStyles()}>
+	            <Element name="container" style={this.getOpenStyles()}>
 		           	
 		           	{this.createInsideContent()}
 
-				</div>
+				</Element>
 			</div>
 		);
 	}
