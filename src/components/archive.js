@@ -147,7 +147,7 @@ export default class Archive extends React.Component {
 								}}></div>
 								<div style={css.text}>A shade like a light lemon yellow adds a calming aura to your room.</div>
 							</div>
-							<a href="http://www.myntra.com/bedsheets?SRC=Radium" target="_blank" style={{
+							<a href="http://www.myntra.com/bedsheets?userQuery=true&f=Prints_and_Patterns_article_attr%3Ageometric%2Cprints%2520(others)%2Csoild%2520or%2520self%2520design%2Cstripes&SRC=Radium" target="_blank" style={{
 								textDecoration: 'none',
 								textTransform: 'uppercase',
 								fontSize: 16,
