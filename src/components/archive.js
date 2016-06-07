@@ -10,8 +10,8 @@ export default class Archive extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			size1: 'nosize',
-			size2: 'nosize',
+			size1: '',
+			size2: '',
 			result: '',
 			active: false,
 			active1: false
@@ -72,11 +72,18 @@ export default class Archive extends React.Component {
 	}
 
 	getInputValue1(e){
-		console.log('The value1 is ',e.target.data);
-		this.setState({	size1: e.target.value , active: true});		
+		this.setState({	size1: e.target.value});
+		var classes = 'specialbutton';
+		
+		if (classes != 'specialbutton active'){
+			this.setState({	active: true});
+		}else{
+			this.setState({	active: false});			
+		}		
 	}
 	getInputValue2(e){
 		this.setState({	size2: e.target.value, active1: true});
+		console.log(e.target.value);
 		// this.handleClick();
 	}
 
@@ -119,8 +126,8 @@ export default class Archive extends React.Component {
 
 	reset() {
 	    this.setState({
-	  		size1: "nosize",
-	  		size2: "nosize",
+	  		size1: " ",
+	  		size2: " ",
 	  		result: "",
 	  		active: false,
 	  		active1: false
@@ -128,59 +135,29 @@ export default class Archive extends React.Component {
 		console.log('clicked');
 	}
 
-	caluculate() {
-		// console.log('Inside caluculate');
-		if (this.state.size1 == 30 && this.state.size2 == 24) {
-			this.setState({
-				result: '30B'
-			});
-		}else if(this.state.size1 == 32 && this.state.size2 == 25){
-			this.setState({
-				result: '32B'
-			});
-		}else if(this.state.size1 == 34 && this.state.size2 == 27){
-			this.setState({
-				result: '34B'
-			});
-		}
-		else if(this.state.size1 == 36 && this.state.size2 == 29){
-			this.setState({
-				result: '36B'
-			});
-		}else if(this.state.size1 == 38 && this.state.size2 == 31){
-			this.setState({
-				result: '38B'
-			});
-		}else if(this.state.size1 == 40 && this.state.size2 == 33){
-			this.setState({
-				result: '40B'
-			});
-		}else{
-			this.setState({
-				result: 'Enter Valid inputs'
-			});
-		}
+	onClickMain(){
+			this.getInputValue2.bind(this);
+			this.handleClick();
 	}
 
 	render() {
-		var self = this;
 
-		if (this.state.size1 == 'nosize' && this.state.size2 == 'nosize'){
-			console.log('Insideeee is null')
-		} else {
-			// this.handleClick().bind(this);
-			// self.caluculate();
-			// console.log('Inside is not null');
-		}
-		let clas = [];
-		clas.push('specialbutton');
-		if(this.state.active){
-			clas.push(' active')
-		}
+		// var self = this;
+		// if (this.state.size1 == 'nosize' && this.state.size2 == 'nosize'){
+		// 	console.log('Insideeee is null')
+		// } else {
+		// 	// this.handleClick().bind(this);
+		// 	// self.caluculate();
+		// 	// console.log('Inside is not null');
+		// }
+		// let clas = [];
+		// clas.push('specialbutton');
+		// if(this.state.active){
+		// 	clas.push(' active')
+		// }
 
-		console.log('the class',clas)
 
-		let classes = classnames('specialbutton'+ target.value, {active: this.state.active});
+		let classes = classnames('specialbutton', {active: this.state.active});
 		let classes1 = classnames('specialbutton1', {active1: this.state.active1});
 
 
@@ -191,14 +168,14 @@ export default class Archive extends React.Component {
 					<p>OVERBUST (INCHES)<br/></p>
 					<p className={classes} style={this.getNumberstyle()} value="30" data="1" onClick={this.getInputValue1.bind(this)}>30</p>
 					<p className={classes} style={this.getNumberstyle()} value="32" dataid="2" onClick={this.getInputValue1.bind(this)}>32</p>
-					<p className={classes} style={this.getNumberstyle()} value="34" onClick={this.getInputValue1.bind(this)}>34</p>
-					<p className={classes} style={this.getNumberstyle()} value="36" onClick={this.getInputValue1.bind(this)}>36</p>
-					<p className={classes} style={this.getNumberstyle()} value="38" onClick={this.getInputValue1.bind(this)}>38</p>
+					<p style={this.getNumberstyle()} value="34" onClick={this.getInputValue1.bind(this)}>34</p>
+					<p style={this.getNumberstyle()} value="36" onClick={this.getInputValue1.bind(this)}>36</p>
+					<p style={this.getNumberstyle()} value="38" onClick={this.getInputValue1.bind(this)}>38</p>
 				</div>
 
 				<div class="ub-sizes" style={this.getSizestyle()}>
 					<p>UNDERBUST (INCHES)<br/></p>
-					<p  className={classes1} style={this.getNumberstyle()} value="24" onClick={this.getInputValue2.bind(this)}>24</p>
+					<p  className={classes1} style={this.getNumberstyle()} onClick={this.onClickMain.bind(this)} value="24">24</p>
 					<p style={this.getNumberstyle()} value="25" onClick={this.getInputValue2.bind(this)}>25</p>
 					<p style={this.getNumberstyle()} value="27" onClick={this.getInputValue2.bind(this)}>27</p>
 					<p style={this.getNumberstyle()} value="29" onClick={this.getInputValue2.bind(this)}>29</p>
