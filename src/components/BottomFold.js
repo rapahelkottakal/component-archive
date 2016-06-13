@@ -17,8 +17,8 @@ export default class BottomFold extends React.Component {
 				borderTopLeftRadius: 25,
 				borderTopRightRadius: 25,
 				margin: '0 27px',
-				fontSize: 13,
-				lineHeight: 1.5
+				fontSize: 11,
+				lineHeight: '16px'
 			},
 			rightCorner: {
 				position: 'absolute',
