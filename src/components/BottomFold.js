@@ -7,6 +7,7 @@ export default class BottomFold extends React.Component {
 		const css = {
 			container: {
 				marginTop: 16,
+				marginBottom: 16,
 				position: 'relative'
 			},
 			text: {
