@@ -27,6 +27,8 @@ export default class BottomFold extends React.Component {
 			},
 			leftCorner: {
 				transform: 'scaleX(-1)',
+				WebkitTransition: 'scaleX(-1)',
+				msTransition: 'scaleX(-1)',
 				position: 'absolute',
 				bottom: 0,
 				left: 0

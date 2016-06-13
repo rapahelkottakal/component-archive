@@ -102,11 +102,11 @@ export default class Archive extends React.Component {
 
 		const css = {
 			topTitle: {
+				textTransform: 'uppercase',
 				fontSize: 23,
 				color: '#feb0ba',
 				textAlign: 'center',
 				marginTop: 8,
-				marginBottom: 8,
 			},
 			text: {
 				fontSize: 11,
@@ -158,7 +158,11 @@ export default class Archive extends React.Component {
 
 					<div style={css.topTitle}>Find the perfect bra</div>
 
-					<img style={css.img} src="http://assets.myntassets.com/v1465821598/SIS/bra-guide/woman.jpg" />
+					<img style={{
+						display: 'block',
+						margin: '0 auto',
+						maxWidth: '100%'
+					}} src="http://assets.myntassets.com/v1465821598/SIS/bra-guide/woman.jpg" />
 
 					<div style={css.text}><em>Did you know that 80% of women wear the wrong size bra? Straps riding up the back, cups being a size too small or shoulder straps digging into the skin — these are all problems caused by not wearing the right size.</em></div>
 					<div style={{marginTop: 16}}><div style={css.text}><strong>Tap to know more</strong></div></div>
