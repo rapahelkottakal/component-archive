@@ -11,35 +11,37 @@ export default class BottomFold extends React.Component {
 				position: 'relative'
 			},
 			text: {
-				backgroundColor: this.props.backgroundColor,
+				// backgroundColor: this.props.backgroundColor,
+				border: '1px dashed '+this.props.backgroundColor,
 				textAlign: 'center',
 				padding: 16,
-				borderTopLeftRadius: 25,
-				borderTopRightRadius: 25,
+				// borderTopLeftRadius: 25,
+				// borderTopRightRadius: 25,
+				borderRadius: 25,
 				margin: '0 27px',
 				fontSize: 11,
 				lineHeight: '16px'
 			},
-			rightCorner: {
-				position: 'absolute',
-				bottom: 0,
-				right: 0
-			},
-			leftCorner: {
-				transform: 'scaleX(-1)',
-				WebkitTransition: 'scaleX(-1)',
-				msTransition: 'scaleX(-1)',
-				position: 'absolute',
-				bottom: 0,
-				left: 0
-			}	
+			// rightCorner: {
+			// 	position: 'absolute',
+			// 	bottom: 0,
+			// 	right: 0
+			// },
+			// leftCorner: {
+			// 	transform: 'scaleX(-1)',
+			// 	WebkitTransition: 'scaleX(-1)',
+			// 	msTransition: 'scaleX(-1)',
+			// 	position: 'absolute',
+			// 	bottom: 0,
+			// 	left: 0
+			// }	
 		};
 
 		return(
 			<div style={css.container}>
 				<div style={css.text}>{this.props.text}</div>
-				<img style={css.rightCorner} src={this.props.cornerImage} />
-				<img style={css.leftCorner} src={this.props.cornerImage} />
+				{/*<img style={css.rightCorner} src={this.props.cornerImage} />
+								<img style={css.leftCorner} src={this.props.cornerImage} />*/}
 			</div>
 		);
 	}

@@ -255,7 +255,31 @@ export default class Archive extends React.Component {
 							</div>
 						</div>
 
-						<ThreeRoundDivs
+						<div>
+							<div style={{width: '30%', display: 'inline-block'}}>
+								<img style={css.img} src="http://assets.myntassets.com/v1465893070/SIS/bra-guide/bra-guide6.jpg" />
+							</div>
+							<div style={{width: '70%', display: 'inline-block', verticalAlign: 'top', paddingTop: 20}}>
+								<div style={css.text}>
+									<span style={{fontSize: 16}}>HACK 3</span><br/>Always try on a bra under a fitted white tee. If it looks fine then, it will look fine with almost anything else.
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div style={{width: '50%', display: 'inline-block', verticalAlign: 'top', paddingTop: 20}}>
+								<div style={css.text}>
+									<span style={{fontSize: 16}}>HACK 4</span><br/>A well-fitted bra will be tight enough to let you slide two fingers comfortably under the band.
+								</div>
+							</div>
+							<div style={{width: '50%', display: 'inline-block', verticalAlign: 'top', paddingTop: 20}}>
+								<div style={css.text}>
+									<span style={{fontSize: 16}}>HACK 5</span><br/>When wearing a new bra, be sure to start with the furthest and loosest hook as the bra will loosen up and stretch over time.
+								</div>
+							</div>
+						</div>
+
+						{/*<ThreeRoundDivs
 							round1Width="45%"
 							title1="HACK 3"
 							text1="Always try on a bra under a fitted white tee. If it looks fine then, it will look fine with almost anything else."
@@ -265,7 +289,7 @@ export default class Archive extends React.Component {
 							round3Width="45%"
 							title3="HACK 4"
 							text3="A well-fitted bra will be tight enough to let you slide two fingers comfortably under the band."
-						/>
+						/>*/}
 						<a style={css.shopBtn} href="http://www.myntra.com/bras?SRC=Radium" target="_blank">SHOP NOW</a>
 					</div>
 					</Element>
