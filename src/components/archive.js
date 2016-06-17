@@ -122,6 +122,15 @@ export default class Archive extends React.Component {
 				textTransform: 'uppercase'
 
 			},
+			toggleTitleActive: {
+				marginBottom: 3,
+				display: 'block',
+				color: '#fff',
+				backgroundColor: '#FD687C',
+				padding: '8px 0',
+				textTransform: 'uppercase'
+
+			},
 			img: {
 				display: 'block',
 				margin: '8px auto',
@@ -167,7 +176,7 @@ export default class Archive extends React.Component {
 					<div style={css.text}><em>Did you know that 80% of women wear the wrong size bra? Straps riding up the back, cups being a size too small or shoulder straps digging into the skin — these are all problems caused by not wearing the right size.</em></div>
 					<div style={{marginTop: 16}}><div style={css.text}><strong>Tap to know more</strong></div></div>
 
-					<Element name="container1"><Link to="container1" smooth={true} onClick={this.handelToggleContent.bind(this,1)} style={css.toggleTitle}>How to measure yourself</Link>
+					<Element name="container1"><Link to="container1" smooth={true} onClick={this.handelToggleContent.bind(this,1)} style={(this.state.container1)?css.toggleTitleActive:css.toggleTitle}>How to measure yourself</Link>
 					<div style={{
 						visibility: (this.state.container1) ? 'visible' : 'hidden',
 						overflow: 'hidden',
@@ -226,7 +235,7 @@ export default class Archive extends React.Component {
 					</div>
 					</Element>
 
-					<Element name="container2"><Link to="container1" offset={45} smooth={true} onClick={this.handelToggleContent.bind(this,2)} style={css.toggleTitle}>Useful hacks</Link>
+					<Element name="container2"><Link to="container1" offset={45} smooth={true} onClick={this.handelToggleContent.bind(this,2)} style={(this.state.container2)?css.toggleTitleActive:css.toggleTitle}>Useful hacks</Link>
 					<div style={{
 						visibility: (this.state.container2) ? 'visible' : 'hidden',
 						overflow: 'hidden',
@@ -294,7 +303,7 @@ export default class Archive extends React.Component {
 					</div>
 					</Element>
 
-					<Element name="container3"><Link to="container1" offset={90} smooth={true} onClick={this.handelToggleContent.bind(this,3)} style={css.toggleTitle}>Caring for your bras</Link>
+					<Element name="container3"><Link to="container1" offset={90} smooth={true} onClick={this.handelToggleContent.bind(this,3)} style={(this.state.container3)?css.toggleTitleActive:css.toggleTitle}>Caring for your bras</Link>
 					<div style={{
 						margin: '0 20px',
 						visibility: (this.state.container3) ? 'visible' : 'hidden',
