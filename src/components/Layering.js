@@ -1,4 +1,5 @@
 import React from 'react';
+import _ from 'lodash';
 
 export default class Layering extends React.Component {
 
@@ -6,10 +7,36 @@ export default class Layering extends React.Component {
 		super();
 
 		this.state = {
+			loaded: false,
 			one: false,
 			two: false,
 			three: false,
 		};
+
+	}
+
+	componentWillMount() {
+
+		const allImages = _.assignIn({},this.props.imgData.looks,this.props.imgData.switches),
+			totalLength = _.size(allImages),
+			thisClass = this;
+
+		let imagesLoadedArray = new Array;
+
+		_.forEach(allImages, (link, key) => {
+			const image = new Image;
+			image.src = link;
+			image.onload = function() {
+				imagesLoadedArray.push(link);
+				if (imagesLoadedArray.length == totalLength) {
+					thisClass.setState({
+						loaded: true
+					});
+				}
+
+			};
+		});
+
 
 	}
 
@@ -71,7 +98,8 @@ export default class Layering extends React.Component {
 
 			container: {
 				position: 'relative',
-				margin: '16px 0'
+				margin: '16px 0',
+				minHeight: 250,
 			},
 
 			look: {
@@ -101,6 +129,17 @@ export default class Layering extends React.Component {
 				backgroundColor: '#000',
 				color: '#fff',
 				borderRadius: '50%'
+			},
+			loadingOverlay: {
+				position: 'absolute',
+				top: 0,
+				left: 0,
+				width: '100%',
+				height: '100%',
+				backgroundColor: 'hsla(0,0%,0%,0.5)',
+				backgroundImage: 'url(http://assets.myntassets.com/v1466161200/radium/loading.gif)',
+				backgroundRepeat: 'no-repeat',
+				backgroundPosition: 'center center',
 			}
 		}
 
@@ -124,6 +163,7 @@ export default class Layering extends React.Component {
 						<div style={styles.switchStatus} className="layering-switch-status">{this.getSwitchStatus('three')}</div>
 					</div>
 				</div>
+				{ (!this.state.loaded) ? <div style={styles.loadingOverlay}></div>: ''}
 			</div>
 		);
 	}
