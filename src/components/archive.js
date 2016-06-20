@@ -1,25 +1,8 @@
 import React from 'react';
-import Slider from 'react-slick';
+
 
 import 'normalize.css/normalize.css';
 import '../css/main.css';
-
-import Textonimage from './text-on-image'
-import Reveal from './reveal';
-import Title from './title';
-
-import Slideimage from './slideimage';
-import Popup from './popup';
-
-
-import FlipCard from './flip-card';
-import sliderGroupData from '../data/slider-group';
-import SliderGroup from './slide-group';
-
-import ShowMore from './showMore';
-import ImageChild from './imageChild';
-
-import Expander from './expander';
 import YouTube from 'react-youtube';
 
 
@@ -53,37 +36,8 @@ export default class Archive extends React.Component {
 		// console.log('test', sliderGroupData);
 
 
-		var settings = {
-			dots: true,
-			infinite: true,
-			speed: 250,
-			slidesToShow: 3,
-			slidesToScroll: 2,
-			autoplay: true,
-			autoplaySpeed: 3000,
-			centerMode: true,
-			arrows: false
-		};
 
-		var settingsSlide = {
-			dots: true,
-			infinite: true,
-			speed: 250,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			autoplay: true,
-			autoplaySpeed: 3000,
-			centerMode: true,
-			arrows: false
-		};
-		let textStyle ={
-			textDecoration: 'none', 
-			padding: '0 5%', 
-			fontSize: '15px',
-			letterSpacing:'1px',
-			color:'#485160',
 
-		}
 		let textoption1 ={
 
 			fontSize:'14px',
@@ -91,18 +45,6 @@ export default class Archive extends React.Component {
 			textAlign:'center',
 			color:'#58574F'
 		}
-
-		let imgStyle = {
-			width: '100%',
-			height: 'auto',
-			display: 'inline-block',
-			padding : '0px 5px',
-		},
-
-			linkStyel = {
-			display: 'inline-block',
-			width: '33.33%'
-		};
 
 		const css = {
 			img: {
