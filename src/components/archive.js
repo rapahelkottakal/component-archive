@@ -20,7 +20,7 @@ import ShowMore from './showMore';
 import ImageChild from './imageChild';
 
 import Expander from './expander';
-
+import YouTube from 'react-youtube';
 
 
 export default class Archive extends React.Component {
@@ -87,7 +87,9 @@ export default class Archive extends React.Component {
 		let textoption1 ={
 
 			fontSize:'14px',
-			padding:'0px 5px',
+			padding:'5% 10%',
+			textAlign:'center',
+			color:'#58574F'
 		}
 
 		let imgStyle = {
@@ -102,80 +104,73 @@ export default class Archive extends React.Component {
 			width: '33.33%'
 		};
 
+		const css = {
+			img: {
+				width: '100%',
+				height: 'auto'
+			},
+			hr:{
+
+				width:'35%',
+				textAlign:'center',
+				color:'#58574F',
+			}
+		};
+
+		const videoOptions = {
+			width:'100%',
+			height:'auto',
+			playerVars: {
+				controls: 0,
+				showinfo: 0,
+				color: 'white',
+	            // color: 'black'
+	        },
+
+
+		}
+
 
 		return(
 			<div style={this.getContainerStyles()}>
 
-			<div className='textoption1'>Did you know that 80% of women wear the wrong size bra? Straps riding up the back, cups being a size too small or shoulder straps digging into the skin — these are all problems caused by not wearing the right size. Here’s how to find the right one. </div>
-
-			<div style={{padding:'5px', fontSize:'18px', fontWeight:800, textAlign: 'center', marginBottom: '2%' }}> TAP TO KNOW MORE</div>
-
-			<Expander image="http://assets.myntassets.com/v1465211219/reactive/bra-guide/measure-yourself.jpg">
-				<div>
-					<div style={{fontWeight:800, fontSize:'18px', padding: '5%'}}>BAND SIZE</div>
-						<a>
-								<img style={{width:'100%'}} src="http://assets.myntassets.com/v1465218039/reactive/bra-guide/bra-guide-band-size.jpg" />
-						</a>				
-					<div className='textoption1'> The best way is to measure your band size first, just under your breasts and around your chest with a soft tape measure.</div>
-					
-					<div className='textoption1' style={{backgroundColor:'#e6e6e6', marginBottom:'5px'}}>
-						<div style={{marginBottom:'10px'}}>If you get an even number— add 4 inches to find your band size.</div>
-						<div>If you get an odd number— add 5 inches to find your band size.</div>
-					</div>
-
-					<div style={{color:'#fff', backgroundColor:'#00a99d', padding:'5px', fontSize:'12px', marginBottom:'5px', padding: '2% 10%'}}>
-						For example- If you get 31 inches 31+5= 36 inches 
-					</div>
-
-				</div>
-
-				<div>
-					<div style={{fontWeight:800, fontSize:'18px', padding: '5%', marginBottom:'5px'}}>CUP SIZE</div>
-						<a>
-								<img style={{width:'100%'}} src="http://assets.myntassets.com/v1465218039/reactive/bra-guide/bra-guide-cup-size.jpg" />
-						</a>				
-					<div className='textoption1'> For the cup size, you’d have to wrap the measuring tape around the fullest part of your breast, pulling it firmly, but not too tight or loose. Now subtract this measurement from your band size to get your perfect cup size.</div>
-					
-					<div className='textoption1' style={{backgroundColor:'#e6e6e6', marginBottom:'5px'}}>
-						<div style={{marginBottom:'10px'}}>Use the following chart to pick the right cup size:  </div>
-						<div>AA= Less than 1″, A=1″, B=2″, C=3′, D=4″, DD=5″..</div>
-					</div>
-
-					<div style={{color:'#fff', backgroundColor:'#00a99d', padding:'5px', fontSize:'12px', marginBottom:'5px', padding: '2% 10%' }}>
-						For example- If your cup size is 36 inches and band size is 34 inches- you will be a B cup with a size of 34B.
-					</div>
-
-				</div>
-			</Expander>
-
-			<Expander image="http://assets.myntassets.com/v1465211219/reactive/bra-guide/useful-hacks.jpg">
-				<div>
-					<div className='textoption1'>1. A well-fitted bra will be tight enough to let you slide two fingers comfortably under the band.</div>
-					<div className='textoption1'>2. Always try on a bra under a fitted white tee. If it looks fine then, it will look fine with almost anything else. </div>
-					<div className='textoption1'>3. When wearing a new bra, be sure to start with the furthest and loosest hook as the bra will loosen up and stretch over time. </div>
-					<div className='textoption1'>4. Your nipple point should be halfway between your shoulder and your elbow when looking at yourself in a mirror, from the side view. If it is lower, it means you’re not wearing the right size.</div>
-					<div className='textoption1'>5. Your bra’s underwire must sit flat and not dig into your skin in any way. The centre point of your bra must lay flush against your chest, without gaping.</div>
-					<div className='textoption1'>6. We recommend you buy a bra with wider straps if you have a large breast size as they offer both comfort and extra support. </div>
-					<div className='textoption1'>7. See if the fit is right by pulling your elbows back to ensure there is no spillage over the cups.</div>
-
-				</div>
-			</Expander>
-
-			<Expander image="http://assets.myntassets.com/v1465211218/reactive/bra-guide/caring-for-your-bras.jpg">
-				<div>
 					<div>
-						<a>
-							<img style={{width:'100%'}} src="http://assets.myntassets.com/v1465218039/reactive/bra-guide/bra-guide-hand-wash.jpg" />
-						</a>
-					</div>
-					<div className='textoption1'>Always make sure to hand wash your bras as this will ensure they will last longer. If washing them in a machine, use the gentle cycle and wash them inside a garment bag. Air-dry your bras as excess heat will cause the fabric to stretch out and even tear, over a period of time.</div>
-					
-				</div>
-			</Expander>		
-
-			
-			<div style={{color:'#fff', backgroundColor:'#00a99d', padding:'5px', fontSize:'14px', fontWeight:600, marginTop:'10%', textAlign: 'center' }}><a href="http://www.myntra.com/bras?SRC=Radium" target="_blank"> SHOP BRAS </a> </div>
+							<img style={css.img} src="http://assets.myntassets.com/v1466428564/reactive/gerua-20-6-16/gerua_01.jpg" />
 	
+					</div>
+
+					<div>
+							<img style={css.img} src="http://assets.myntassets.com/v1466424768/reactive/gerua-20-6-16/Gerua_03-min.jpg" />
+							<img style={css.img} src="http://assets.myntassets.com/v1466424768/reactive/gerua-20-6-16/Gerua_05-min.jpg" />
+							<img style={css.img} src="http://assets.myntassets.com/v1466424768/reactive/gerua-20-6-16/Gerua_06-min.jpg" />
+					</div>
+
+					<div className='textoption1'>Beautiful georgette, cotton or cotton jacquard pieces in sunset hues will infuse your wardrobe with a youthful vibe.</div>
+					<hr style={css.hr} />
+
+					<div>
+							<img style={css.img} src="http://assets.myntassets.com/v1466424769/reactive/gerua-20-6-16/Gerua_08-min.jpg" />
+							<img style={css.img} src="http://assets.myntassets.com/v1466424768/reactive/gerua-20-6-16/Gerua_09-min.jpg" />
+					</div>
+					
+					<div className='textoption1'>Trendy silhouettes and techniques like colourblocking and slits have created a jaw-dropping modern collection in materials like cotton, crepe and georgette. </div>
+					<hr style={css.hr} />
+
+					<div>
+							<img style={css.img} src="http://assets.myntassets.com/v1466424768/reactive/gerua-20-6-16/Gerua_11-min.jpg" />
+							<img style={css.img} src="http://assets.myntassets.com/v1466424769/reactive/gerua-20-6-16/Gerua_12-min.jpg" />
+					</div>
+					
+					<div className='textoption1'style={{padding:'2% 10%'}}>The bold hued simple kurtas in cotton and cotton jacquard can be paired in many ways to create dazzling outfits.</div>
+					<hr style={css.hr} />
+
+					<div className='textoption1' style={{color:'#A7A492'}}>Can’t wait to get your hands on a Gerua? Get this look soon exclusively on Myntra.</div>
+					
+					<YouTube
+						videoId="Vo8DxfSovnY"
+						opts={videoOptions}
+					/>
+					
 			</div>
 		);
 
