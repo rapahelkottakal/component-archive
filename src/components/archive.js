@@ -77,13 +77,13 @@ export default class Archive extends React.Component {
 			<div style={this.getContainerStyles()}>
 
 					<div>
-							<img style={css.img} src="http://assets.myntassets.com/v1466428564/reactive/gerua-20-6-16/gerua_01.jpg" />
+							<img style={css.img} src="http://assets.myntassets.com/v1466513815/reactive/gerua-20-6-16/gerua_01.jpg" />
 	
 					</div>
 
 					<div>
 							<img style={css.img} src="http://assets.myntassets.com/v1466424768/reactive/gerua-20-6-16/Gerua_03-min.jpg" />
-							<img style={css.img} src="http://assets.myntassets.com/v1466424768/reactive/gerua-20-6-16/Gerua_05-min.jpg" />
+							<img style={css.img} src="http://assets.myntassets.com/v1466513815/reactive/gerua-20-6-16/gerua_05.jpg" />
 							<img style={css.img} src="http://assets.myntassets.com/v1466424768/reactive/gerua-20-6-16/Gerua_06-min.jpg" />
 					</div>
 
@@ -91,7 +91,7 @@ export default class Archive extends React.Component {
 					<hr style={css.hr} />
 
 					<div>
-							<img style={css.img} src="http://assets.myntassets.com/v1466424769/reactive/gerua-20-6-16/Gerua_08-min.jpg" />
+							<img style={css.img} src="http://assets.myntassets.com/v1466513814/reactive/gerua-20-6-16/gerua_08.jpg" />
 							<img style={css.img} src="http://assets.myntassets.com/v1466424768/reactive/gerua-20-6-16/Gerua_09-min.jpg" />
 					</div>
 					
@@ -99,7 +99,7 @@ export default class Archive extends React.Component {
 					<hr style={css.hr} />
 
 					<div>
-							<img style={css.img} src="http://assets.myntassets.com/v1466424768/reactive/gerua-20-6-16/Gerua_11-min.jpg" />
+							<img style={css.img} src="http://assets.myntassets.com/v1466513814/reactive/gerua-20-6-16/gerua_11.jpg" />
 							<img style={css.img} src="http://assets.myntassets.com/v1466424769/reactive/gerua-20-6-16/Gerua_12-min.jpg" />
 					</div>
 					
