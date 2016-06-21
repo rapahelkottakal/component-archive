@@ -82,7 +82,7 @@ export default class Archive extends React.Component {
 					</div>
 
 					<div>
-							<img style={css.img} src="http://assets.myntassets.com/v1466424768/reactive/gerua-20-6-16/Gerua_03-min.jpg" />
+							<img style={{width: '100%',	height: 'auto' ,marginTop: '7%'}} src="http://assets.myntassets.com/v1466424768/reactive/gerua-20-6-16/Gerua_03-min.jpg" />
 							<img style={css.img} src="http://assets.myntassets.com/v1466513815/reactive/gerua-20-6-16/gerua_05.jpg" />
 							<img style={css.img} src="http://assets.myntassets.com/v1466424768/reactive/gerua-20-6-16/Gerua_06-min.jpg" />
 					</div>
@@ -109,7 +109,7 @@ export default class Archive extends React.Component {
 					<div className='textoption1' style={{color:'#A7A492'}}>Can’t wait to get your hands on a Gerua? Get this look soon exclusively on Myntra.</div>
 					
 					<YouTube
-						videoId="Vo8DxfSovnY"
+						videoId="rZKo08a2ER8"
 						opts={videoOptions}
 					/>
 					
