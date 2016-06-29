@@ -5,15 +5,15 @@ export default [
 		slides: [
 			{
 				img: 'http://assets.myntassets.com/v1463465247/radium/SIS/footwear-flats/ballerinas-min.jpg',
-				link: 'http://www.myntra.com/women-flats?f=Shoe_Type_article_attr%3Aballerina%2520%252F%2520flat%2520shoes&SRC=Radium'
+				link: 'http://www.myntra.com/flats-and-casual-shoes-guide?f=Shoe_Type_article_attr%3Aballerina%2520%252F%2520flat%2520shoes%3A%3Acategories%3AFlats&SRC=Radium'
 			},
 			{
 				img: 'http://assets.myntassets.com/v1463465247/radium/SIS/footwear-flats/boat-shoes-min.jpg',
-				link: 'http://www.myntra.com/women-casual-shoes?f=Shoe_Type_article_attr%3Aboat%2520shoes&SRC=Radium'
+				link: 'http://www.myntra.com/flats-and-casual-shoes-guide?f=Shoe_Type_article_attr%3Aboat%2520shoes%3A%3Acategories%3ACasual%2520Shoes&SRC=Radium'
 			},
 			{
 				img: 'http://assets.myntassets.com/v1463465247/radium/SIS/footwear-flats/brogues-min.jpg',
-				link: 'http://www.myntra.com/women-casual-shoes?f=Shoe_Type_article_attr%3Abrogues&SRC=Radium'
+				link: 'http://www.myntra.com/flats-and-casual-shoes-guide?f=Shoe_Type_article_attr%3Abrogues%3A%3Acategories%3ACasual%2520Shoes&SRC=Radium'
 			},
 		]
 	},
@@ -23,7 +23,7 @@ export default [
 		slides: [
 			{
 				img: 'http://assets.myntassets.com/v1463465443/radium/SIS/footwear-flats/espadrilles-min.jpg',
-				link: 'http://www.myntra.com/women-casual-shoes?f=Shoe_Type_article_attr%3Aespadrilles&SRC=Radium'
+				link: 'http://www.myntra.com/flats-and-casual-shoes-guide?f=Shoe_Type_article_attr%3Aespadrilles%3A%3Acategories%3ACasual%2520Shoes&SRC=Radium'
 			},
 		]
 	},
@@ -33,7 +33,7 @@ export default [
 		slides: [
 			{
 				img: 'http://assets.myntassets.com/v1463465539/radium/SIS/footwear-flats/flip-flops-min.jpg',
-				link: 'http://www.myntra.com/flip-flops?f=gender%3Amen%2520women%2Cwomen&SRC=Radium'
+				link: 'http://www.myntra.com/flats-and-casual-shoes-guide?f=Flip-flop_type_article_attr%3Athong%2520strap%3A%3Acategories%3AFlip%2520Flops&SRC=Radium'
 			},
 		]
 	},
@@ -43,7 +43,7 @@ export default [
 		slides: [
 			{
 				img: 'http://assets.myntassets.com/v1463466091/radium/SIS/footwear-flats/gladiators-min.jpg',
-				link: 'http://www.myntra.com/women-flats?f=Shoe_Type_article_attr%3Agladiators&SRC=Radium'
+				link: 'http://www.myntra.com/flats-and-casual-shoes-guide?f=Shoe_Type_article_attr%3Agladiators%3A%3Acategories%3AFlats&SRC=Radium'
 			},
 		]
 	},
@@ -63,7 +63,7 @@ export default [
 		slides: [
 			{
 				img: 'http://assets.myntassets.com/v1463490521/radium/SIS/footwear-flats/lace-up-boots-min.jpg',
-				link: 'http://www.myntra.com/women-boots?f=Fastening_article_attr%3Alace-up%3A%3Acategories%3ACasual%2520Shoes&SRC=Radium'
+				link: 'http://www.myntra.com/flats-and-casual-shoes-guide?f=Fastening_article_attr%3Alace-up%3A%3Acategories%3ACasual%2520Shoes&SRC=Radium'
 			},
 			{
 				img: 'http://assets.myntassets.com/v1463466216/radium/SIS/footwear-flats/loafers-min.jpg',
@@ -81,7 +81,7 @@ export default [
 			},
 			{
 				img: 'http://assets.myntassets.com/v1463466217/radium/SIS/footwear-flats/monk-strap-boots-min.jpg',
-				link: 'http://www.myntra.com/women-boots?f=Fastening_article_attr%3Abuckle%3A%3Acategories%3ACasual%2520Shoes&SRC=Radium'
+				link: 'http://www.myntra.com/flats-and-casual-shoes-guide?f=Fastening_article_attr%3Abuckle%3A%3Acategories%3ACasual%2520Shoes&SRC=Radium'
 			},
 		]
 	},
@@ -91,7 +91,7 @@ export default [
 		slides: [
 			{
 				img: 'http://assets.myntassets.com/v1463466452/radium/SIS/footwear-flats/one-toe-min.jpg',
-				link: 'http://www.myntra.com/women-flats?f=Shoe_Type_article_attr%3Aone%2520toe&SRC=Radium'
+				link: 'http://www.myntra.com/flats-and-casual-shoes-guide?f=Shoe_Type_article_attr%3Aone%2520toe%3A%3Acategories%3AFlats&SRC=Radium'
 			},
 		]
 	},
@@ -101,15 +101,15 @@ export default [
 		slides: [
 			{
 				img: 'http://assets.myntassets.com/v1463466453/radium/SIS/footwear-flats/slip-ons-min.jpg',
-				link: 'http://www.myntra.com/women-flats?f=Fastening_and_Back_Detail_article_attr%3Aslip-on&SRC=Radium'
+				link: 'http://www.myntra.com/flats-and-casual-shoes-guide?f=Fastening_and_Back_Detail_article_attr%3Aslip-on%3A%3Acategories%3AFlats&SRC=Radium'
 			},
 			{
 				img: 'http://assets.myntassets.com/v1463466454/radium/SIS/footwear-flats/sneakers-min.jpg',
-				link: 'http://www.myntra.com/women-casual-shoes?f=Shoe_Type_article_attr%3Asneakers&SRC=Radium'
+				link: 'http://www.myntra.com/flats-and-casual-shoes-guide?f=Shoe_Type_article_attr%3Asneakers%3A%3Acategories%3ACasual%2520Shoes&SRC=Radium'
 			},
 			{
 				img: 'http://assets.myntassets.com/v1463466454/radium/SIS/footwear-flats/strappy-min.jpg',
-				link: 'http://www.myntra.com/women-flats?f=Shoe_Type_article_attr%3Agladiators%2Cone%2520toe%2Copen%2520toe%2Ct-strap%2520%252F%2520thong%2520sandals&SRC=Radium'
+				link: 'http://www.myntra.com/flats-and-casual-shoes-guide?f=Shoe_Type_article_attr%3Agladiators%2Cone%2520toe%2Copen%2520toe%2Ct-strap%2520%252F%2520thong%2520sandals%3A%3Acategories%3AFlats&SRC=Radium'
 			},
 		]
 	},
@@ -119,7 +119,7 @@ export default [
 		slides: [
 			{
 				img: 'http://assets.myntassets.com/v1463466584/radium/SIS/footwear-flats/t-straps-min.jpg',
-				link: 'http://www.myntra.com/women-flats?f=Shoe_Type_article_attr%3At-strap%2520%252F%2520thong%2520sandals&SRC=Radium'
+				link: 'http://www.myntra.com/flats-and-casual-shoes-guide?f=Shoe_Type_article_attr%3At-strap%2520%252F%2520thong%2520sandals%3A%3Acategories%3AFlats&SRC=Radium'
 			},
 		]
 	},
@@ -129,7 +129,7 @@ export default [
 		slides: [
 			{
 				img: 'http://assets.myntassets.com/v1463466585/radium/SIS/footwear-flats/zip-up-boots-min.jpg',
-				link: 'http://www.myntra.com/women-boots?f=Fastening_article_attr%3Azipper%3A%3Acategories%3ACasual%2520Shoes&SRC=Radium'
+				link: 'http://www.myntra.com/flats-and-casual-shoes-guide?f=Fastening_article_attr%3Azipper%3A%3AShoe_Type_article_attr%3Aflat%2520boots%3A%3Acategories%3ACasual%2520Shoes&SRC=Radium'
 			},
 		]
 	},
