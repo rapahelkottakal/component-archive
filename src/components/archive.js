@@ -326,7 +326,7 @@ export default class Archive extends React.Component {
 								<div>
 									<div style={showMoreTitle}>Relaxed</div>
 									<div style={showMoreText}>{showMoreTextObj.relaxed}</div>
-									<a href="http://www.myntra.com/flats-and-casual-shoes-guide?f=Pattern_article_attr%3Aprinted%3A%3AUpper_Material_article_attr%3Acanvas%2520%252F%2520fabric%3A%3Acategories%3ACasual%2520Shoes&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
+									<a href="http://www.myntra.com/flats-and-casual-shoes-guide?f=Pattern_article_attr%3Aprinted%3A%3AUpper_Material_article_attr%3Acanvas%2520or%2520fabric%3A%3Acategories%3ACasual%2520Shoes&SRC=Radium" target="_blank" style={showMoreShop}>Shop now &raquo;</a>
 								</div>
 								
 							</ImageChild>
