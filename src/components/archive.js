@@ -76,7 +76,7 @@ export default class Archive extends React.Component {
 					<a style={goLink} href="http://www.myntra.com/radium/SIS/footwear-flats/">Go to flats dictionary</a>
 
 				</div>
-				<div><Example></Example></div>
+			
 			</div>
 
 		);
