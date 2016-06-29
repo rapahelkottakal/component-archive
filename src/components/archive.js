@@ -231,7 +231,7 @@ export default class Archive extends React.Component {
 						</div>
 
 						<div style={{margin: '16px 0'}}><div style={css.text}><strong>For example- If your cup size is 36 inches and band size is 34 inches- you will be a B cup with a size of 34B.</strong></div></div>
-						<a style={css.shopBtn} href="http://www.myntra.com/bras?SRC=Radium" target="_blank">SHOP NOW</a>
+						<a style={css.shopBtn} href="http://www.myntra.com/bras-and-sets-guide?SRC=Radium" target="_blank">SHOP NOW</a>
 					</div>
 					</Element>
 
@@ -299,7 +299,7 @@ export default class Archive extends React.Component {
 							title3="HACK 4"
 							text3="A well-fitted bra will be tight enough to let you slide two fingers comfortably under the band."
 						/>*/}
-						<a style={css.shopBtn} href="http://www.myntra.com/bras?SRC=Radium" target="_blank">SHOP NOW</a>
+						<a style={css.shopBtn} href="http://www.myntra.com/bras-and-sets-guide?SRC=Radium" target="_blank">SHOP NOW</a>
 					</div>
 					</Element>
 
@@ -343,7 +343,7 @@ export default class Archive extends React.Component {
 							backgroundColor="#FFADB9"
 						/>
 
-						<a style={css.shopBtn} href="http://www.myntra.com/bras?SRC=Radium" target="_blank">SHOP NOW</a>
+						<a style={css.shopBtn} href="http://www.myntra.com/bras-and-sets-guide?SRC=Radium" target="_blank">SHOP NOW</a>
 
 					</div>
 					</Element>
