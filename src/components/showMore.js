@@ -111,7 +111,7 @@ export default class ShowMore extends React.Component {
 			textStyle = {
 				textAlign: 'center',
 				textTransform: 'uppercase',
-				fontSize: 12
+				fontSize: 10
 			};
 
 		_.forEach(this.props.children, (value,key) => {
@@ -124,7 +124,7 @@ export default class ShowMore extends React.Component {
 					<Link to={this.props.name} offset={-190} smooth={true} style={{ width: value.props.width, height: 'auto', display: 'inline-block', verticalAlign: 'top'}} key={key}>
 						<img 
 							src={value.props.image}
-							style={{ width: '100%', height: 'auto', opacity: 0.5 }}
+							style={{ width: '100%', height: 'auto', opacity: 0.5, padding: '15px 15px 2px 15px' }}
 							onClick={this.changeCurrentChild.bind(this,key)} />
 						<div style={textStyle}>{value.props.title}</div>
 					</Link>
@@ -134,7 +134,7 @@ export default class ShowMore extends React.Component {
 				imageRow.push(
 					<Link to={this.props.name} offset={-190} smooth={true} style={{ width: value.props.width, height: 'auto', display: 'inline-block', verticalAlign: 'top'}} key={key}>
 						<img src={value.props.image}
-							style={{ width: '100%', height: 'auto', opacity: 1 }}
+							style={{ width: '100%', height: 'auto', opacity: 1, padding: '15px 15px 2px 15px' }}
 							onClick={this.changeCurrentChild.bind(this,key)} />
 						<div style={textStyle}>{value.props.title}</div>
 					</Link>
