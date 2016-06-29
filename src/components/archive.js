@@ -4,22 +4,13 @@ import Slider from 'react-slick';
 import 'normalize.css/normalize.css';
 import '../css/main.css';
 
-import Textonimage from './text-on-image'
-import Reveal from './reveal';
-import Title from './title';
-
-import Slideimage from './slideimage';
-import Popup from './popup';
-
-
-import FlipCard from './flip-card';
 import sliderGroupData from '../data/slider-group';
 import SliderGroup from './slide-group';
-
 import ShowMore from './showMore';
 import ImageChild from './imageChild';
 
 import Example from './videoTest';
+
 
 
 export default class Archive extends React.Component {
@@ -64,12 +55,25 @@ export default class Archive extends React.Component {
 			arrows: false
 		};
 
+		let goLink = {
+			display: 'block',
+			textAlign: 'center',
+			textTransform: 'uppercase',
+			padding: '16px 0',
+			fontSize: 13,
+			backgroundColor: '#B2B2B2',
+			color: 'white',
+			textDecoration: 'none'
+		}
+
 		return(
 			<div style={this.getContainerStyles()}>
 
 				<div>
 
 					<SliderGroup data={sliderGroupData}></SliderGroup>
+
+					<a style={goLink} href="http://www.myntra.com/radium/SIS/footwear-flats/">Go to flats dictionary</a>
 
 				</div>
 				<div><Example></Example></div>
