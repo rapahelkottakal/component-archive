@@ -5,6 +5,8 @@ import '../css/main.css';
 
 import Title from './title';
 
+import Ga from '../functions/Ga';
+
 
 export default class Archive extends React.Component {
 
@@ -18,6 +20,11 @@ export default class Archive extends React.Component {
 			left: 0,
 			width: '100%',
 		}
+	}
+
+	handelShopBtnClick(e) {
+		// console.log(e.target.closest('a'));
+		Ga({ label: e.target.closest('a').href });
 	}
 
 
@@ -82,7 +89,7 @@ export default class Archive extends React.Component {
 
 					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-1-image3.jpg" width="100%" height="auto" />
 
-					<a href="http://www.myntra.com/rustic-charm?SRC=Radium" target="_blanck"><img style={{display: 'block', margin: ' 7% 0 16%'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-shop-button.png" width="100%" height="auto" /></a>
+					<a onClick={this.handelShopBtnClick} href="http://www.myntra.com/rustic-charm?SRC=Radium" target="_blanck"><img style={{display: 'block', margin: ' 7% 0 16%'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-shop-button.png" width="100%" height="auto" /></a>
 
 
 
@@ -116,7 +123,7 @@ export default class Archive extends React.Component {
 
 					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463478290/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-2-image3.jpg" width="100%" height="auto" />
 
-					<a href="http://www.myntra.com/festive-brights?SRC=Radium" target="_blanck"><img style={{display: 'block', margin: ' 7% 0 16%'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-shop-button.png" width="100%" height="auto" /></a>
+					<a onClick={this.handelShopBtnClick} href="http://www.myntra.com/festive-brights?SRC=Radium" target="_blanck"><img style={{display: 'block', margin: ' 7% 0 16%'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-shop-button.png" width="100%" height="auto" /></a>
 
 
 
@@ -148,7 +155,7 @@ export default class Archive extends React.Component {
 
 					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463479157/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-3-image3.jpg" width="100%" height="auto" />
 
-					<a href="http://www.myntra.com/vibrant-vibes?SRC=Radium" target="_blanck"><img style={{display: 'block', margin: ' 7% 0 16%'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-shop-button.png" width="100%" height="auto" /></a>
+					<a onClick={this.handelShopBtnClick} href="http://www.myntra.com/vibrant-vibes?SRC=Radium" target="_blanck"><img style={{display: 'block', margin: ' 7% 0 16%'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-shop-button.png" width="100%" height="auto" /></a>
 
 					
 
@@ -180,7 +187,7 @@ export default class Archive extends React.Component {
 
 					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463479475/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-4-image3.jpg" width="100%" height="auto" />
 
-					<a href="http://www.myntra.com/ethereal-elegance?SRC=Radium" target="_blanck"><img style={{display: 'block', margin: ' 7% 0 16%'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-shop-button.png" width="100%" height="auto" /></a>
+					<a onClick={this.handelShopBtnClick} href="http://www.myntra.com/ethereal-elegance?SRC=Radium" target="_blanck"><img style={{display: 'block', margin: ' 7% 0 16%'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-shop-button.png" width="100%" height="auto" /></a>
 
 					
 
@@ -214,7 +221,7 @@ export default class Archive extends React.Component {
 
 					<img style={{display: 'block', margin: '4% 0'}} src="http://assets.myntassets.com/v1463479843/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-5-image3.jpg" width="100%" height="auto" />
 
-					<a href="http://www.myntra.com/pastel-traditions?SRC=Radium" target="_blanck"><img style={{display: 'block', margin: ' 7% 0 16%'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-shop-button.png" width="100%" height="auto" /></a>
+					<a onClick={this.handelShopBtnClick} href="http://www.myntra.com/pastel-traditions?SRC=Radium" target="_blanck"><img style={{display: 'block', margin: ' 7% 0 16%'}} src="http://assets.myntassets.com/v1463474984/Lookgood/Feed/Look%20Book/may-16/17th/ethnic-look-book-shop-button.png" width="100%" height="auto" /></a>
 				</div>				
 			</div>
 		);
