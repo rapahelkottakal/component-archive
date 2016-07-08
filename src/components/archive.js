@@ -108,6 +108,11 @@ export default class Archive extends React.Component {
 			// console.log(event.target.tagName);
 		}
 
+		if (key) {
+
+			Ga({ label: 'Face shape: ' + key});
+		}
+
 
 		switch(key) {
 			case 'Diamond':
