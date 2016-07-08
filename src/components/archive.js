@@ -9,11 +9,43 @@ import '../css/main.css';
 import YouTube from 'react-youtube';
 import Title from './title';
 
-
+import Ga from '../helpers/Ga';
 
 
 export default class Archive extends React.Component {
 
+	constructor() {
+		super();
+		this.videoFirstPlay = false;
+	}
+
+	handelShopBtnClick(e) {
+		Ga({
+			action: e.target.closest('a').title,
+			label: e.target.closest('a').href
+		 });
+	}
+
+	handelVideoPlay(e) {
+		// console.log(this.videoFirstPlay);
+
+		if (!this.videoFirstPlay) {
+			Ga({
+				action: 'Video',
+				label: 'Played'
+			});
+			this.videoFirstPlay = true;
+		}
+
+	}
+
+	handelVideoEnd(e) {
+		Ga({
+			action: 'Video',
+			label: 'Completed'
+		});
+		this.videoFirstPlay = false;
+	}
 
 
 	getContainerStyles() {
@@ -70,8 +102,10 @@ export default class Archive extends React.Component {
 			height: 50
 		};
 
+		const videoHeight = window.innerWidth * 9 / 16;
+
 		const opts = {
-	      height: 'auto',
+	      height: videoHeight,
 	      width: '100%',
 	      playerVars: { // https://developers.google.com/youtube/player_parameters 
 	        // autoplay: 1,
@@ -99,6 +133,9 @@ export default class Archive extends React.Component {
 				padding="4% 7% 3%"
 				align="center"
 			/>
+			<a onClick={this.handelShopBtnClick} title="Shop collection btn - last" href="http://www.myntra.com/quiz?SRC=Radium" target="_blanck">
+				<img style={{display: 'block', margin: '10% 0'}} src="http://assets.myntassets.com/v1464333180/SIS/quiz-post/QUIZ-explore.jpg" width="100%" height="auto" />
+			</a>
 			<img style={{display: 'block'}} src="http://assets.myntassets.com/v1464329854/SIS/quiz-post/QUIZ-clothing.jpg" width="100%" height="auto" />
 
 			<img style={{display: 'block'}} src="http://assets.myntassets.com/v1464329855/SIS/quiz-post/QUIZ-footwear.jpg" width="100%" height="auto" />
@@ -110,6 +147,8 @@ export default class Archive extends React.Component {
 			<YouTube
 		        videoId="nzIw2R272jo"
 		        opts={opts}
+		        onPlay={this.handelVideoPlay.bind(this)}
+		        onEnd={this.handelVideoEnd.bind(this)}
 		      />
 
 			<img style={{display: 'block', marginTop: '10%'}} src="http://assets.myntassets.com/v1464331904/SIS/quiz-post/QUIZ-nautical.jpg" width="100%" height="auto" />
@@ -120,7 +159,7 @@ export default class Archive extends React.Component {
 
 			<img style={{display: 'block', marginTop: '10%'}} src="http://assets.myntassets.com/v1464333053/SIS/quiz-post/QUIZ-black-and-white.jpg" width="100%" height="auto" />
 
-			<a href="http://www.myntra.com/quiz?SRC=Radium" target="_blanck">
+			<a onClick={this.handelShopBtnClick} title="Shop collection btn - last" href="http://www.myntra.com/quiz?SRC=Radium" target="_blanck">
 				<img style={{display: 'block', margin: '10% 0'}} src="http://assets.myntassets.com/v1464333180/SIS/quiz-post/QUIZ-explore.jpg" width="100%" height="auto" />
 			</a>
 			</div>
