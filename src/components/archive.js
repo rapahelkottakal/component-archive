@@ -133,7 +133,7 @@ export default class Archive extends React.Component {
 				padding="4% 7% 3%"
 				align="center"
 			/>
-			<a onClick={this.handelShopBtnClick} title="Shop collection btn - last" href="http://www.myntra.com/quiz?SRC=Radium" target="_blanck">
+			<a onClick={this.handelShopBtnClick} title="Shop collection btn - first" href="http://www.myntra.com/quiz?SRC=Radium" target="_blanck">
 				<img style={{display: 'block', margin: '10% 0'}} src="http://assets.myntassets.com/v1464333180/SIS/quiz-post/QUIZ-explore.jpg" width="100%" height="auto" />
 			</a>
 			<img style={{display: 'block'}} src="http://assets.myntassets.com/v1464329854/SIS/quiz-post/QUIZ-clothing.jpg" width="100%" height="auto" />
