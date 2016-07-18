@@ -5,6 +5,8 @@ import { Link, Element, Events } from 'react-scroll';
 
 import _ from 'lodash';
 
+import Ga from '../helpers/Ga';
+
 export default class ShowMore extends React.Component {
 
 	// componentDidMount() {
@@ -90,6 +92,10 @@ export default class ShowMore extends React.Component {
 	}
 
 	changeCurrentChild(key) {
+
+		// console.log(this.props.children[key].props.text);
+
+		Ga({action: 'Tab switch',label: this.props.children[key].props.text});
 
 		this.setState({
 			currentChild: key

@@ -6,6 +6,8 @@ import '../css/main.css';
 import ShowMore from './showMore';
 import ImageChild from './imageChild';
 
+import Ga from '../helpers/Ga';
+
 export default class Archive extends React.Component {
 
 	componentDidMount() {
@@ -30,6 +32,10 @@ export default class Archive extends React.Component {
 			left: 0,
 			width: '100%',
 		}
+	}
+
+	handelLinkClick(e) {
+		Ga({action: 'Shop link clicked', label: e.target.closest('a').href });
 	}
 
 	render() {
@@ -147,7 +153,9 @@ export default class Archive extends React.Component {
 								}}></div>
 								<div style={css.text}>A shade like a light lemon yellow adds a calming aura to your room.</div>
 							</div>
-							<a href="http://www.myntra.com/home-furnishing-guide?f=Prints_and_Patterns_article_attr%3Afloral%2520or%2520tropical%2Cgeometric%2Cprints%2520(others)%2Csoild%2520or%2520self%2520design%2Cstripes%3A%3Acategories%3ABedsheets&SRC=Radium" target="_blank" style={{
+							<a
+								onClick={this.handelLinkClick}
+								href="http://www.myntra.com/home-furnishing-guide?f=Prints_and_Patterns_article_attr%3Afloral%2520or%2520tropical%2Cgeometric%2Cprints%2520(others)%2Csoild%2520or%2520self%2520design%2Cstripes%3A%3Acategories%3ABedsheets&SRC=Radium" target="_blank" style={{
 								textDecoration: 'none',
 								textTransform: 'uppercase',
 								fontSize: 16,
@@ -193,7 +201,9 @@ export default class Archive extends React.Component {
 								}}></div>
 								<div style={css.text}>When you have predominantly light shades in your room you can pair them with hues that are starkly in contrast to add depth to the space.</div>
 							</div>
-							<a href="http://www.myntra.com/home-furnishing-guide?f=categories%3ABedsheets%3A%3Acolour%3Ablue%2Ccoral%2Clavender%2Corange%2Cpeach%2Cpink%2Csea%2520green%2Cyellow&SRC=Radium" target="_blank" style={{
+							<a 
+								onClick={this.handelLinkClick}
+								href="http://www.myntra.com/home-furnishing-guide?f=categories%3ABedsheets%3A%3Acolour%3Ablue%2Ccoral%2Clavender%2Corange%2Cpeach%2Cpink%2Csea%2520green%2Cyellow&SRC=Radium" target="_blank" style={{
 								textDecoration: 'none',
 								textTransform: 'uppercase',
 								fontSize: 16,
@@ -239,7 +249,9 @@ export default class Archive extends React.Component {
 								}}></div>
 								<div style={css.text}>Play with textures and colours in the same family to add a nice touch to your room.</div>
 							</div>
-							<a href="http://www.myntra.com/home-furnishing-guide?f=categories%3ABedsheets%3A%3Acolour%3Ablue%2Ccream%2Cgreen%2Cwhite&SRC=Radium" target="_blank" style={{
+							<a 
+								onClick={this.handelLinkClick}
+								href="http://www.myntra.com/home-furnishing-guide?f=categories%3ABedsheets%3A%3Acolour%3Ablue%2Ccream%2Cgreen%2Cwhite&SRC=Radium" target="_blank" style={{
 								textDecoration: 'none',
 								textTransform: 'uppercase',
 								fontSize: 16,
@@ -285,7 +297,9 @@ export default class Archive extends React.Component {
 								}}></div>
 								<div style={css.text}>These shades can make any room look rich so make the reds stand out by playing with contrasting colours.</div>
 							</div>
-							<a href="http://www.myntra.com/home-furnishing-guide?f=categories%3ABedsheets%3A%3Acolour%3Ablack%2Ccharcoal%2Ccream%2Cgreen%2Cgrey%2Coff%2520white%2Cwhite&SRC=Radium" target="_blank" style={{
+							<a 
+								onClick={this.handelLinkClick}
+								href="http://www.myntra.com/home-furnishing-guide?f=categories%3ABedsheets%3A%3Acolour%3Ablack%2Ccharcoal%2Ccream%2Cgreen%2Cgrey%2Coff%2520white%2Cwhite&SRC=Radium" target="_blank" style={{
 								textDecoration: 'none',
 								textTransform: 'uppercase',
 								fontSize: 16,
